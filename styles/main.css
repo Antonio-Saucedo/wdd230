@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, header, main, footer {
+    width: 525px;
+    margin: 0 auto;
+    font-family:'Trebuchet MS';
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+header, footer {
+    background-color: #3377aa;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 1rem)
+}
+
+main, main h2, ul {
+    padding: 15px 10px;
+}
+
+main p, ul li {
+    padding: 3px;
+}
+
+main p {
+    padding-bottom: 20px;
+}
+
+main ul {
+    padding-left: 50px;
+}
+
+main h2, ul {
+    box-shadow: 0px 1px black;
+}
+
+main h2 {
+    text-shadow: 2px 2px 5px;
+}
+
+main p {
+    font-style: italic;
+}
+
+footer {
+    height: 4rem;
+}
+
+picture img{
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 15px;
+}
+
+/* id selector */
+#footer, #date {
+    text-align: center;
+    padding: 5px;
+}
+
+#author, #footer {
+    color: #fff;
+}
+
+#date {
+    color: rgb(251, 255, 0);
+}
+
+#author {
+    padding: 15px;
+    grid-row: 1;
+    grid-column: 2;
+}
