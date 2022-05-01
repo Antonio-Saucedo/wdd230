@@ -29,14 +29,14 @@ header {
 
 header,
 footer {
-  background-color: #3377aa;
+  background-color: #660000;
   filter: drop-shadow(0 0 1rem);
 }
 
 header h1,
 #footer,
 #date {
-  color: #fff;
+  color: #FFD6D6;
 }
 
 header h1 {
@@ -56,7 +56,7 @@ main {
 
 ul li {
   padding: 3px;
-  list-style: square;
+  list-style-type: circle;
 }
 
 main ul {

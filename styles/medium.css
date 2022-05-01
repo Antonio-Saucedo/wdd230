@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5em) {
+@media (min-width: 32.5em) {
   body,
   header,
   main,
@@ -8,6 +8,17 @@
 
   body {
     height: 100vh;
+  }
+
+  header h1,
+  #footer,
+  #date {
+    color: #000;
+  }
+
+  header,
+  footer {
+    background-color: #8dbadd;
   }
 
   header {
@@ -27,14 +38,13 @@
   }
 
   ul li {
-    list-style: disc;
+    list-style: square;
   }
 }
 
 /*Ensure the top of the page displays correctly when screen is sideways*/
-@media only screen and (max-height: 670px) {
-    body {
-        height: 100%;
-    }
-    
+@media (max-height: 670px) {
+  body {
+    height: 100%;
+  }
 }
