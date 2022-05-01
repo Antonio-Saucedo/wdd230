@@ -27,7 +27,6 @@
   }
 
   header h1 {
-    grid-template-columns: 170px 1fr;
     grid-row: 1;
     grid-column: 2;
   }

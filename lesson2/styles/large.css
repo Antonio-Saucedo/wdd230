@@ -1,0 +1,18 @@
+@media (min-width: 64em) {
+  body,
+  header,
+  main,
+  footer {
+    width: 960px;
+  }
+
+  main {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* class selector */
+  .last {
+    grid-column: 3;
+  }
+}
