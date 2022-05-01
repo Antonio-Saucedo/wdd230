@@ -1,0 +1,40 @@
+@media only screen and (min-width: 32.5em) {
+  body,
+  header,
+  main,
+  footer {
+    width: 550px;
+  }
+
+  body {
+    height: 100vh;
+  }
+
+  header {
+    grid-template-columns: 170px 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  header h1 {
+    grid-template-columns: 170px 1fr;
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  header,
+  footer {
+    border-radius: 20px;
+  }
+
+  ul li {
+    list-style: disc;
+  }
+}
+
+/*Ensure the top of the page displays correctly when screen is sideways*/
+@media only screen and (max-height: 670px) {
+    body {
+        height: 100%;
+    }
+    
+}
