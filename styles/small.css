@@ -73,7 +73,7 @@ main h2 {
 }
 
 footer {
-  height: 4rem;
+  height: 5rem;
 }
 
 picture img {
@@ -106,5 +106,5 @@ p {
 #footer,
 #date {
   text-align: center;
-  padding: 5px;
+  padding: 12px 0 0;
 }
