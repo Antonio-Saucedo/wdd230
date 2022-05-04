@@ -6,11 +6,6 @@
     width: 550px;
   }
 
-  main {
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   footer {
     height: 38px;
   }

@@ -26,11 +26,8 @@ body {
   justify-content: center;
 }
 
-header {
-  display: grid;
-  grid-template-rows: 50px 50px;
-  justify-items: center;
-  align-items: center;
+header, footer {
+  text-align: center;
 }
 
 header,
@@ -40,22 +37,21 @@ footer {
 
 header,
 #footer,
-.topic h3,
-.topic li,
-.topic p {
+section h3,
+section li,
+section p {
   padding: 10px 1rem;
 }
 
 header h1,
 header h2,
-.topic h3,
+section h3,
 #footer {
   color: #fff;
 }
 
 main {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
 }
 
 ul li {
@@ -64,7 +60,6 @@ ul li {
 
 footer {
   height: 55px;
-  text-align: center;
 }
 
 h1,
@@ -97,8 +92,7 @@ picture img{
     width: 92%;
 }
 
-/* class selector */
-.topic {
+section {
   margin: 10px;
   background-color: #eee;
   border: 1px solid #aaa;
@@ -106,7 +100,7 @@ picture img{
   overflow: hidden;
 }
 
-.topic h3 {
+section h3 {
   background-color: #3a4958;
   height: 40px;
 }
