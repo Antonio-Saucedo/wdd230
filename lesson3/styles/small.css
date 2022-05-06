@@ -43,7 +43,6 @@ footer,
 
 header h1,
 header p,
-nav a,
 #footer,
 #date,
 .colors {
@@ -63,6 +62,11 @@ header picture {
 nav,
 .nav {
   background-color: #00a8f3;
+}
+
+nav a,
+.nav {
+  color: #000;
 }
 
 nav,
