@@ -65,7 +65,8 @@ nav,
 }
 
 nav a,
-.nav {
+.nav,
+.active {
   color: #000;
 }
 
@@ -138,10 +139,6 @@ p {
 }
 
 /* class selector */
-.active a {
-  color: #0a2032;
-}
-
 .colors {
   display: flex;
   min-height: 80px;
