@@ -15,17 +15,29 @@ footer {
 
 body {
   background-color: slategrey;
+}
+
+body,
+.colors {
   justify-content: center;
 }
 
-header,
-nav {
-  text-align: center;
+header {
+  display: grid;
 }
 
 header,
 nav,
-footer {
+main,
+#footer,
+#date {
+  text-align: center;
+}
+
+header,
+footer,
+.head,
+.foot {
   background-color: #0a2032;
 }
 
@@ -33,7 +45,8 @@ header h1,
 header p,
 nav a,
 #footer,
-#date {
+#date,
+.colors {
   color: #fff;
 }
 
@@ -42,18 +55,33 @@ header p {
   padding: 10px 0 5px 0;
 }
 
-nav {
-  padding: 10px;
+header picture {
+  grid-row: 1;
+  padding: 25px 0 10px;
 }
 
+nav,
+.nav {
+  background-color: #00a8f3;
+}
+
+nav,
 main,
 main h2,
-p {
+p,
+a,
+main picture,
+main ul li,
+.colors {
   padding: 10px;
 }
 
 main {
   padding-bottom: 40px;
+}
+
+main,
+.active {
   background-color: #fff;
 }
 
@@ -62,26 +90,24 @@ ul li {
 }
 
 a {
-    display: block;
-    text-decoration: none;
-    padding: 10px;
+  display: block;
+  text-decoration: none;
 }
 
 footer {
   height: 5rem;
 }
 
-picture img {
-  vertical-align: middle;
-}
-
 h1,
 h2,
-h3 {
+h3,
+nav,
+.colors {
   font-family: "Inter", sans-serif;
 }
 
-h1 {
+h1,
+.head {
   font-size: 30px;
 }
 
@@ -90,11 +116,13 @@ h2 {
 }
 
 header p,
-h3 {
+nav,
+h3,
+.nav,
+.foot {
   font-size: 20px;
 }
 
-a,
 p {
   font-size: 15px;
 }
@@ -102,15 +130,25 @@ p {
 /* id selector */
 #footer,
 #date {
-  text-align: center;
   padding: 12px 0 0;
 }
 
 /* class selector */
-.active {
-  background-color: #fff;
-}
-
 .active a {
   color: #0a2032;
+}
+
+.colors {
+  display: flex;
+  min-height: 80px;
+}
+
+.colors li {
+  display: block;
+  border: 1px solid #000;
+}
+
+.nav,
+.foot {
+  padding: 16px;
 }
