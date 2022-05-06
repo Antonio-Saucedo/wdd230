@@ -1,0 +1,13 @@
+@media (min-width: 32.5em) {
+  body,
+  header,
+  main,
+  footer {
+    width: 650px;
+  }
+
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+  }
+}
