@@ -10,6 +10,13 @@ main,
 footer {
   width: 100%;
   margin: 0 auto;
+}
+
+body,
+header,
+main,
+footer,
+.trebuchet {
   font-family: "Trebuchet MS";
 }
 
