@@ -27,6 +27,7 @@
   nav ul {
     display: grid;
     grid-template-columns: repeat(4, auto);
+    align-items: center;
   }
 
   main {
