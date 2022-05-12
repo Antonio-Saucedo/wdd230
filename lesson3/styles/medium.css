@@ -11,11 +11,6 @@
     grid-template-rows: 110px 70px;
   }
 
-  header h1,
-  header p {
-    grid-column: 2;
-  }
-
   header h1 {
     align-self: flex-end;
   }
