@@ -63,12 +63,9 @@ header h1 {
   margin: 48px 0;
 }
 
-header svg {
-  margin: 56px 2vw;
-}
-
+header svg,
 nav {
-  margin: 45px 2vw;
+  margin: auto 2vw;
 }
 
 nav button,
