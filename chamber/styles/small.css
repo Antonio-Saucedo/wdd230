@@ -138,18 +138,19 @@ p {
 /* id selector */
 #today {
   background-color: rgba(37, 150, 190, 0.5);
-  width: 96%;
-  height: 50px;
+  width: 92%;
+  height: 20px;
+  padding: 10px;
 }
 
 /* class selector */
 .now {
-  height: 70px;
+  height: 50px;
 }
 
 .section {
   border: 1px solid #000;
-  width: 95%;
+  width: 96%;
   height: content;
   margin: 10px auto;
 }
