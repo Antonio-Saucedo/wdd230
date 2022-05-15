@@ -133,6 +133,10 @@ footer {
   padding-bottom: 10px;
 }
 
+footer picture img {
+  margin: 20px;
+}
+
 footer h2,
 footer h3,
 footer p,
@@ -144,7 +148,7 @@ footer p,
 footer svg {
   position: absolute;
   left: 35%;
-  bottom: 25%;
+  bottom: -53%;
   height: 20px;
 }
 
@@ -182,7 +186,17 @@ p {
 
 .section {
   border: 1px solid #000;
-  height: content;
+  height: 150px;
   margin: 10px auto;
   width: 96%;
+}
+
+.spot1,
+.spot2 {
+  height: 40%;
+}
+
+.join,
+.spot3 {
+  display: none;
 }
