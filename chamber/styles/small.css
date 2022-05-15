@@ -130,6 +130,7 @@ main,
 }
 
 footer {
+  position: relative;
   padding-bottom: 10px;
 }
 
