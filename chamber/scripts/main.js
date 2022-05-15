@@ -12,5 +12,4 @@ const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Sa
 const d = new Date();
 
 document.getElementById("today").textContent = `${weekday[d.getDay()]}, ${d.getDate()} ${d.getFullYear()}`;
-document.getElementById("footer").textContent = `© ${d.getFullYear()} | Antonio J. Saucedo | Idaho`;
-document.getElementById("date").textContent = `Last Updated: ${document.lastModified}`;
+document.getElementById("modified").textContent = `Last Updated: ${document.lastModified}`;

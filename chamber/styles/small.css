@@ -14,19 +14,26 @@ footer {
 }
 
 body,
-.now {
+.now,
+footer,
+#location {
   justify-content: center;
+}
+
+header div,
+footer {
+  background-color: #0a2032;
 }
 
 header div {
   display: flex;
-  background-color: #0a2032;
   height: 120px;
 }
 
 header,
 nav button,
-nav ul li a {
+nav ul li.active a,
+footer {
   color: #fff;
 }
 
@@ -49,22 +56,20 @@ nav ul.open,
   display: block;
 }
 
-header h1 {
-  width: 220px;
-  text-align: left;
+header h1,
+footer {
+  height: auto;
+  text-align: center;
 }
 
 header svg {
-  width: 30px;
-  height: 30px;
+  height: 40px;
 }
 
-header h1 {
-  margin: 48px 0;
-}
-
+header h1,
 header svg,
-nav {
+nav,
+#today {
   margin: auto 2vw;
 }
 
@@ -76,7 +81,6 @@ nav ul li a {
 nav button {
   background-color: transparent;
   border: 1px solid #fff;
-  font-size: 2rem;
 }
 
 nav ul {
@@ -90,16 +94,17 @@ nav ul li a,
 
 nav ul li a {
   text-decoration: none;
-  background-color: #00a8f3;
+  background-color: #fff;
+  color: #000;
   border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 nav ul li.active a {
-  background-color: rgba(37, 150, 190, 0.2);
+  background-color: #00bbff33;
 }
 
 nav ul li a:hover {
-  background-color: rgba(37, 150, 190, 0.5);
+  background-color: rgb(37, 150, 190);
 }
 
 nav ul,
@@ -108,9 +113,15 @@ nav ul,
   display: none;
 }
 
-nav button.open {
+nav button.open,
+#hamburgerBtn.open span:nth-child(1),
+nav ul li a {
   position: relative;
-  left: 42px;
+  top: 45px;
+}
+
+nav button.open {
+  left: 51px;
 }
 
 main,
@@ -118,40 +129,60 @@ main,
   text-align: center;
 }
 
-h1,
-#today {
-  font-size: 17px;
+footer {
+  padding-bottom: 10px;
 }
 
+footer h2,
+footer h3,
+footer p,
+#today,
+.section h2 {
+  padding: 5px;
+}
+
+footer svg {
+  position: absolute;
+  left: 35%;
+  bottom: 25%;
+  height: 20px;
+}
+
+h1,
+#today {
+  font-size: 25px;
+}
+
+nav button,
 h2 {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 h3,
 p {
-  font-size: 10px;
+  font-size: 15px;
 }
 
 /* id selector */
 #today {
   background-color: rgba(37, 150, 190, 0.5);
   width: 92%;
-  height: 20px;
-  padding: 10px;
+  height: 40%;
+}
+
+#location {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
 }
 
 /* class selector */
 .now {
-  height: 50px;
+  height: 65px;
 }
 
 .section {
   border: 1px solid #000;
-  width: 96%;
   height: content;
   margin: 10px auto;
-}
-
-.section h2 {
-  padding: 10px;
+  width: 96%;
 }
