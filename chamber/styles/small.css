@@ -112,10 +112,6 @@ nav ul li a {
   top: 48px;
 }
 
-nav button.open {
-  left: 7px;
-}
-
 main,
 .now {
   text-align: center;
@@ -172,8 +168,8 @@ p {
 /* class selector */
 .head {
   display: grid;
-  grid-template-rows: 100%;
-  grid-template-columns: 140px 1fr 35px 35px 45px;
+  grid-template-rows: 124px;
+  grid-template-columns: 140px 140px 1fr 1fr 1fr;
   column-gap: 5px;
 }
 
