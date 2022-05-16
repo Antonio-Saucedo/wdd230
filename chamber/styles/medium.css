@@ -15,6 +15,11 @@
     display: grid;
   }
 
+  footer {
+    display: grid;
+  }
+
+  /* id selector */
   #today {
     width: 95%;
   }
@@ -56,5 +61,9 @@
   .weather {
     grid-row: 5;
     width: 92%;
+  }
+
+  .main {
+    display: flex;
   }
 }
