@@ -9,6 +9,7 @@ header,
 main,
 footer {
   width: 100%;
+  margin: 0 auto;
   font-family: "Trebuchet MS";
 }
 
@@ -24,12 +25,6 @@ footer {
   background-color: #0a2032;
 }
 
-header div {
-  display: grid;
-  grid-template-columns: 150px, 160px, 40px, 40px, 1fr;
-  height: 120px;
-}
-
 header,
 nav button,
 nav ul li.active a,
@@ -37,51 +32,37 @@ footer {
   color: #fff;
 }
 
-header picture {
-  padding: 2vw;
+header picture,
+.title {
+  padding: 10px;
 }
 
-header picture img,
-header h1 {
+header picture img {
   height: 100px;
 }
 
-header h1,
-header h2 {
-  grid-row: 1;
-  grid-column: 2;
-}
-
-header h1,
-header svg,
 nav ul li a,
 nav ul.open,
 #hamburgerBtn span:nth-child(1),
-#hamburgerBtn.open span:nth-child(2),
-.section {
+#hamburgerBtn.open span:nth-child(2) {
   display: block;
 }
 
-header h1,
 footer {
   height: auto;
   text-align: center;
 }
 
 header svg {
-  grid-column: 3;
-  height: 40px;
+  height: 25%;
 }
 
-header h1,
+header picture,
 header svg,
 nav,
-#today {
-  margin: auto 2vw;
-}
-
-nav {
-  grid-column: 5;
+#today,
+.title {
+  margin: auto;
 }
 
 nav button,
@@ -128,11 +109,11 @@ nav button.open,
 #hamburgerBtn.open span:nth-child(1),
 nav ul li a {
   position: relative;
-  top: 45px;
+  top: 48px;
 }
 
 nav button.open {
-  left: 51px;
+  left: 7px;
 }
 
 main,
@@ -141,7 +122,6 @@ main,
 }
 
 footer {
-  position: relative;
   padding-bottom: 10px;
 }
 
@@ -158,7 +138,6 @@ footer p,
 }
 
 footer svg {
-  grid-column: 4;
   position: absolute;
   left: 35%;
   height: 20px;
@@ -183,7 +162,6 @@ p {
 #today {
   background-color: rgba(37, 150, 190, 0.5);
   width: 92%;
-  height: 40%;
 }
 
 #location {
@@ -192,6 +170,13 @@ p {
 }
 
 /* class selector */
+.head {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 140px 1fr 35px 35px 45px;
+  column-gap: 5px;
+}
+
 .now {
   height: 65px;
 }
