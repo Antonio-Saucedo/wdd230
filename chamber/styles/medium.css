@@ -6,16 +6,7 @@
     width: 700px;
   }
 
-  header h1 {
-    margin: auto;
-    text-align: left;
-  }
-
   main {
-    display: grid;
-  }
-
-  footer {
     display: grid;
   }
 
@@ -25,6 +16,10 @@
   }
 
   /* class selector */
+  .head {
+    grid-template-columns: 140px 1fr 50px 50px 100px;
+  }
+
   .join {
     display: block;
   }
@@ -46,12 +41,12 @@
   }
 
   .spot2 {
-      grid-column: 2;
+    grid-column: 2;
   }
 
   .spot1,
   .spot2 {
-      height: 85%;
+    height: 85%;
   }
 
   .join {

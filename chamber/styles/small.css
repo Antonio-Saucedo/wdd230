@@ -13,11 +13,8 @@ footer {
   font-family: "Trebuchet MS";
 }
 
-body,
-.now,
-footer,
-#location {
-  justify-content: center;
+body {
+  vertical-align: middle;
 }
 
 header div,
@@ -59,10 +56,13 @@ header svg {
 
 header picture,
 header svg,
-nav,
 #today,
 .title {
   margin: auto;
+}
+
+nav {
+  margin: auto 10px;
 }
 
 nav button,
@@ -135,7 +135,7 @@ footer p,
 
 footer svg {
   position: absolute;
-  left: 35%;
+  left: 30%;
   height: 20px;
 }
 
@@ -169,12 +169,12 @@ p {
 .head {
   display: grid;
   grid-template-rows: 124px;
-  grid-template-columns: 140px 140px 1fr 1fr 1fr;
+  grid-template-columns: 140px 135px 1fr 1fr 1fr;
   column-gap: 5px;
 }
 
 .now {
-  height: 65px;
+  height: 50px;
 }
 
 .section {
