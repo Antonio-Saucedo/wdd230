@@ -57,7 +57,8 @@ header svg {
 header picture,
 header svg,
 #today,
-.title {
+.title,
+.main {
   margin: auto;
 }
 
@@ -121,6 +122,11 @@ footer {
   padding-bottom: 10px;
 }
 
+footer picture img,
+.section {
+  height: 150px;
+}
+
 footer picture img {
   margin: 20px;
 }
@@ -133,8 +139,12 @@ footer p,
   padding: 5px;
 }
 
-footer svg {
+footer svg,
+#year {
   position: absolute;
+}
+
+footer svg {
   left: 30%;
   height: 20px;
 }
@@ -157,12 +167,16 @@ p {
 /* id selector */
 #today {
   background-color: rgba(37, 150, 190, 0.5);
-  width: 92%;
+  width: 94%;
 }
 
 #location {
-  border-bottom: 1px solid #fff;
   padding-bottom: 20px;
+}
+
+#year {
+  bottom: -475px;
+  left: 30%;
 }
 
 /* class selector */
@@ -177,11 +191,14 @@ p {
   height: 50px;
 }
 
+.section,
+.main {
+  width: 96%;
+}
+
 .section {
   border: 1px solid #000;
-  height: 150px;
   margin: 10px auto;
-  width: 96%;
 }
 
 .spot1,
@@ -192,4 +209,12 @@ p {
 .join,
 .spot3 {
   display: none;
+}
+
+.main {
+  border-bottom: 1px solid #fff;
+}
+
+.footer h3 {
+  margin-top: 27px;
 }
