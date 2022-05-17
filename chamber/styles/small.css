@@ -127,26 +127,12 @@ footer picture img,
   height: 150px;
 }
 
-footer picture img {
-  margin: 20px;
-}
-
 footer h2,
 footer h3,
 footer p,
 #today,
 .section h2 {
   padding: 5px;
-}
-
-footer svg,
-#year {
-  position: absolute;
-}
-
-footer svg {
-  left: 30%;
-  height: 20px;
 }
 
 h1,
@@ -170,12 +156,13 @@ p {
   width: 94%;
 }
 
-#location {
-  padding-bottom: 20px;
+#year,
+.mainInfo svg {
+  position: absolute;
 }
 
 #year {
-  bottom: -475px;
+  bottom: -480px;
   left: 30%;
 }
 
@@ -213,6 +200,19 @@ p {
 
 .main {
   border-bottom: 1px solid #fff;
+}
+
+.main picture img {
+  margin: 20px;
+}
+
+.mainInfo {
+  padding-bottom: 20px;
+}
+
+.mainInfo svg {
+  left: 30%;
+  height: 20px;
 }
 
 .footer h3 {
