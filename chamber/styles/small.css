@@ -211,7 +211,8 @@ p {
 }
 
 .mainInfo svg {
-  left: 30%;
+  bottom: -425px;
+  left: 35%;
   height: 20px;
 }
 

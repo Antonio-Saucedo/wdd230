@@ -78,6 +78,11 @@
     text-align: left;
   }
 
+  .mainInfo svg {
+    bottom: -240px;
+    left: 73%;
+  }
+
   .info,
   .location {
     grid-row: 1;
