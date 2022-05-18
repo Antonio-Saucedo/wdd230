@@ -1,0 +1,8 @@
+@media (min-width: 64em) {
+    body,
+  header,
+  main,
+  footer {
+    width: 900px;
+  }
+}
