@@ -16,6 +16,19 @@
     width: 95%;
   }
 
+  #year {
+    position: static;
+    grid-row: 1;
+    grid-column: 1;
+    text-align: right;
+  }
+
+  #modified {
+    grid-row: 2;
+    grid-column: 1/4;
+    text-align: center;
+  }
+
   /* class selector */
   .head {
     grid-template-columns: 140px 1fr 50px 50px 63px;
@@ -78,14 +91,38 @@
     text-align: left;
   }
 
+  .mainInfo {
+    position: relative;
+  }
+
   .mainInfo svg {
-    bottom: -240px;
-    left: 73%;
+    bottom: 22px;
+    left: 0%;
   }
 
   .info,
   .location {
     grid-row: 1;
     grid-column: 3;
+  }
+
+  .footer {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 133px 1fr;
+  }
+
+  .footer h3 {
+    margin-top: auto;
+    grid-row: 1;
+    grid-column: 2;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+  }
+
+  .footer p {
+    grid-row: 1;
+    grid-column: 3;
+    text-align: left;
   }
 }
