@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: borber-box;
+  box-sizing: border-box;
 }
 
 body,
@@ -25,7 +25,8 @@ footer {
 header,
 nav button,
 nav ul li.active a,
-footer {
+footer,
+.largeNav ul li a {
   color: #fff;
 }
 

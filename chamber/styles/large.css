@@ -6,8 +6,8 @@
     width: 900px;
   }
 
-  nav {
-    display: none;
+  header picture {
+    margin-left: 9px;
   }
 
   main {
@@ -25,12 +25,38 @@
 
   /* class selectors */
   .head {
-    grid-template-columns: 140px 240px 1fr 50px 50px 20px;
+    grid-template-columns: 150px 240px 1fr 50px 50px 6px;
+  }
+
+  .title {
+    margin: auto 0;
+  }
+
+  .smallNav {
+    display: none;
   }
 
   .largeNav {
-    display: flex;
+    display: block;
     grid-column: 3;
+    margin: auto;
+  }
+
+  .largeNav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .largeNav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  .active {
+    background-color: #00a8f3;
+    color: #000;
   }
 
   .facebook {
