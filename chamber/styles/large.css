@@ -6,6 +6,10 @@
     width: 900px;
   }
 
+  nav {
+    display: none;
+  }
+
   main {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(4, 1fr);
@@ -20,6 +24,19 @@
   }
 
   /* class selectors */
+  .head {
+    grid-template-columns: 140px 240px 1fr 50px 50px 20px;
+  }
+
+  .largeNav {
+    display: flex;
+    grid-column: 3;
+  }
+
+  .facebook {
+    grid-column: 4;
+  }
+
   .events {
     grid-row: 1;
   }

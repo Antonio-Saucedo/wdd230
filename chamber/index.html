@@ -10,7 +10,7 @@
     <title>Ice Valley Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/medium.css" />
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/large.css" />
   </head>
   <body>
     <header>
@@ -19,17 +19,30 @@
           <img src="images/ivc-logo.png" alt="IVC Logo" />
         </picture>
         <div class="title">
-        <h1>Ice Valley</h1>
-        <h2>Chamber of Commerce</h2>
+          <h1>Ice Valley</h1>
+          <h2>Chamber of Commerce</h2>
+          <div class="largeNav">
+            <ul>
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Discover</a></li>
+              <li><a href="#">Directory</a></li>
+              <li><a href="#">Join</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14222 14222">
+        <svg
+          class="facebook"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 14222 14222"
+        >
           <circle
             xmlns="http://www.w3.org/2000/svg"
             cx="7111"
             cy="7112"
             r="7111"
             fill="#1977f3"
-          />
+          ></circle>
           <path
             xmlns="http://www.w3.org/2000/svg"
             d="M9879 9168l315-2056H8222V5778c0-562 275-1111 1159-1111h897V2917s-814-139-1592-139c-1624 0-2686 984-2686 2767v1567H4194v2056h1806v4969c362 57 733 86 1111 86s749-30 1111-86V9168z"
@@ -37,10 +50,9 @@
           />
         </svg>
         <svg
+          class="linkedIn"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 64 64"
-          aria-labelledby="title"
-          aria-describedby="desc"
           role="img"
           xmlns:xlink="http://www.w3.org/1999/xlink"
         >
@@ -97,61 +109,46 @@
     </main>
     <footer>
       <div class="main">
-      <picture>
-        <img src="images/ivc-logo.png" alt="IVC Logo">
-      </picture>
-      <div class="mainTitle">
-      <h2>Ice Valley Chamber of Commerce</h2>
-      <p>210 Valley Road<br />Ice Valley, Idaho 83406</p>
-      </div>
-      <div class="mainInfo">
-      <p>info@IceValley.com</p>
-      <p>(208) 482-5539</p>
-      <p>Location Map</p>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        xmlns:dc="http://purl.org/dc/elements/1.1/"
-        xmlns:cc="http://creativecommons.org/ns#"
-        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-        version="1.1"
-        id="DESIGNS"
-        x="0px"
-        y="0px"
-        viewBox="0 0 32 32"
-        style="enable-background: new 0 0 32 32"
-        xml:space="preserve"
-      >
-        <title property="dc:title">to pin</title>
-        <desc property="dc:description">
-          An icon for "pin" from the Stone series on to [icon]. Downloaded from
-          http://www.toicon.com/icons/stone_pin by 127.0.0.1 on 2017-07-10.
-          Licensed CC-BY, see http://toicon.com/license/ for details.
-        </desc>
-        <path
-          class="stone_een"
-          d="M30.5,30.5c-0.148,0.148-0.344,0.224-0.54,0.224c-0.176,0-0.353-0.061-0.497-0.184l-11.084-9.505  l2.659-2.659l9.501,11.087C30.799,29.766,30.782,30.218,30.5,30.5z M24.293,12.293l-0.879-0.879  c-0.391-0.391-0.902-0.586-1.414-0.586s-1.024,0.195-1.414,0.586L20.45,11.55l-8.807-7.206c0.717-0.785,0.702-1.999-0.057-2.758  l-0.879-0.879c-0.391-0.391-1.024-0.391-1.414,0L0.707,9.293c-0.391,0.391-0.391,1.024,0,1.414l0.879,0.879  c0.389,0.389,0.897,0.582,1.406,0.582c0.485,0,0.97-0.176,1.352-0.525l7.206,8.807l-0.136,0.136c-0.781,0.781-0.781,2.047,0,2.828  l0.879,0.879c0.391,0.391,1.024,0.391,1.414,0l10.586-10.586C24.683,13.317,24.683,12.683,24.293,12.293z"
-          style="fill: #fff"
-        />
-        <metadata>
-          <work rdf:about="">
-            <format>image/svg+xml</format>
-            <type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-            <license
-              rdf:resource="http://creativecommons.org/licenses/by/4.0/"
+        <picture>
+          <img src="images/ivc-logo.png" alt="IVC Logo" />
+        </picture>
+        <div class="mainTitle">
+          <h2>Ice Valley Chamber of Commerce</h2>
+          <p>210 Valley Road<br />Ice Valley, Idaho 83406</p>
+        </div>
+        <div class="mainInfo">
+          <p>info@IceValley.com</p>
+          <p>(208) 482-5539</p>
+          <p>Location Map</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            id="DESIGNS"
+            x="0px"
+            y="0px"
+            viewBox="0 0 32 32"
+            style="enable-background: new 0 0 32 32"
+            xml:space="preserve"
+          >
+            <title>to pin</title>
+            <desc>
+              An icon for "pin" from the Stone series on to [icon]. Downloaded
+              from http://www.toicon.com/icons/stone_pin by 127.0.0.1 on
+              2017-07-10. Licensed CC-BY, see http://toicon.com/license/ for
+              details.
+            </desc>
+            <path
+              class="stone_een"
+              d="M30.5,30.5c-0.148,0.148-0.344,0.224-0.54,0.224c-0.176,0-0.353-0.061-0.497-0.184l-11.084-9.505  l2.659-2.659l9.501,11.087C30.799,29.766,30.782,30.218,30.5,30.5z M24.293,12.293l-0.879-0.879  c-0.391-0.391-0.902-0.586-1.414-0.586s-1.024,0.195-1.414,0.586L20.45,11.55l-8.807-7.206c0.717-0.785,0.702-1.999-0.057-2.758  l-0.879-0.879c-0.391-0.391-1.024-0.391-1.414,0L0.707,9.293c-0.391,0.391-0.391,1.024,0,1.414l0.879,0.879  c0.389,0.389,0.897,0.582,1.406,0.582c0.485,0,0.97-0.176,1.352-0.525l7.206,8.807l-0.136,0.136c-0.781,0.781-0.781,2.047,0,2.828  l0.879,0.879c0.391,0.391,1.024,0.391,1.414,0l10.586-10.586C24.683,13.317,24.683,12.683,24.293,12.293z"
+              style="fill: #fff"
             />
-            <attributionname>Shannon E Thomas</attributionname>
-            <attributionurl>
-              http://www.toicon.com/icons/stone_pin
-            </attributionurl>
-          </work>
-        </metadata>
-      </svg>
-      </div>
+          </svg>
+        </div>
       </div>
       <div class="footer">
         <h3>Antonio Saucedo</h3>
-        <p id="year">&#169 2022 Ice Valley Chamber</p>
+        <p id="year">&#169; 2022 Ice Valley Chamber</p>
         <p>WDD 230 Project</p>
         <p id="modified"></p>
       </div>
