@@ -11,6 +11,15 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
+  /* id selectors */
+  #modified {
+    grid-row: 1;
+    grid-column: 4;
+    border-left: 2px solid #fff;
+    text-align: left;
+  }
+
+  /* class selectors */
   .events {
     grid-row: 1;
   }
@@ -53,5 +62,13 @@
 
   .news {
     grid-column: 2/4;
+  }
+
+  .main {
+    grid-template-columns: 200px 340px 1fr;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 133px 126px 1fr;
   }
 }
