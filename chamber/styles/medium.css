@@ -7,24 +7,23 @@
   }
 
   main,
-  footer div {
+  .main,
+  .spots,
+  .footer {
     display: grid;
   }
 
   /* id selector */
-  #today {
-    width: 95%;
+  #today,
+  .section {
+    width: 97%;
   }
 
   #year {
-    position: static;
-    grid-row: 1;
-    grid-column: 1;
     text-align: right;
   }
 
   #modified {
-    grid-row: 2;
     grid-column: 1/4;
     text-align: center;
   }
@@ -32,11 +31,6 @@
   /* class selector */
   .head {
     grid-template-columns: 140px 1fr 50px 50px 100px;
-  }
-
-  .join {
-    display: block;
-    grid-row: 4;
   }
 
   .hero,
@@ -52,16 +46,11 @@
 
   .spots {
     grid-row: 3;
-    display: grid;
   }
 
-  .spot2 {
-    grid-column: 2;
-  }
-
-  .spot1,
-  .spot2 {
-    height: 85%;
+  .join {
+    grid-row: 4;
+    display: block;
   }
 
   .events,
@@ -70,8 +59,22 @@
     width: 92%;
   }
 
+  .spot2,
+  .mainTitle {
+    grid-column: 2;
+  }
+
+  .info,
+  .location {
+    grid-column: 3;
+  }
+
+  .spot1,
+  .spot2 {
+    height: 85%;
+  }
+
   .main {
-    display: grid;
     grid-template-columns: 200px 250px 1fr;
     column-gap: 5px;
   }
@@ -85,9 +88,8 @@
     margin: auto;
   }
 
-  .mainTitle {
-    grid-row: 1;
-    grid-column: 2;
+  .mainTitle,
+  .footer p {
     text-align: left;
   }
 
@@ -100,29 +102,13 @@
     left: 0%;
   }
 
-  .info,
-  .location {
-    grid-row: 1;
-    grid-column: 3;
-  }
-
   .footer {
     margin-top: 10px;
-    display: grid;
     grid-template-columns: 1fr 133px 1fr;
   }
 
   .footer h3 {
-    margin-top: auto;
-    grid-row: 1;
-    grid-column: 2;
-    border-left: 2px solid #fff;
-    border-right: 2px solid #fff;
-  }
-
-  .footer p {
-    grid-row: 1;
-    grid-column: 3;
-    text-align: left;
+    border-style: solid;
+    border-width: 0 2px 0 2px;
   }
 }

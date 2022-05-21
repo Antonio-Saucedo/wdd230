@@ -158,14 +158,8 @@ p {
   width: 94%;
 }
 
-#year,
 .mainInfo svg {
   position: absolute;
-}
-
-#year {
-  bottom: 76px;
-  left: 26%;
 }
 
 /* class selector */
@@ -221,8 +215,4 @@ p {
   bottom: 22px;
   left: 32%;
   height: 20px;
-}
-
-.footer h3 {
-  margin-top: 27px;
 }
