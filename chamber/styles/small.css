@@ -7,8 +7,7 @@
 body,
 header,
 main,
-footer,
-.hero picture img{
+footer {
   width: 100%;
 }
 
@@ -93,8 +92,13 @@ nav ul li a,
   box-shadow: 1px -1px 10px 1px #000;
 }
 
-nav ul li a {
+nav ul li a,
+.events a {
   text-decoration: none;
+
+}
+
+nav ul li a {
   background-color: #fff;
   color: #000;
   border-top: 1px solid rgba(0, 0, 0, 0.5);
@@ -140,8 +144,7 @@ footer {
   padding-bottom: 10px;
 }
 
-footer picture img,
-.section {
+footer picture img {
   height: 150px;
 }
 
@@ -196,14 +199,13 @@ p {
   height: 50px;
 }
 
-.section,
 .main {
   width: 96%;
 }
 
 .section {
   border: 1px solid #000;
-  margin: 10px auto;
+  margin: 10px;
 }
 
 .events picture {
@@ -220,7 +222,7 @@ p {
 }
 
 .hero picture img {
-  height: 100%;
+  display: block;
 }
 
 .spot1,
