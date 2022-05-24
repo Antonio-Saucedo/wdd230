@@ -90,6 +90,7 @@ nav ul {
 nav ul li a,
 .section {
   background-color: #00a8f3;
+  box-shadow: 1px -1px 10px 1px #000;
 }
 
 nav ul li a {
@@ -119,7 +120,8 @@ nav button.open,
 nav ul li a,
 .hero,
 .mainInfo,
-.footer {
+.footer,
+.events {
   position: relative;
 }
 
@@ -147,7 +149,8 @@ footer h2,
 footer h3,
 footer p,
 #today,
-.section h2 {
+.section h2,
+.events h3 {
   padding: 5px;
 }
 
@@ -161,7 +164,10 @@ h2 {
   font-size: 20px;
 }
 
-h3,
+h3 {
+  font-size: 17px;
+}
+
 p {
   font-size: 15px;
 }
@@ -173,7 +179,8 @@ p {
 }
 
 .mainInfo svg,
-.hero h2 {
+.hero h2,
+.events picture {
   position: absolute;
 }
 
@@ -197,6 +204,11 @@ p {
 .section {
   border: 1px solid #000;
   margin: 10px auto;
+}
+
+.events picture {
+  left: 32%;
+  top: 22%;
 }
 
 .hero {
