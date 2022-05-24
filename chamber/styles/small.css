@@ -21,6 +21,7 @@ footer {
 
 body {
   vertical-align: middle;
+  z-index: -1;
 }
 
 header div,
@@ -37,7 +38,13 @@ footer,
 }
 
 header picture,
-.title {
+.title,
+.events,
+.weather,
+.news,
+.spots,
+.spot1,
+.spot2 {
   padding: 10px;
 }
 
@@ -73,7 +80,8 @@ nav {
 }
 
 nav button,
-nav ul li a {
+nav ul li a,
+.section p {
   padding: 5px 10px;
 }
 
@@ -102,6 +110,7 @@ nav ul li a {
   background-color: #fff;
   color: #000;
   border-top: 1px solid rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 nav ul li.active a {
@@ -140,10 +149,6 @@ main,
   text-align: center;
 }
 
-footer {
-  padding-bottom: 10px;
-}
-
 footer picture img {
   height: 150px;
 }
@@ -153,8 +158,16 @@ footer h3,
 footer p,
 #today,
 .section h2,
-.events h3 {
+.events h3,
+.events a,
+.spot1,
+.spot2 {
   padding: 5px;
+}
+
+footer,
+.section h3 {
+  padding-bottom: 10px;
 }
 
 h1,
@@ -178,16 +191,20 @@ p {
 /* id selector */
 #today {
   background-color: rgba(37, 150, 190, 0.5);
-  width: 94%;
 }
 
+#today,
+.main {
+  width: 96%;
+}
+
+/* class selector */
 .mainInfo svg,
 .hero h2,
 .events picture {
   position: absolute;
 }
 
-/* class selector */
 .head {
   display: grid;
   grid-template-rows: 124px;
@@ -199,22 +216,15 @@ p {
   height: 50px;
 }
 
-.main {
-  width: 96%;
-}
-
 .section {
-  border: 1px solid #000;
-  margin: 10px;
+  width: fit-content;
+  margin: 15px auto;
+  z-index: 0;
 }
 
 .events picture {
   left: 32%;
-  top: 22%;
-}
-
-.hero {
-  overflow: hidden;
+  top: 30%;
 }
 
 .hero h2 {
@@ -225,9 +235,13 @@ p {
   display: block;
 }
 
-.spot1,
-.spot2 {
-  height: 40%;
+.section h3 {
+  font-style: italic;
+  border-bottom: 1px solid #000;
+}
+
+.spot1 {
+  width: 100%;
 }
 
 .join,
@@ -243,6 +257,7 @@ p {
   margin: 20px;
 }
 
+.section h3,
 .mainInfo {
   padding-bottom: 20px;
 }
