@@ -13,3 +13,7 @@ const d = new Date();
 
 document.getElementById("today").textContent = `${weekday[d.getDay()]}, ${d.getDate()} ${d.getFullYear()}`;
 document.getElementById("modified").textContent = `Last Updated: ${document.lastModified}`;
+
+if (d.getDay() == 1 || d.getDay() == 2) {
+  document.getElementById("joinUs").style.display = "block";
+}

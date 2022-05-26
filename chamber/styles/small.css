@@ -61,7 +61,8 @@ nav ul.open,
   display: block;
 }
 
-footer {
+footer,
+#joinUs {
   text-align: center;
 }
 
@@ -108,9 +109,14 @@ nav ul li a,
   text-decoration: none;
 }
 
+nav ul li a,
+#joinUs,
+.events a {
+  color: #000;
+}
+
 nav ul li a {
   background-color: #fff;
-  color: #000;
   border-top: 1px solid rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
@@ -202,6 +208,11 @@ p {
   width: 96%;
 }
 
+
+#joinUs {
+  background-color: #00a8f3;
+}
+
 /* class selector */
 .mainInfo svg,
 .hero h2,
@@ -264,7 +275,8 @@ p {
 }
 
 .join,
-.spot3 {
+.spot3,
+#joinUs {
   display: none;
 }
 
