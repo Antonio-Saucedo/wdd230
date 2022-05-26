@@ -178,7 +178,9 @@ h1,
 }
 
 nav button,
-h2 {
+h2,
+.join button,
+.hero button {
   font-size: 20px;
 }
 
@@ -203,7 +205,8 @@ p {
 /* class selector */
 .mainInfo svg,
 .hero h2,
-.events picture {
+.events picture,
+.hero button {
   position: absolute;
 }
 
@@ -263,6 +266,23 @@ p {
 .join,
 .spot3 {
   display: none;
+}
+
+.join button,
+.hero button {
+  background-color: #0a2032;
+  color: #fff;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.hero button {
+  right: 5%;
+  bottom: 10%;
+}
+
+.join button {
+  width: 100%;
 }
 
 .main {

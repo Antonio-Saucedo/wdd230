@@ -40,10 +40,6 @@
     grid-template-columns: 140px 1fr 50px 50px 100px;
   }
 
-  .section h3 {
-    border-bottom: none;
-  }
-
   .hero,
   .news,
   .spots,
@@ -61,14 +57,6 @@
     width: 100%;
   }
 
-  .join button {
-    background-color: #0a2032;
-    color: #fff;
-    border-radius: 15px;
-    padding: 5px;
-    width: 100%;
-  }
-
   .events,
   .weather {
     grid-row: 5;
@@ -78,6 +66,10 @@
   .events h2,
   .events h3 {
     padding: 25px 10px;
+  }
+
+  .events h3 {
+    border-bottom: none;
   }
 
   .events picture {
