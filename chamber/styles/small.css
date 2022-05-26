@@ -42,9 +42,11 @@ header picture,
 .events,
 .weather,
 .news,
+.join,
 .spots,
 .spot1,
-.spot2 {
+.spot2,
+.spot3 {
   padding: 10px;
 }
 
