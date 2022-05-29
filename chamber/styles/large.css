@@ -3,16 +3,15 @@
   header,
   main,
   footer {
-    width: 960px;
+    max-width: 1000px;
   }
 
   header picture {
-    margin-left: 9px;
+    margin-left: 5px;
   }
 
   main {
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 276px 1fr 276px;
   }
 
   /* id selectors */
@@ -84,6 +83,10 @@
     grid-column: 2;
   }
 
+  .hero picture img {
+    height: 100%;
+  }
+
   .spots,
   .spot1,
   .spot2,
@@ -96,8 +99,9 @@
     grid-column: 3;
   }
 
+  .spot2,
   .spot3 {
-    width: 100%;
+    margin-top: 10px;
   }
 
   .weather {
@@ -124,6 +128,6 @@
   }
 
   .footer {
-    grid-template-columns: 1fr 133px 126px 1fr;
+    grid-template-columns: 1fr 147px 123px 1fr;
   }
 }

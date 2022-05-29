@@ -3,22 +3,25 @@
   header,
   main,
   footer {
-    width: 700px;
+    max-width: 700px;
   }
 
   main,
   .main,
+  .spots,
   .footer {
     display: grid;
   }
 
   main,
-  .spots {
+  .spots,
+  .main {
     column-gap: 10px;
   }
 
-  main {
-    grid-template-columns: 1fr 1fr 280px;
+  main,
+  .main {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   /* id selector */
@@ -30,21 +33,26 @@
     text-align: right;
   }
 
-  #modified {
-    grid-column: 1/4;
-    text-align: center;
-  }
-
-  /* class selector */
-  .head {
-    grid-template-columns: 140px 1fr 50px 50px 100px;
-  }
-
+  #modified,
   .hero,
   .news,
   .spots,
   .join {
     grid-column: 1/4;
+  }
+  /* class selector */
+  .head {
+    grid-template-columns: 140px 1fr 50px 50px 100px;
+  }
+
+  .hero picture img,
+  .join,
+  .spot3 {
+    width: 100%;
+  }
+
+  .hero h2 {
+    top: 5%;
   }
 
   .news {
@@ -54,7 +62,6 @@
   .join {
     grid-row: 4;
     display: block;
-    width: 100%;
   }
 
   .events,
@@ -73,16 +80,12 @@
   }
 
   .events picture {
-    left: 28%;
-    top: 39%;
+    top: 8%;
   }
 
-  .weather {
-    grid-column: 3;
-  }
-
-  .events {
-    grid-column: 1/3;
+  .spot1,
+  .spot3 {
+    margin: 0;
   }
 
   .spot2,
@@ -90,19 +93,10 @@
     grid-column: 2;
   }
 
+  .weather,
   .info,
   .location {
     grid-column: 3;
-  }
-
-  .spots {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .main {
-    grid-template-columns: 200px 250px 1fr;
-    column-gap: 5px;
   }
 
   .main picture img {
@@ -130,7 +124,7 @@
 
   .footer {
     margin-top: 10px;
-    grid-template-columns: 1fr 133px 1fr;
+    grid-template-columns: 1fr 147px 1fr;
   }
 
   .footer h3 {
