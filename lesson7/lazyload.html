@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progressive Loading of Images • Antonio Saucedo</title>
+    <meta
+      name="description"
+      content="This demostrates progressive loading of images in a webpage."
+    />
+    <link rel="stylesheet" href="styles/small.css" />
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <h1>Progressive Loading Images</h1>
+    <picture>
+      <img
+        src="images/placeholder.jpg"
+        data-src="images/chicken.jpg"
+        alt="chicken"
+      />
+    </picture>
+    <picture>
+      <img src="images/placeholder.jpg" data-src="images/goat.jpg" alt="goat" />
+    </picture>
+    <picture>
+      <img
+        src="images/placeholder.jpg"
+        data-src="images/horse.jpg"
+        alt="horse"
+      />
+    </picture>
+    <picture>
+      <img
+        src="images/placeholder.jpg"
+        data-src="images/rabbit.jpg"
+        alt="rabbit"
+      />
+    </picture>
+    <picture>
+      <img src="images/placeholder.jpg" data-src="images/ram.jpg" alt="ram" />
+    </picture>
+    <picture>
+      <img
+        src="images/placeholder.jpg"
+        data-src="images/sheep.jpg"
+        alt="sheep"
+      />
+    </picture>
+  </body>
+</html>
