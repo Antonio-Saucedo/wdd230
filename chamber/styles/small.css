@@ -8,7 +8,8 @@ body,
 header,
 main,
 footer,
-.join button {
+.join button,
+.hero picture img {
   width: 100%;
 }
 
@@ -59,7 +60,8 @@ nav ul li a,
 nav ul.open,
 #hamburgerBtn span:nth-child(1),
 #hamburgerBtn.open span:nth-child(2),
-.hero picture img {
+.hero picture img,
+.discover picture img {
   display: block;
 }
 
@@ -250,7 +252,7 @@ p {
 }
 
 .hero h2 {
-  left: 15%;
+  left: 12%;
   top: 10%;
 }
 

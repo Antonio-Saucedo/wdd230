@@ -82,6 +82,10 @@
     grid-column: 2;
   }
 
+  .hero h2 {
+    left: 10%;
+  }
+
   .hero picture img {
     height: 100%;
   }
