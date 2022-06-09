@@ -9,7 +9,6 @@
     />
     <title>Geneva First Chamber of Commerce</title>
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/medium.css" />
@@ -88,13 +87,13 @@
         </h2>
       </div>
     </header>
-    <main>
+    <main class="discoverPage">
       <div class="section discover">
         <picture>
-          <img src="images/lausanneSmall.jpg" alt="village" />
+          <source media="(max-width:699px)" srcset="images/lausanneSmall.jpg" />
+          <source media="(max-width:999px)" srcset="images/lausanneMedium.jpg" />
+          <img src="images/lausanneLarge.jpg" alt="village" />
         </picture>
-      </div>
-      <div class="section">
         <p>
           Lausanne is the capital and largest city of the Swiss canton of Vaud.
           It is a hilly city, situated on the shores of Lake Geneva, about
@@ -104,28 +103,15 @@
           neighbour. The municipality of Lausanne has a population of about
           140,000, making it the fourth largest city in Switzerland after Basel,
           Geneva, and Zurich, with the entire agglomeration area having about
-          420,000 inhabitants (as of January 2019). The metropolitan area of
-          Lausanne-Geneva (including Vevey-Montreux, Yverdon-les-Bains, Valais
-          and foreign parts), commonly designated as Arc lémanique was over 1.3
-          million inhabitants in 2017 and is the fastest growing in Switzerland.
-          Initially a Celtic and Roman settlement on the shores of the lake,
-          Lausanne became a town at the foot of Notre Dame, a cathedral built in
-          the 12th century. In the 20th century, Lausanne became a focus of
-          international sport, hosting the International Olympic Committee
-          (which has recognized the city as the "Olympic Capital" since 1994),
-          the Court of Arbitration for Sport and some 55 international sport
-          associations. It lies in a noted wine-growing region. The city has a
-          28-station metro system, making it the smallest city in the world to
-          have a rapid transit system. Lausanne hosted the 2020 Winter Youth
-          Olympics.
+          420,000 inhabitants (as of January 2019).
         </p>
       </div>
       <div class="section discover">
         <picture>
-          <img src="images/cathedralSmall.jpg" alt="cathedral" />
+          <source media="(max-width:699px)" srcset="images/cathedralSmall.jpg" />
+          <source media="(max-width:999px)" srcset="images/cathedralMedium.jpg" />
+          <img src="images/cathedralLarge.jpg" alt="cathedral" />
         </picture>
-      </div>
-      <div class="section">
         <p>
           The Cathedral of Notre Dame of Lausanne is a church located in the
           city of Lausanne, in the canton of Vaud in Switzerland. It belongs to
@@ -135,19 +121,15 @@
           master mason restarted construction until 1215. Finally a third
           engineer, Jean Cotereel, completed the majority of the existing
           cathedral including a porch, and two towers, one of which is the
-          current day belfry. The other tower was never completed. The cathedral
-          was consecrated and dedicated to Our Lady in 1275 by Pope Gregory X,
-          Rudolph of Habsburg, and the bishop of Lausanne at the time, Guillaume
-          of Champvent. The medieval architect Villard de Honnecourt drew the
-          rose window of the south transept in his sketchbook in 1270.
+          current day belfry. The other tower was never completed.
         </p>
       </div>
       <div class="section discover">
         <picture>
-          <img src="images/ferrisWheelSmall.jpg" alt="ferrisWheel" />
+          <source media="(max-width:699px)" srcset="images/ferrisWheelSmall.jpg" />
+          <source media="(max-width:999px)" srcset="images/ferrisWheelMedium.jpg" />
+          <img src="images/ferrisWheelLarge.jpg" alt="ferrisWheel" />
         </picture>
-      </div>
-      <div class="section">
         <p>
           The Jardin anglais (literally "English garden") is an urban park in
           Geneva, Switzerland, situated at the location of an ancient harbor and
@@ -162,10 +144,10 @@
       </div>
       <div class="section discover">
         <picture>
-          <img src="images/fountainSmall.jpg" alt="fountain" />
+          <source media="(max-width:699px)" srcset="images/fountainSmall.jpg" />
+          <source media="(max-width:999px)" srcset="images/fountainMedium.jpg" />
+          <img src="images/fountainLarge.jpg" alt="fountain" />
         </picture>
-      </div>
-      <div class="section">
         <p>
           The Jet d'Eau (French, Water-Jet) is a large fountain in Geneva,
           Switzerland and is one of the city's most famous landmarks, being
@@ -176,21 +158,15 @@
           an altitude of ten kilometres (33,000 ft). Five hundred litres (130 US
           gal) of water per second are jetted to an altitude of 140 metres (460
           ft) by two 500 kW pumps, operating at 2,400 V, consuming one megawatt
-          of electricity (3,000,000 KWh and costing 510,000 CHF per year). The
-          water leaves the ten-centimetre (4 in) nozzle at a speed of 200 km/h
-          (55 m/s). At any given moment, there are about 7,000 L (1,800 US gal)
-          of water in the air. Unsuspecting visitors to the fountain—which can
-          be reached via a stone jetty from the left bank of the lake—may be
-          surprised to find themselves drenched after a slight change in wind
-          direction.
+          of electricity (3,000,000 KWh and costing 510,000 CHF per year).
         </p>
       </div>
       <div class="section discover">
         <picture>
-          <img src="images/gardenSmall.jpg" alt="garden" />
+          <source media="(max-width:699px)" srcset="images/gardenSmall.jpg" />
+          <source media="(max-width:999px)" srcset="images/gardenMedium.jpg" />
+          <img src="images/gardenLarge.jpg" alt="garden" />
         </picture>
-      </div>
-      <div class="section">
         <p>
           The Cantonal Botanical Museum and Gardens in the Canton of Vaud,
           Switzerland, comprises the museum and botanical garden in Lausanne, as
@@ -204,10 +180,10 @@
       </div>
       <div class="section discover">
         <picture>
-          <img src="images/trainSmall.jpg" alt="train" />
+          <source media="(max-width:699px)" srcset="images/trainSmall.jpg" />
+          <source media="(max-width:999px)" srcset="images/trainMedium.jpg" />
+          <img src="images/trainLarge.jpg" alt="train" />
         </picture>
-      </div>
-      <div class="section">
         <p>
           Lausanne railway station Is the main intercity and regional railway
           station for the city of Lausanne, Vaud, Switzerland. It is often known
@@ -217,12 +193,7 @@
           passenger trains are available to a wide variety of destinations
           across the country. Passenger trains are primarily run by Swiss
           Federal Railways (SBB CFF FFS), with additional international trains
-          run by companies from neighbouring France (TGV Lyria). There is also a
-          network of local services from Lausanne, primarily as part of the RER
-          Vaud, and platforms for line 2 of the Lausanne Métro. The metro
-          station, Lausanne-Gare, was opened on 27 October 2008. Passenger
-          facilities include Bureau de change, left luggage and lost property
-          offices.
+          run by companies from neighbouring France (TGV Lyria).
         </p>
       </div>
     </main>

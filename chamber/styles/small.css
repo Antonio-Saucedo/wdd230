@@ -48,7 +48,8 @@ header picture,
 .spots,
 .spot1,
 .spot2,
-.spot3 {
+.spot3,
+.discover picture img {
   padding: 10px;
 }
 
@@ -79,7 +80,8 @@ header svg,
 #today,
 .title,
 .main,
-.climate h1 {
+.climate h1,
+.discover picture img {
   margin: auto;
 }
 

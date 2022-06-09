@@ -10,10 +10,6 @@
     margin-left: 5px;
   }
 
-  main {
-    grid-template-columns: 276px 1fr 276px;
-  }
-
   /* id selectors */
   #modified {
     grid-row: 1;
@@ -23,6 +19,10 @@
   }
 
   /* class selectors */
+  .home {
+    grid-template-columns: 276px 1fr 276px;
+  }
+
   .head {
     grid-template-columns: 150px 240px 1fr 50px 50px 6px;
   }

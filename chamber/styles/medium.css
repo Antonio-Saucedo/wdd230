@@ -9,7 +9,8 @@
   main,
   .main,
   .spots,
-  .footer {
+  .footer,
+  .discover picture {
     display: grid;
   }
 
@@ -17,11 +18,6 @@
   .spots,
   .main {
     column-gap: 10px;
-  }
-
-  main,
-  .main {
-    grid-template-columns: repeat(3, 1fr);
   }
 
   /* id selector */
@@ -41,13 +37,19 @@
     grid-column: 1/4;
   }
   /* class selector */
+  .home,
+  .main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .head {
     grid-template-columns: 140px 1fr 50px 50px 100px;
   }
 
   .hero picture img,
   .join,
-  .spot3 {
+  .spot3,
+  .discover picture img {
     width: 100%;
   }
 
