@@ -324,3 +324,12 @@ p {
   left: 32%;
   height: 20px;
 }
+
+.discover picture img[data-src] {
+  filter: blur(0.2em);
+}
+
+.discover picture img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
