@@ -9,7 +9,8 @@ header,
 main,
 footer,
 .join button,
-.hero picture img {
+.hero picture img,
+.discover picture img {
   width: 100%;
 }
 
