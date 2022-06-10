@@ -133,4 +133,10 @@
   .footer {
     grid-template-columns: 1fr 147px 123px 1fr;
   }
+
+  .discover picture img:hover {
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
+  }
 }

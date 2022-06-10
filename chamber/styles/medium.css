@@ -133,4 +133,15 @@
     border-style: solid;
     border-width: 0 2px 0 2px;
   }
+
+  .discover picture img {
+    transition: 1s ease;
+  }
+
+  .discover picture img:hover {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+    transition: 1s ease;
+  }
 }
