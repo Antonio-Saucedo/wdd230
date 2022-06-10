@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  font-family: Ubuntu, sans-serif;
+}
+
+body table {
+  width: 350px;
+}
+
+body table,
+.columns {
+  border: 1px solid #000;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.columns td,
+.columns th,
+.title,
+tfoot td {
+  padding: 5px;
+}
+
+.columns td,
+.columns th {
+  border-right: 1px solid #000;
+}
+
+.columns:nth-child(even) {
+  background-color: aqua;
+}
+
+.columns:nth-child(odd) {
+  background-color: rgb(221, 214, 214);
+}
+
+.title,
+tfoot {
+  background-color: lightseagreen;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.stretch {
+  grid-column: 2/4;
+}
