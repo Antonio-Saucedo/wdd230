@@ -13,10 +13,12 @@ body {
   text-align: center;
   justify-content: center;
   font-family: Ubuntu, sans-serif;
+  font-size: 20px;
 }
 
 body table {
-  width: 350px;
+  width: 370px;
+  background-color: rgb(83, 49, 49);
 }
 
 body table,
@@ -38,7 +40,7 @@ tfoot td {
 
 .columns td,
 .columns th {
-  border-right: 1px solid #000;
+  border: 1px solid #000;
 }
 
 .columns:nth-child(even) {
@@ -49,13 +51,23 @@ tfoot td {
   background-color: rgb(221, 214, 214);
 }
 
+.columns:nth-child(6) td:nth-child(3),
+.columns:nth-child(2) {
+  background-color: rgb(87, 0, 0);
+  color: white;
+}
+
+.columns:nth-child(7) td:nth-child(1) {
+  font-style: italic;
+}
+
 .title,
 tfoot {
   background-color: lightseagreen;
 }
 
 .title {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .stretch {
