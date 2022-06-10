@@ -8,6 +8,7 @@ body,
 header,
 main,
 footer,
+.visits,
 .join button,
 .hero picture img,
 .discover picture img {
@@ -106,6 +107,7 @@ nav ul {
 }
 
 nav ul li a,
+.visits,
 .section {
   background-color: #00a8f3;
   box-shadow: 1px -1px 10px 1px #000;
@@ -163,7 +165,7 @@ nav ul li a {
 
 main,
 .now,
-#visits,
+.visits,
 #modified {
   text-align: center;
 }
@@ -176,6 +178,7 @@ footer h2,
 footer h3,
 footer p,
 #today,
+.visits,
 .section h2,
 .events h3,
 .events a {
@@ -183,7 +186,7 @@ footer p,
 }
 
 footer,
-#visits,
+.visits,
 .section h3 {
   padding-bottom: 10px;
 }
@@ -195,6 +198,7 @@ h1,
 
 nav button,
 h2,
+.visits p,
 .join button,
 .hero button {
   font-size: 20px;
@@ -223,6 +227,12 @@ p {
 }
 
 /* class selector */
+.visits,
+.section {
+  margin: 15px auto;
+  z-index: 0;
+}
+
 .mainInfo svg,
 .hero h2,
 .events picture img,
@@ -247,8 +257,6 @@ p {
 
 .section {
   width: fit-content;
-  margin: 15px auto;
-  z-index: 0;
 }
 
 .events picture {
