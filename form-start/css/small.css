@@ -108,7 +108,7 @@ form input.submitBtn {
     color: white;
     border-radius: 16px;
     padding: 12px 24px;
-    margin: 0 0 32px 2%;
+    margin: 0 0 32px 8px;
     width: 96%;
     max-width: 320px;
 }
