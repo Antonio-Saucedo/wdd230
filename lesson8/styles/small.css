@@ -36,6 +36,7 @@ table {
 
 table caption {
   font-size: 30px;
+  font-weight: 600;
   box-shadow: 10px 15px 20px 0 #000;
 }
 
@@ -48,7 +49,7 @@ tfoot td {
 
 table caption,
 tfoot {
-  background-color: lightseagreen;
+  background-color: #7f906e;
 }
 
 tfoot {
@@ -56,19 +57,19 @@ tfoot {
 }
 
 .columns:nth-child(even) {
-  background-color: aqua;
+  background-color: #8b7b85;
 }
 
 .columns:nth-child(odd) {
-  background-color: rgb(221, 214, 214);
+  background-color: #cac6c7;
 }
 
 .columns:nth-child(1) th:nth-child(n+1),
-.columns:nth-child(5) td:nth-child(3) {
-  background-color: rgb(87, 0, 0);
+.columns:nth-child(4) td:nth-child(3) {
+  background-color: #362933;
   color: white;
 }
 
-.columns:nth-child(7) td:nth-child(1) {
+.columns:nth-child(5) td:nth-child(1) {
   font-style: italic;
 }
