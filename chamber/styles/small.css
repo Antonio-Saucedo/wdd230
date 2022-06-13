@@ -9,7 +9,7 @@ header,
 main,
 footer,
 .visits,
-.join button,
+.joinbox button,
 .hero picture img,
 .discover picture img {
   width: 100%;
@@ -46,7 +46,7 @@ header picture,
 .events,
 .weather,
 .news,
-.join,
+.joinbox,
 .spots,
 .spot1,
 .spot2,
@@ -69,7 +69,11 @@ nav ul.open,
 }
 
 footer,
-#joinUs {
+#joinUs,
+#modified,
+.section,
+.now,
+.visits {
   text-align: center;
 }
 
@@ -142,7 +146,7 @@ nav ul,
 #hamburgerBtn span:nth-child(2),
 #hamburgerBtn.open span:nth-child(1),
 .largeNav,
-.join,
+.joinbox,
 .spot3,
 #joinUs {
   display: none;
@@ -161,13 +165,6 @@ nav button.open,
 #hamburgerBtn.open span:nth-child(1),
 nav ul li a {
   top: 48px;
-}
-
-main,
-.now,
-.visits,
-#modified {
-  text-align: center;
 }
 
 footer picture img {
@@ -199,7 +196,7 @@ h1,
 nav button,
 h2,
 .visits p,
-.join button,
+.joinbox button,
 .hero button {
   font-size: 20px;
 }
@@ -304,7 +301,7 @@ p {
   text-align: right;
 }
 
-.join button,
+.joinbox button,
 .hero button {
   background-color: #0a2032;
   color: #fff;
@@ -343,4 +340,65 @@ p {
 .discover picture img {
   filter: blur(0em);
   transition: filter 0.5s;
+}
+
+/* Form */
+form fieldset {
+  border: 1px solid #00a8f3;
+  border-radius: 10px;
+}
+
+form legend {
+  color: #0a2032;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 10px;
+  color: #9c2c13;
+  font-size: 14px;
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 16px;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 12px;
+  color: #555;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+  display: block;
+  padding: 12px 0;
+  color: #555;
+}
+
+.join {
+  display: flex;
+}
+
+form input.submitBtn {
+  display: block;
+  border: none;
+  background-color: #9c2c13;
+  color: white;
+  border-radius: 16px;
+  padding: 12px 24px;
+  margin: 0 30px 30px 30px;
+  width: 96%;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
 }

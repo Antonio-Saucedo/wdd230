@@ -63,7 +63,7 @@
   }
 
   .events,
-  .join,
+  .joinbox,
   .news,
   .weather {
     grid-column: 1;
@@ -111,12 +111,12 @@
     grid-row: 2;
   }
 
-  .join,
+  .joinbox,
   .news {
     grid-row: 3;
   }
 
-  .join p,
+  .joinbox p,
   .events h2,
   .events h3 {
     padding: 15px 10px;

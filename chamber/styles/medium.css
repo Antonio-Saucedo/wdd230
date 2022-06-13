@@ -33,7 +33,7 @@
   .hero,
   .news,
   .spots,
-  .join {
+  .joinbox {
     grid-column: 1/4;
   }
   /* class selector */
@@ -47,7 +47,7 @@
   }
 
   .hero picture img,
-  .join,
+  .joinbox,
   .spot3 {
     width: 100%;
   }
@@ -61,7 +61,7 @@
     grid-row: 2;
   }
 
-  .join {
+  .joinbox {
     grid-row: 4;
     display: block;
   }
@@ -71,7 +71,7 @@
     grid-row: 5;
   }
 
-  .join p,
+  .joinbox p,
   .events h2,
   .events h3 {
     padding: 25px 10px;
