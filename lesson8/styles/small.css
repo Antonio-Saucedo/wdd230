@@ -7,40 +7,49 @@
 body {
   height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 20px;
   text-align: center;
   justify-content: center;
   font-family: Ubuntu, sans-serif;
   font-size: 20px;
 }
 
-body table {
-  width: 370px;
-  background-color: rgb(83, 49, 49);
-}
-
-body table,
-.columns {
+table,
+table caption,
+.columns th,
+.columns td {
   border: 1px solid #000;
 }
 
-.columns {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+table,
+.columns th,
+.columns td {
+  border-collapse: collapse;
 }
 
+table,
+table caption {
+  box-shadow: 10px 10px 20px 0 #000;
+}
+
+table caption {
+  font-size: 30px;
+}
+
+table caption,
 .columns td,
 .columns th,
-.title,
 tfoot td {
-  padding: 5px;
+  padding: 10px;
 }
 
-.columns td,
-.columns th {
-  border: 1px solid #000;
+table caption,
+tfoot {
+  background-color: lightseagreen;
+}
+
+tfoot {
+  font-size: 15px;
 }
 
 .columns:nth-child(even) {
@@ -51,25 +60,12 @@ tfoot td {
   background-color: rgb(221, 214, 214);
 }
 
-.columns:nth-child(6) td:nth-child(3),
-.columns:nth-child(2) {
+.columns:nth-child(1) th:nth-child(n+1),
+.columns:nth-child(5) td:nth-child(3) {
   background-color: rgb(87, 0, 0);
   color: white;
 }
 
 .columns:nth-child(7) td:nth-child(1) {
   font-style: italic;
-}
-
-.title,
-tfoot {
-  background-color: lightseagreen;
-}
-
-.title {
-  font-size: 30px;
-}
-
-.stretch {
-  grid-column: 2/4;
 }
