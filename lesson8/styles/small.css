@@ -30,13 +30,13 @@ table,
   border-collapse: collapse;
 }
 
-table,
-table caption {
+table {
   box-shadow: 10px 10px 20px 0 #000;
 }
 
 table caption {
   font-size: 30px;
+  box-shadow: 10px 15px 20px 0 #000;
 }
 
 table caption,
