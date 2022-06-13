@@ -15,7 +15,10 @@ body {
 }
 
 table,
-table caption,
+table caption {
+  border: 2px solid gray;
+}
+
 .columns th,
 .columns td {
   border: 1px solid #000;
