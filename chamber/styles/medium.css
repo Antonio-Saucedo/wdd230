@@ -10,7 +10,9 @@
   .main,
   .spots,
   .footer,
-  .discover picture {
+  .discover picture,
+  .join,
+  .join .section {
     display: grid;
   }
 
@@ -48,7 +50,9 @@
 
   .hero picture img,
   .joinbox,
-  .spot3 {
+  .spot3,
+  .join .section,
+  .benefits {
     width: 100%;
   }
 
@@ -91,7 +95,8 @@
   }
 
   .spot2,
-  .mainTitle {
+  .mainTitle,
+  .join .section {
     grid-column: 2;
   }
 
@@ -124,8 +129,14 @@
     left: 0%;
   }
 
-  .footer {
+  .footer,
+  .benefitsb,
+  .benefitss,
+  .benefitsg {
     margin-top: 10px;
+  }
+
+  .footer {
     grid-template-columns: 1fr 147px 1fr;
   }
 
@@ -143,5 +154,22 @@
     -ms-transform: scale(1.02);
     transform: scale(1.02);
     transition: 1s ease;
+  }
+
+  .join {
+    grid-template-columns: 425px 1fr;
+  }
+
+  .join .section {
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  /* Form */
+  form fieldset {
+    margin: 15px auto;
+  }
+
+  form input.joinBtn {
+    margin: 10px 12px 20px 12px;
   }
 }

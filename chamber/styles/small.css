@@ -51,7 +51,12 @@ header picture,
 .spot1,
 .spot2,
 .spot3,
-.discover picture img {
+.discover picture img,
+.join .section,
+.benefitsnp,
+.benefitsb,
+.benefitss,
+.benefitsg {
   padding: 10px;
 }
 
@@ -112,7 +117,11 @@ nav ul {
 
 nav ul li a,
 .visits,
-.section {
+.section,
+.benefitsnp,
+.benefitsb,
+.benefitss,
+.benefitsg {
   background-color: #00a8f3;
   box-shadow: 1px -1px 10px 1px #000;
 }
@@ -148,7 +157,8 @@ nav ul,
 .largeNav,
 .joinbox,
 .spot3,
-#joinUs {
+#joinUs,
+.join .section {
   display: none;
 }
 
@@ -353,14 +363,6 @@ form fieldset {
     padding: 10px;
 }
 
-form fieldset,
-form label.top input,
-form label.top select,
-form label.top textarea,
-form input.joinBtn {
-  border-radius: 15px;
-}
-
 form legend,
 form label.top input,
 form label.top select,
@@ -388,7 +390,7 @@ form label.top,
 form div {
     padding-top: 10px;
     color: red;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 form label.top input,
@@ -402,7 +404,7 @@ form label.top input,
 form label.top select,
 form label.top textarea {
     -webkit-appearance: none;
-    font-size: 18px;
+    font-size: 20px;
     border: solid 1px #00a8f3;
     padding: 12px;
     background-color: rgba(37, 150, 190, 0.5);
@@ -422,7 +424,7 @@ form input.joinBtn {
     background-color: #0a2032;
     color: white;
     padding: 12px 24px;
-    margin: 0 30px 30px 30px;
+    margin: 10px 30px 20px 30px;
 }
 
 form label.top input:required {

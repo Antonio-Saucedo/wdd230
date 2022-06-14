@@ -139,4 +139,8 @@
     -ms-transform: scale(1.01);
     transform: scale(1.01);
   }
+
+  .join {
+    grid-template-columns: 600px 1fr;
+  }
 }
