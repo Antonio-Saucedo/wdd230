@@ -51,8 +51,7 @@
   .hero picture img,
   .joinbox,
   .spot3,
-  .join .section,
-  .benefits {
+  .join .section {
     width: 100%;
   }
 
@@ -130,9 +129,7 @@
   }
 
   .footer,
-  .benefitsnp,
-  .benefitss,
-  .benefitsg {
+  .join .section:nth-child(2) div:nth-child(n+2) {
     margin-top: 10px;
   }
 

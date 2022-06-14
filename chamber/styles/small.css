@@ -53,10 +53,7 @@ header picture,
 .spot3,
 .discover picture img,
 .join .section,
-.benefitsnp,
-.benefitsb,
-.benefitss,
-.benefitsg {
+.join .section:nth-child(2) div:nth-child(n+1) {
   padding: 10px;
 }
 
@@ -118,10 +115,7 @@ nav ul {
 nav ul li a,
 .visits,
 .section,
-.benefitsnp,
-.benefitsb,
-.benefitss,
-.benefitsg {
+.join .section:nth-child(2) div:nth-child(n+1) {
   background-color: #00a8f3;
   box-shadow: 1px -1px 10px 1px #000;
 }
