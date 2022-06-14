@@ -53,7 +53,8 @@ header picture,
 .spot3,
 .discover picture img,
 .join .section,
-.join .section:nth-child(2) div:nth-child(n+1) {
+.join .section:nth-child(2) div:nth-child(n+1),
+.thankyou picture img {
   padding: 10px;
 }
 
@@ -151,8 +152,7 @@ nav ul,
 .largeNav,
 .joinbox,
 .spot3,
-#joinUs,
-.join .section {
+#joinUs {
   display: none;
 }
 
@@ -193,7 +193,8 @@ footer,
 }
 
 h1,
-#today {
+#today,
+.thankyou h2 {
   font-size: 25px;
 }
 
@@ -242,7 +243,8 @@ p {
 }
 
 .head,
-.climate {
+.climate,
+.join {
   display: grid;
 }
 
@@ -284,7 +286,8 @@ p {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.spot1 {
+.spot1,
+.thankyou {
   width: 100%;
 }
 
@@ -418,7 +421,7 @@ form input.joinBtn {
     background-color: #0a2032;
     color: white;
     padding: 12px 24px;
-    margin: 10px 30px 20px 30px;
+    margin: 10px 30px 5px 30px;
 }
 
 form label.top input:required {
@@ -427,4 +430,8 @@ form label.top input:required {
 
 form label.top input:required:valid {
     border-left: green solid 6px;
+}
+
+.join .section {
+  grid-row: 1;
 }
