@@ -25,10 +25,10 @@
             "imageurl": "https://www.chuv.ch/typo3conf/ext/site_package/Resources/Public/Patternlab/images/chuv.png"
         },
         {
-            "name": "Ecole Rudolf Steiner Lausanne",
-            "address": "Rte du Bois-Genoud 36, 1023 Crissier, Switzerland",
-            "website": "http://www.ecolesteiner-lausanne.ch/",
-            "imageurl": "http://www.ecolesteiner-lausanne.ch/ersl/wp-content/uploads/ersl_logo_avec-nom-300x116.png"
+            "name": "Le Musée Olympique",
+            "address": "Quai d'Ouchy 1, 1006 Lausanne, Switzerland",
+            "website": "https://olympics.com/musee/",
+            "imageurl": "https://stillmedab.olympic.org/media/Images/Museum/Logo-FR-small.png?interpolation=lanczos-none&resize=252:84"
         },
         {
             "name": "Aquasplash",
