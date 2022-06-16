@@ -21,13 +21,13 @@
         {
             "name": "CHUV Centre hospitalier universitaire vaudois",
             "address": "Rue du Bugnon 46, 1011 Lausanne, Switzerland",
-            "website": "https://www.pharmacie24.ch/pharmacie24_sjt.php",
+            "website": "https://www.chuv.ch/fr/chuv-home/",
             "imageurl": "https://www.chuv.ch/typo3conf/ext/site_package/Resources/Public/Patternlab/images/chuv.png"
         },
         {
             "name": "Pharmacie 24",
             "address": "Av. de Montchoisi 3, 1006 Lausanne, Switzerland",
-            "website": "https://chaletdesenfants.ch/",
+            "website": "https://www.pharmacie24.ch/pharmacie24_sjt.php",
             "imageurl": "https://www.pharmacie24.ch/images/Pharmacie_24_Logo.png"
         },
         {
