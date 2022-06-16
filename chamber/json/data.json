@@ -25,10 +25,10 @@
             "imageurl": "https://www.chuv.ch/typo3conf/ext/site_package/Resources/Public/Patternlab/images/chuv.png"
         },
         {
-            "name": "Pharmacie 24",
-            "address": "Av. de Montchoisi 3, 1006 Lausanne, Switzerland",
-            "website": "https://www.pharmacie24.ch/pharmacie24_sjt.php",
-            "imageurl": "https://www.pharmacie24.ch/images/Pharmacie_24_Logo.png"
+            "name": "Burnier Garden Centre de Lavaux",
+            "address": "Rte de Savigny 110, 1090 La Croix-sur-Lutry, Switzerland",
+            "website": "http://www.gardencentredelavaux.ch/",
+            "imageurl": "https://gardencentredelavaux.ch/wp-content/themes/garden-child/dist/images/logo.png"
         },
         {
             "name": "Aquasplash",
