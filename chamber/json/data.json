@@ -25,10 +25,10 @@
             "imageurl": "https://www.chuv.ch/typo3conf/ext/site_package/Resources/Public/Patternlab/images/chuv.png"
         },
         {
-            "name": "Le Musée Olympique",
-            "address": "Quai d'Ouchy 1, 1006 Lausanne, Switzerland",
-            "website": "https://olympics.com/musee/",
-            "imageurl": "https://stillmedab.olympic.org/media/Images/Museum/Logo-FR-small.png?interpolation=lanczos-none&resize=252:84"
+            "name": "La Branche",
+            "address": "Chem. de la Branche 28, 1073 Savigny, Switzerland",
+            "website": "https://labranche.ch/",
+            "imageurl": "https://labranche.ch/wp-content/themes/branche/img/logo.png"
         },
         {
             "name": "Aquasplash",
