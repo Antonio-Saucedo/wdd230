@@ -21,14 +21,14 @@
         {
             "name": "CHUV Centre hospitalier universitaire vaudois",
             "address": "Rue du Bugnon 46, 1011 Lausanne, Switzerland",
-            "website": "https://www.chuv.ch/fr/chuv-home/",
+            "website": "https://www.pharmacie24.ch/pharmacie24_sjt.php",
             "imageurl": "https://www.chuv.ch/typo3conf/ext/site_package/Resources/Public/Patternlab/images/chuv.png"
         },
         {
-            "name": "Auberge du Chalet des Enfants",
-            "address": "Rte du Chalet des Enfants, 1052 Le Mont-sur-Lausanne, Switzerland",
+            "name": "Pharmacie 24",
+            "address": "Av. de Montchoisi 3, 1006 Lausanne, Switzerland",
             "website": "https://chaletdesenfants.ch/",
-            "imageurl": "https://chaletdesenfants.ch/wp-content/themes/TM_chalet/assets/images/CDE_logo.svg"
+            "imageurl": "https://www.pharmacie24.ch/images/Pharmacie_24_Logo.png"
         },
         {
             "name": "Aquasplash",
