@@ -1,10 +1,10 @@
 {
     "businesses": [
         {
-            "name": "AQUATIS - Aquarium-Vivarium Lausanne",
-            "address": "Rte de Berne 144, 1010 Lausanne, Switzerland",
-            "website": "https://www.aquatis.ch/?utm_source=MyBusiness&utm_medium=Earned",
-            "imageurl": "https://www.aquatis.ch/typo3conf/ext/boas/Resources/Public/Themes/aqa/logo.svg"
+            "name": "Supermarché Migros",
+            "address": "En Fezelin, 1032 Romanel-sur-Lausanne, Switzerland",
+            "website": "https://filialen.migros.ch/de/migros-supermarkt-romanel-sur-lausanne",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/chamber/images/migrosx.svg"
         },
         {
             "name": "Musée cantonal des Beaux-Arts de Lausanne - MCBA",
@@ -25,10 +25,10 @@
             "imageurl": "https://www.chuv.ch/typo3conf/ext/site_package/Resources/Public/Patternlab/images/chuv.png"
         },
         {
-            "name": "UNIL | Université de Lausanne",
-            "address": "1015 Lausanne, Switzerland",
-            "website": "https://www.unil.ch/index.html",
-            "imageurl": "https://www.unil.ch/modules/unil-core/img/unil-logo.svg"
+            "name": "Auberge du Chalet des Enfants",
+            "address": "Rte du Chalet des Enfants, 1052 Le Mont-sur-Lausanne, Switzerland",
+            "website": "https://chaletdesenfants.ch/",
+            "imageurl": "https://chaletdesenfants.ch/wp-content/themes/TM_chalet/assets/images/CDE_logo.svg"
         },
         {
             "name": "Aquasplash",
