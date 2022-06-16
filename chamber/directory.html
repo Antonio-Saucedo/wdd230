@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="This is the Geneva First Chamber of Commerce. We are here to help businesses connect with their community."
+      content="This is a directory of the Geneva First Chamber of Commerce members."
     />
     <title>Geneva First Chamber of Commerce</title>
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/medium.css" />
@@ -27,9 +26,9 @@
         </div>
         <div class="largeNav">
           <ul>
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
+            <li class="active"><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
@@ -70,9 +69,9 @@
         <nav class="smallNav">
           <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
           <ul id="primaryNav">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
+            <li class="active"><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
@@ -88,92 +87,7 @@
         </h2>
       </div>
     </header>
-    <main class="home">
-      <div class="section hero">
-        <h2>Geneva First Chamber of Commerce</h2>
-        <picture>
-          <source media="(max-width:520px)" srcset="images/genevaSmall.jpg" />
-          <source media="(max-width:1023px)" srcset="images/genevaMedium.jpg" />
-          <img src="images/genevaLarge.jpg" alt="Lake Geneva, Switzerland" />
-        </picture>
-        <a href="join.html">Join the Chamber</a>
-      </div>
-      <div class="section events">
-        <h2>Ribbon Cutting</h2>
-        <picture> <img src="images/ring.png" alt="ring" /></picture>
-        <h3>The Ring Shop</h3>
-        <p>
-          Join us for the grand opening of The Ring Shop, Thursday at 1:00 p.m.
-        </p>
-        <a href="#">more info ...</a>
-      </div>
-      <div class="section weather">
-        <h2>Weather</h2>
-        <div class="climate">
-          <picture>
-            <img src="images/weather.png" alt="weather" />
-          </picture>
-          <h1><span id="temperature">33</span>&#176;C</h1>
-          <h2>Partly Cloudy</h2>
-        </div>
-        <div class="climate">
-          <p>Wind Speed:</p>
-          <p><span id="windSpeed">2.5</span> km/h</p>
-          <p>Wind Chill:</p>
-          <p id="windChill">N/A</p>
-        </div>
-      </div>
-      <div class="section news">
-        <h2>News Release</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-          quibusdam officiis rerum dolore minima cum quas doloribus suscipit,
-          provident magnam recusandae, quis praesentium ipsum laudantium unde ex
-          maxime dolores ab ut nulla nemo ipsa maiores eveniet.
-        </p>
-      </div>
-      <div class="section joinbox">
-        <button onclick="window.location.href='join.html';">Join Us!</button>
-        <p>
-          Discover how to join Geneva First chamber of commerce and how it will
-          benefit your organization!
-        </p>
-      </div>
-      <div class="section spots">
-        <div class="section spot1">
-          <h2>Thankful Transport</h2>
-          <picture>
-            <source media="(min-width:1024px)" srcset="images/truckSmall.png" />
-            <img src="images/truck.png" alt="truck" />
-          </picture>
-          <h3>"We get it there for you!"</h3>
-          <p>hello@thankfultransport.com</p>
-          <p>+999-999-9999 | Website</p>
-        </div>
-        <div class="section spot2">
-          <h2>Code Primera</h2>
-          <picture>
-            <source
-              media="(min-width:1024px)"
-              srcset="images/pencilsSmall.png"
-            />
-            <img src="images/pencils.png" alt="pencils" />
-          </picture>
-          <h3>An after school coding instructional program.</h3>
-          <p>contact@codeprimera.com</p>
-          <p>+999-999-9999 | Website</p>
-        </div>
-        <div class="section spot3">
-          <h2>Build A Treefort</h2>
-          <picture>
-            <source media="(min-width:1024px)" srcset="images/treeSmall.png" />
-            <img src="images/tree.png" alt="tree" />
-          </picture>
-          <h3>Over 1000 Plans!</h3>
-          <p>builda@treefort.com</p>
-          <p>+888-888-8888 | Website</p>
-        </div>
-      </div>
+    <main class="directory">
     </main>
     <footer>
       <div class="main">

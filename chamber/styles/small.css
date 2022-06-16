@@ -20,6 +20,13 @@ header,
 main,
 footer {
   margin: 0 auto;
+}
+
+body,
+header,
+main,
+footer,
+.joinbox button {
   font-family: "Trebuchet MS";
 }
 
@@ -53,7 +60,7 @@ header picture,
 .spot3,
 .discover picture img,
 .join .section,
-.join .section:nth-child(2) div:nth-child(n+1),
+.join .section:nth-child(2) div:nth-child(n + 1),
 .thankyou picture img {
   padding: 10px;
 }
@@ -116,13 +123,14 @@ nav ul {
 nav ul li a,
 .visits,
 .section,
-.join .section:nth-child(2) div:nth-child(n+1) {
+.join .section:nth-child(2) div:nth-child(n + 1) {
   background-color: #00a8f3;
   box-shadow: 1px -1px 10px 1px #000;
 }
 
 nav ul li a,
-.events a {
+.events a,
+.hero a {
   text-decoration: none;
 }
 
@@ -202,7 +210,7 @@ nav button,
 h2,
 .visits p,
 .joinbox button,
-.hero button {
+.hero a {
   font-size: 20px;
 }
 
@@ -238,7 +246,7 @@ p {
 .mainInfo svg,
 .hero h2,
 .events picture img,
-.hero button {
+.hero a {
   position: absolute;
 }
 
@@ -309,20 +317,17 @@ p {
 }
 
 .joinbox button,
-.hero button {
+.hero a {
   border-radius: 15px;
-}
-
-.joinbox button,
-.hero button {
   background-color: #0a2032;
   color: #fff;
   padding: 10px;
 }
 
-.hero button {
+.hero a {
   right: 5%;
   bottom: 10%;
+  border: 2px solid #000;
 }
 
 .main {
@@ -355,9 +360,9 @@ p {
 
 /* Form */
 form fieldset {
-    margin: 10px 15px;
-    border: 1px solid #0a2032;
-    padding: 10px;
+  margin: 10px 15px;
+  border: 1px solid #0a2032;
+  padding: 10px;
 }
 
 form legend,
@@ -365,12 +370,12 @@ form label.top input,
 form label.top select,
 form label.top textarea,
 form label.options {
-    color: #0a2032;
+  color: #0a2032;
 }
 
 form legend {
-    margin: 0 15px;
-    padding: 0 10px;
+  margin: 0 15px;
+  padding: 0 10px;
 }
 
 form label.top,
@@ -380,14 +385,14 @@ form label.top select,
 form label.top textarea,
 form label.options,
 form input.joinBtn {
-    display: block;
+  display: block;
 }
 
 form label.top,
 form div {
-    padding-top: 10px;
-    color: red;
-    font-size: 15px;
+  padding-top: 10px;
+  color: #8a0000;
+  font-size: 15px;
 }
 
 form label.top input,
@@ -400,36 +405,43 @@ form input.joinBtn {
 form label.top input,
 form label.top select,
 form label.top textarea {
-    -webkit-appearance: none;
-    font-size: 20px;
-    border: solid 1px #00a8f3;
-    padding: 12px;
-    background-color: rgba(37, 150, 190, 0.5);
+  -webkit-appearance: none;
+  font-size: 20px;
+  border: solid 1px #00a8f3;
+  padding: 12px;
+  background-color: rgba(37, 150, 190, 0.5);
 }
 
 form label.options {
-    padding: 12px 0;
+  padding: 12px 0;
 }
 
 .joininput {
-    display: flex;
+  display: flex;
 }
 
 form input.joinBtn {
-    font-size: 20px;
-    border: none;
-    background-color: #0a2032;
-    color: white;
-    padding: 12px 24px;
-    margin: 10px 30px 5px 30px;
+  font-size: 20px;
+  border: none;
+  background-color: #0a2032;
+  color: white;
+  padding: 12px 24px;
+  margin: 10px 30px 5px 30px;
 }
 
 form label.top input:required {
-    border-left: red solid 6px;
+  border-left: red solid 6px;
 }
 
 form label.top input:required:valid {
-    border-left: green solid 6px;
+  border-left: green solid 6px;
+}
+
+form input[type="radio"] {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Chrome, Safari, Opera */
+  transform: scale(1.2);
+  margin-right: 5px;
 }
 
 .join .section {
