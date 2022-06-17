@@ -44,7 +44,8 @@ header,
 nav button,
 nav ul li.active a,
 footer,
-.largeNav ul li a {
+.largeNav ul li a,
+.mainInfo a {
   color: #fff;
 }
 
@@ -134,7 +135,8 @@ section {
 
 nav ul li a,
 .events a,
-.hero a {
+.hero a,
+.mainInfo a {
   text-decoration: none;
 }
 
