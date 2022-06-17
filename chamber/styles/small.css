@@ -83,7 +83,9 @@ footer,
 #modified,
 .section,
 .now,
-.visits {
+.visits,
+.directorymenu,
+.grid section {
   text-align: center;
 }
 
@@ -123,7 +125,9 @@ nav ul {
 nav ul li a,
 .visits,
 .section,
-.join .section:nth-child(2) div:nth-child(n + 1) {
+.join .section:nth-child(2) div:nth-child(n + 1),
+.directorymenu,
+section {
   background-color: #00a8f3;
   box-shadow: 1px -1px 10px 1px #000;
 }
@@ -252,7 +256,8 @@ p {
 
 .head,
 .climate,
-.join {
+.join,
+.grid {
   display: grid;
 }
 
@@ -416,7 +421,9 @@ form label.options {
   padding: 12px 0;
 }
 
-.joininput {
+.joininput,
+.list,
+.list section {
   display: flex;
 }
 
@@ -446,4 +453,63 @@ form input[type="radio"] {
 
 .join .section {
   grid-row: 1;
+}
+
+/* Directory */
+.directorymenu {
+	margin: 16px auto;
+}
+
+.directorymenu,
+section,
+section p {
+  padding: 8px;
+}
+
+.directorymenu button {
+	padding: 16px;
+}
+
+section {
+	margin: 12px;
+}
+
+section p {
+  word-wrap: break-word;
+}
+
+.grid {
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.list,
+.grid section {
+	flex-direction: column;
+}
+
+.list section {
+	align-items: center;
+}
+
+.grid section > * {
+	margin: 2px;
+}
+
+.list section {
+	flex-direction: row;
+	justify-content: left;
+}
+
+.list section > * {
+	margin: 0 16px;
+	text-align: left;
+}
+
+section h3 {
+	font-size: 24px;
+}
+
+section img {
+  padding: 10px 0 10px 0;
+	width: 150px;
 }
