@@ -423,9 +423,7 @@ form label.options {
   padding: 12px 0;
 }
 
-.joininput,
-.list,
-.list section {
+.joininput {
   display: flex;
 }
 
@@ -464,8 +462,9 @@ form input[type="radio"] {
 
 .directorymenu,
 section,
+section h2,
 section p {
-  padding: 8px;
+  padding: 2px;
 }
 
 .directorymenu button {
@@ -474,6 +473,7 @@ section p {
 
 section {
 	margin: 12px;
+  padding: 15px 0;
 }
 
 section p {
@@ -481,30 +481,24 @@ section p {
 }
 
 .grid {
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.list,
 .grid section {
 	flex-direction: column;
-}
-
-.list section {
-	align-items: center;
 }
 
 .grid section > * {
 	margin: 2px;
 }
 
-.list section {
-	flex-direction: row;
-	justify-content: left;
-}
-
 .list section > * {
 	margin: 0 16px;
 	text-align: left;
+}
+
+.list section {
+  flex-direction: row;
 }
 
 section h3 {
@@ -513,5 +507,5 @@ section h3 {
 
 section img {
   padding: 10px 0 10px 0;
-	width: 150px;
+	width: 200px;
 }

@@ -128,7 +128,7 @@
   }
 
   .footer,
-  .join .section:nth-child(2) div:nth-child(n+2) {
+  .join .section:nth-child(2) div:nth-child(n + 2) {
     margin-top: 10px;
   }
 
@@ -167,5 +167,20 @@
 
   form input.joinBtn {
     margin: 10px 12px 15px 12px;
+  }
+
+  .list,
+  .list section {
+    display: flex;
+  }
+
+  .list {
+    flex-direction: column;
+  }
+
+  .list section {
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
   }
 }
