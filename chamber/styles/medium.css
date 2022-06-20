@@ -88,7 +88,8 @@
   }
 
   .spot1,
-  .spot3 {
+  .spot3,
+  article {
     margin: 0;
   }
 
@@ -160,13 +161,18 @@
     grid-template-rows: repeat(4, auto);
   }
 
-  /* Form */
   form fieldset {
     margin: 15px auto;
   }
 
   form input.joinBtn {
     margin: 10px 12px 15px 12px;
+  }
+
+  section h2,
+  section p,
+  section a {
+    margin: 0 auto;
   }
 
   .list,
@@ -179,8 +185,24 @@
   }
 
   .list section {
-    flex-direction: row;
     justify-content: left;
     align-items: center;
+  }
+
+  .list section {
+    margin: 12px 0;
+  }
+
+  .list section h2,
+  .list section a {
+    width: 200px;
+  }
+
+  .list section p {
+    width: 130px;
+  }
+
+  .grid section {
+    margin: 12px;
   }
 }

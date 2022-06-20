@@ -456,27 +456,28 @@ form input[type="radio"] {
 }
 
 /* Directory */
-.directorymenu {
-	margin: 16px auto;
+.directorymenu,
+article {
+	margin: 16px 0;
 }
 
 .directorymenu,
-section,
+section img {
+  padding: 10px 0;
+}
+
 section h2,
-section p {
-  padding: 2px;
+section p,
+section a {
+  padding: 2px 0;
 }
 
-.directorymenu button {
-	padding: 16px;
-}
-
+.directorymenu button,
 section {
-	margin: 12px;
-  padding: 15px 0;
+	padding: 15px;
 }
 
-section p {
+section a {
   word-wrap: break-word;
 }
 
@@ -492,13 +493,8 @@ section p {
 	margin: 2px;
 }
 
-.list section > * {
-	margin: 0 16px;
-	text-align: left;
-}
-
-.list section {
-  flex-direction: row;
+.list section:nth-child(even) {
+  background-color: rgba(37, 150, 190, 0.5);
 }
 
 section h3 {
@@ -506,6 +502,5 @@ section h3 {
 }
 
 section img {
-  padding: 10px 0 10px 0;
 	width: 200px;
 }
