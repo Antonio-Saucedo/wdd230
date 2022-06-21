@@ -177,7 +177,8 @@ nav button.open,
 nav ul li a,
 .hero,
 .mainInfo,
-.events picture {
+.events picture,
+.mainInfo picture {
   position: relative;
 }
 
@@ -353,8 +354,7 @@ p {
 }
 
 .mainInfo svg {
-  bottom: 22px;
-  left: 32%;
+  right: 100px;
   height: 20px;
 }
 

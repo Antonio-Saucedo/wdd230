@@ -123,11 +123,6 @@
     position: relative;
   }
 
-  .mainInfo svg {
-    bottom: 22px;
-    left: 0%;
-  }
-
   .footer,
   .join .section:nth-child(2) div:nth-child(n + 2) {
     margin-top: 10px;
