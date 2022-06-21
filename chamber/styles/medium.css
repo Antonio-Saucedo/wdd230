@@ -80,6 +80,10 @@
     display: block;
   }
 
+  .joinbox a {
+    padding: 10px 44%;
+  }
+
   .events,
   .weather {
     grid-row: 5;

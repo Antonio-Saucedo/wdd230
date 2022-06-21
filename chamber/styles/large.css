@@ -114,7 +114,10 @@
     grid-row: 3;
   }
 
-  .joinbox p,
+  .joinbox a {
+    padding: 10px 35%;
+  }
+
   .events h2,
   .events h3 {
     padding: 15px 10px;

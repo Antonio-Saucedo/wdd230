@@ -9,7 +9,6 @@ header,
 main,
 footer,
 .visits,
-.joinbox button,
 .hero picture img,
 .discover picture img {
   width: 100%;
@@ -26,7 +25,7 @@ body,
 header,
 main,
 footer,
-.joinbox button {
+.joinbox a {
   font-family: "Trebuchet MS";
 }
 
@@ -118,7 +117,8 @@ section {
 nav ul li a,
 .events a,
 .hero a,
-.mainInfo a {
+.mainInfo a,
+.joinbox a {
   text-decoration: none;
 }
 
@@ -188,7 +188,7 @@ h1,
 header button,
 h2,
 .visits p,
-.joinbox button,
+.joinbox a,
 .hero a,
 .title h1 {
   font-size: 20px;
@@ -316,7 +316,6 @@ p {
 .events,
 .weather,
 .news,
-.joinbox,
 .spots,
 .spot1,
 .spot2,
@@ -326,22 +325,25 @@ p {
 .join .section,
 .join .section:nth-child(2) div:nth-child(n + 1),
 .thankyou picture img,
-.joinbox button,
 .hero a {
   padding: 10px;
 }
 
-.joinbox button,
+.joinbox {
+  padding: 20px 10px 10px 10px;
+}
+
+.joinbox a,
 .hero a {
   border-radius: 15px;
   background-color: #0a2032;
   color: #fff;
+  border: 2px solid #000;
 }
 
 .hero a {
   right: 5%;
   bottom: 10%;
-  border: 2px solid #000;
 }
 
 .main {
