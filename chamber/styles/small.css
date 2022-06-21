@@ -49,26 +49,13 @@ footer,
   color: #fff;
 }
 
-header picture,
-.title,
-.events,
-.weather,
-.news,
-.joinbox,
-.spots,
-.spot1,
-.spot2,
-.spot3,
-#joinUs h2,
-.discover picture img,
-.join .section,
-.join .section:nth-child(2) div:nth-child(n + 1),
-.thankyou picture img {
-  padding: 10px;
+header picture:nth-child(1),
+.title {
+  padding: 7px;
 }
 
 header picture img {
-  height: 100px;
+  width: 100px;
 }
 
 nav ul li a,
@@ -92,7 +79,7 @@ footer,
 }
 
 header svg {
-  height: 25%;
+  width: 30px;
 }
 
 header picture,
@@ -176,9 +163,7 @@ nav button.open,
 #hamburgerBtn.open span:nth-child(1),
 nav ul li a,
 .hero,
-.mainInfo,
-.events picture,
-.mainInfo picture {
+.events picture {
   position: relative;
 }
 
@@ -189,7 +174,7 @@ nav ul li a {
 }
 
 footer picture img {
-  height: 150px;
+  width: 200px;
 }
 
 footer h2,
@@ -219,7 +204,8 @@ nav button,
 h2,
 .visits p,
 .joinbox button,
-.hero a {
+.hero a,
+.title h1 {
   font-size: 20px;
 }
 
@@ -246,13 +232,16 @@ p {
 }
 
 /* class selector */
+.socialMedia svg:nth-child(1) {
+  padding-bottom: 10px;
+}
+
 .visits,
 .section {
   margin: 15px auto;
   z-index: 0;
 }
 
-.mainInfo svg,
 .hero h2,
 .events picture img,
 .hero a {
@@ -268,8 +257,18 @@ p {
 
 .head {
   grid-template-rows: 124px;
-  grid-template-columns: 140px 135px 1fr 1fr 1fr;
+  grid-template-columns: 100px 130px 30px 1fr;
   column-gap: 5px;
+}
+
+@media (min-width: 23.75em) {
+  .head {
+    grid-template-columns: 100px 130px 1fr 1fr 1fr;
+  }
+
+  /* header svg {
+    display: none;
+  } */
 }
 
 .now {
@@ -326,12 +325,29 @@ p {
   text-align: right;
 }
 
+.events,
+.weather,
+.news,
+.joinbox,
+.spots,
+.spot1,
+.spot2,
+.spot3,
+#joinUs h2,
+.discover picture img,
+.join .section,
+.join .section:nth-child(2) div:nth-child(n + 1),
+.thankyou picture img,
+.joinbox button,
+.hero a {
+  padding: 10px;
+}
+
 .joinbox button,
 .hero a {
   border-radius: 15px;
   background-color: #0a2032;
   color: #fff;
-  padding: 10px;
 }
 
 .hero a {
@@ -354,8 +370,7 @@ p {
 }
 
 .mainInfo svg {
-  right: 100px;
-  height: 20px;
+  width: 20px;
 }
 
 .discover picture img[data-src] {
@@ -460,7 +475,7 @@ form input[type="radio"] {
 /* Directory */
 .directorymenu,
 article {
-	margin: 16px 0;
+  margin: 16px 0;
 }
 
 .directorymenu,
@@ -476,7 +491,7 @@ section a {
 
 .directorymenu button,
 section {
-	padding: 15px;
+  padding: 15px;
 }
 
 section a {
@@ -484,15 +499,15 @@ section a {
 }
 
 .grid {
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .grid section {
-	flex-direction: column;
+  flex-direction: column;
 }
 
 .grid section > * {
-	margin: 2px;
+  margin: 2px;
 }
 
 .list section:nth-child(even) {
@@ -500,9 +515,9 @@ section a {
 }
 
 section h3 {
-	font-size: 24px;
+  font-size: 24px;
 }
 
 section img {
-	width: 200px;
+  width: 200px;
 }

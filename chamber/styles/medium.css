@@ -21,6 +21,10 @@
     column-gap: 10px;
   }
 
+  /* header svg {
+    display: block;
+  } */
+
   /* id selector */
   #today {
     width: 97%;
@@ -38,6 +42,10 @@
     grid-column: 1/4;
   }
   /* class selector */
+  .title h1 {
+    font-size: 25px;
+  }
+
   .home,
   .main {
     grid-template-columns: repeat(3, 1fr);
