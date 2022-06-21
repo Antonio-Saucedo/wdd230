@@ -32,7 +32,6 @@ footer,
 
 body {
   vertical-align: middle;
-  z-index: -1;
 }
 
 header div,
@@ -41,10 +40,9 @@ footer {
 }
 
 header,
-nav button,
+header button,
 nav ul li.active a,
 footer,
-.largeNav ul li a,
 .mainInfo a {
   color: #fff;
 }
@@ -60,7 +58,6 @@ header picture img {
 
 nav ul li a,
 nav ul.open,
-#hamburgerBtn span:nth-child(1),
 #hamburgerBtn.open span:nth-child(2),
 .hero picture img,
 .discover picture img {
@@ -70,6 +67,7 @@ nav ul.open,
 footer,
 #joinUs,
 #modified,
+.socialMedia,
 .section,
 .now,
 .visits,
@@ -83,7 +81,8 @@ header svg {
 }
 
 header picture,
-header svg,
+header div,
+header button,
 #today,
 .title,
 .main,
@@ -92,17 +91,12 @@ header svg,
   margin: auto;
 }
 
-nav {
-  margin: auto 10px;
-}
-
-nav button,
-nav ul li a,
+header button,
 .section p {
   padding: 5px 10px;
 }
 
-nav button {
+header button {
   background-color: transparent;
   border: 1px solid #fff;
 }
@@ -136,13 +130,12 @@ section a {
 }
 
 nav ul li a {
-  background-color: #fff;
   border-top: 1px solid rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  padding: 10px 12px;
 }
 
 nav ul li.active a {
-  background-color: #00bbff33;
+  background-color: #185b78;
 }
 
 nav ul li a:hover {
@@ -152,25 +145,17 @@ nav ul li a:hover {
 nav ul,
 #hamburgerBtn span:nth-child(2),
 #hamburgerBtn.open span:nth-child(1),
-.largeNav,
 .joinbox,
 .spot3,
 #joinUs {
   display: none;
 }
 
-nav button.open,
-#hamburgerBtn.open span:nth-child(1),
+header,
 nav ul li a,
 .hero,
 .events picture {
   position: relative;
-}
-
-nav button.open,
-#hamburgerBtn.open span:nth-child(1),
-nav ul li a {
-  top: 48px;
 }
 
 footer picture img {
@@ -200,7 +185,7 @@ h1,
   font-size: 25px;
 }
 
-nav button,
+header button,
 h2,
 .visits p,
 .joinbox button,
@@ -232,14 +217,10 @@ p {
 }
 
 /* class selector */
-.socialMedia svg:nth-child(1) {
-  padding-bottom: 10px;
-}
-
 .visits,
-.section {
+.section,
+#joinUs {
   margin: 15px auto;
-  z-index: 0;
 }
 
 .hero h2,
@@ -256,19 +237,26 @@ p {
 }
 
 .head {
-  grid-template-rows: 124px;
-  grid-template-columns: 100px 130px 30px 1fr;
-  column-gap: 5px;
+  grid-template-rows: 110px;
+  grid-template-columns: 100px 130px 1fr 1fr;
 }
 
-@media (min-width: 23.75em) {
+@media (min-width: 22.625em) {
   .head {
     grid-template-columns: 100px 130px 1fr 1fr 1fr;
   }
 
-  /* header svg {
-    display: none;
-  } */
+  .socialMedia {
+    grid-column: 3/5;
+  }
+
+  .socialMedia span:nth-child(1) {
+    margin-right: 15px;
+  }
+
+  .socialMedia svg:nth-child(1) {
+    padding-bottom: 0;
+  }
 }
 
 .now {
@@ -479,7 +467,8 @@ article {
 }
 
 .directorymenu,
-section img {
+section img,
+.socialMedia svg:nth-child(1) {
   padding: 10px 0;
 }
 
