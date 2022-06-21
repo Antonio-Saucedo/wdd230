@@ -193,13 +193,20 @@
     margin: 12px 0;
   }
 
-  .list section h2,
-  .list section a {
+  .list section h2 {
     width: 200px;
   }
 
-  .list section p {
-    width: 130px;
+  .list section a {
+    width: 150px;
+  }
+
+  .list section p:nth-child(2) {
+    width: 160px;
+  }
+
+  .list section p:nth-child(3) {
+    width: 100px;
   }
 
   .grid section {
