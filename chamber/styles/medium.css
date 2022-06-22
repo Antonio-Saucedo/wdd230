@@ -14,6 +14,10 @@
     padding-left: 9px;
   }
 
+  header svg {
+    width: 40px;
+  }
+
   main,
   .main,
   .spots,
@@ -24,9 +28,12 @@
   }
 
   main,
-  .spots,
-  .main {
+  .spots {
     column-gap: 10px;
+  }
+
+  footer {
+    padding: 0 10px;
   }
 
   /* id selector */
@@ -50,8 +57,7 @@
     font-size: 25px;
   }
 
-  .home,
-  .main {
+  .home {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -81,7 +87,7 @@
   }
 
   .joinbox a {
-    padding: 10px 44%;
+    padding: 10px 42%;
   }
 
   .events,
@@ -121,11 +127,14 @@
     grid-column: 3;
   }
 
+  .main {
+    grid-template-columns: 200px 1fr 160px;
+  }
+
   .main picture img {
     margin: 20px 0;
   }
 
-  .mainTitle,
   .mainInfo {
     margin: auto;
   }
@@ -135,22 +144,35 @@
     text-align: left;
   }
 
-  .mainInfo {
-    position: relative;
+  .mainTitle {
+    padding-left: 7px;
   }
 
-  .footer,
+  .mainInfo {
+    position: relative;
+    padding-bottom: 0;
+  }
+
+  .footer {
+    padding: 10px 0 10px;
+  }
+
   .join .section:nth-child(2) div:nth-child(n + 2) {
     margin-top: 10px;
   }
 
   .footer {
-    grid-template-columns: 1fr 124px 1fr;
+    grid-template-columns: 1fr 130px 1fr;
   }
 
+  .mainTitle,
   .footer p {
+    margin: auto 0;
+  }
+
+  .footer p:nth-child(2) {
     border-style: solid;
-    border-width: 0 1px 0 1px;
+    border-width: 0 2px 0 2px;
   }
 
   .discover picture img {

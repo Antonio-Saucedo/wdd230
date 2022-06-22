@@ -29,7 +29,7 @@ footer,
   font-family: "Trebuchet MS";
 }
 
-body {
+header picture img body {
   vertical-align: middle;
 }
 
@@ -55,8 +55,10 @@ header picture img {
   width: 100px;
 }
 
+header picture img,
 nav ul li a,
 nav ul.open,
+footer picture img,
 #hamburgerBtn.open span:nth-child(2),
 .hero picture img,
 .discover picture img {
@@ -80,10 +82,9 @@ header svg {
 }
 
 header picture,
-header div,
 header button,
 #today,
-.title,
+.socialMedia,
 .main,
 .climate h1,
 .discover picture img {
@@ -153,14 +154,9 @@ nav ul,
 }
 
 header,
-nav ul li a,
 .hero,
 .events picture {
   position: relative;
-}
-
-footer picture img {
-  width: 200px;
 }
 
 footer h2,
@@ -173,10 +169,8 @@ footer p,
   padding: 5px;
 }
 
-footer,
-.visits,
-.section h3 {
-  padding-bottom: 10px;
+footer picture img {
+  width: 200px;
 }
 
 h1,
@@ -205,10 +199,6 @@ p {
 /* id selector */
 #today {
   background-color: rgba(37, 150, 190, 0.5);
-}
-
-#today,
-.main {
   width: 96%;
 }
 
@@ -217,10 +207,18 @@ p {
 }
 
 /* class selector */
+.title {
+  margin: auto 0;
+}
+
 .visits,
 .section,
 #joinUs {
   margin: 15px auto;
+}
+
+.visits {
+  padding-bottom: 10px;
 }
 
 .hero h2,
@@ -329,6 +327,7 @@ p {
   padding: 10px;
 }
 
+footer,
 .joinbox {
   padding: 20px 10px 10px 10px;
 }
@@ -351,7 +350,7 @@ p {
 }
 
 .main picture img {
-  margin: 20px;
+  margin: 0 auto 15px;
 }
 
 .section h3,

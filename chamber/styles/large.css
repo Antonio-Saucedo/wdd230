@@ -12,8 +12,13 @@
 
   nav ul {
     position: absolute;
-    bottom: 147px;
-    left: 400px;
+    bottom: 88px;
+    left: 372px;
+  }
+
+  nav ul li a,
+  .footer p:nth-child(3) {
+    text-align: center;
   }
 
   nav ul li a {
@@ -21,14 +26,13 @@
   }
 
   nav ul,
-  nav ul.open,
-  nav ul li a {
+  nav ul li a,
+  nav ul.open {
     display: flex;
   }
 
   /* id selectors */
   #modified {
-    border-left: 2px solid #fff;
     text-align: left;
   }
 
@@ -48,11 +52,7 @@
   }
 
   .head {
-    grid-template-columns: 150px 240px 1fr 120px;
-  }
-
-  .title {
-    margin: auto 0;
+    grid-template-columns: 150px 200px 1fr 130px;
   }
 
   .head .active a {
@@ -132,7 +132,8 @@
   }
 
   .footer p:nth-child(3) {
-    text-align: center;
+    border-style: solid;
+    border-width: 0 2px 0 0;
   }
 
   .discover picture img:hover {
