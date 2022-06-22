@@ -3,26 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This is to learn how an API works.">
-    <title>Weather API</title>
+    <meta name="description" content="This is to learn how an API works." />
+    <title>Weather API • Demonstration</title>
     <script src="scripts/weather-api.js" defer></script>
     <link rel="stylesheet" href="styles/small.css" />
   </head>
   <body>
-    <header>Open Weather Map API Demonstration</header>
-    <main>
-      <p>
-        The current temperature in Fairbanks, Alaska is
-        <span id="current-temp"></span> &deg;
-      </p>
-      <h2>Current Condition Icon</h2>
-      <figure>
-        <img src="" alt="" id="weather-icon" />
-        <figcaption></figcaption>
-      </figure>
-    </main>
-    <footer>
-        <p>Copyright 2022 | Antonio Saucedo | BYUI-Idaho</p>
-    </footer>
+    <div>
+      <header>
+        <h1>Open Weather Map API Demonstration</h1>
+      </header>
+      <main>
+        <p>
+          The current temperature in Fairbanks, Alaska is
+          <span id="current-temp"></span>&deg;F
+        </p>
+        <p>The current temperature minimum is <span id="min"></span>&deg;F</p>
+        <p>The current temperature maximum is <span id="max"></span>&deg;F</p>
+        <h2>Current Condition</h2>
+        <figure>
+          <img src="" alt="" id="weather-icon" />
+          <figcaption></figcaption>
+        </figure>
+        <h2>Current Wind Speed</h2>
+        <p><span id="wind-desc"></span> MPH</p>
+      </main>
+      <footer>
+        <p>&#169; 2022 | Antonio Saucedo | BYUI-Idaho</p>
+        <p>API &#8594; OpenWeatherMap</p>
+      </footer>
+    </div>
   </body>
 </html>

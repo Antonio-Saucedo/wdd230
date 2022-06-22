@@ -3,3 +3,66 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f0e0d6;
+}
+
+header,
+main,
+footer,
+div {
+    margin: 0 auto;
+}
+
+header,
+main,
+footer {
+    padding: 10px;
+    width: content;
+}
+
+header {
+    background-color: #3c4e6e;
+    color: #fff;
+}
+
+main {
+    background-color: #f0ad95;
+}
+
+footer {
+    background-color: #99b0bb;
+}
+
+div {
+    box-shadow: 0 0 10px 5px #c46858;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+p {
+    padding: 5px 0;
+}
+
+p,
+figcaption {
+    font-size: 20px;
+}
+
+figcaption {
+    padding-bottom: 5px;
+}

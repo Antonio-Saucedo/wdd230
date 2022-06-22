@@ -1,20 +1,25 @@
 const currentTemp = document.querySelector("#current-temp");
+const minTemp = document.querySelector("#min");
+const maxTemp = document.querySelector("#max");
 const weatherIcon = document.querySelector("#weather-icon");
-const captionDesc = document.querySelector("figcaption");
+const weatherDesc = document.querySelector("figcaption");
+const windDesc = document.querySelector("#wind-desc");
 
-// Need to finish!!!!
-const url = `https://api.openweathermap.org/data/2.5/weather?q=Fairnanks&units=Imperial&appid=`;
+const url = `https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=Imperial&appid=fc6f9211ad045deb2b01c57bb94315bc`;
 
 apiFetch(url);
 
 function displayResults (weatherData) {
     currentTemp.innerHTML = weatherData.main.temp.toFixed(1);
-
-    const imagesrc = `https://openweathermap.org/img/w/${weatherDatat.weather[0].icon}.png`;
-    const desc = weatherData.weather[0].description;
-    weatherIcon.setAttribute('src', imagesrc);
-    weatherIcon.setAttribute("alt", desc);
-    captionDesc.innerHTML = desc;
+    minTemp.innerHTML = weatherData.main.temp_min.toFixed(1);
+    maxTemp.innerHTML = weatherData.main.temp_max.toFixed(1);
+    const weatherimagesrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+    const descweather = weatherData.weather[0].description;
+    const descwind = weatherData.wind.speed.toFixed(1);
+    weatherIcon.setAttribute("src", weatherimagesrc);
+    weatherIcon.setAttribute("alt", descweather);
+    weatherDesc.innerHTML = descweather;
+    windDesc.innerHTML = descwind;
 }
 
 async function apiFetch(apiURL) {
@@ -22,7 +27,6 @@ async function apiFetch(apiURL) {
         const response = await fetch(apiURL);
         if (response.ok) {
             const data = await response.json();
-            console.log(data); //temp//
             displayResults(data);
         } else {
             throw Error(await response.text());
