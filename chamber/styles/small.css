@@ -132,6 +132,7 @@ section a {
 nav ul li a {
   border-top: 1px solid rgba(0, 0, 0, 0.5);
   padding: 10px 12px;
+  justify-content: center;
 }
 
 nav ul li.active a {
@@ -163,7 +164,6 @@ footer picture img {
 }
 
 footer h2,
-footer h3,
 footer p,
 #today,
 .visits,
