@@ -14,11 +14,19 @@ function displayResults (weatherData) {
     minTemp.innerHTML = weatherData.main.temp_min.toFixed(1);
     maxTemp.innerHTML = weatherData.main.temp_max.toFixed(1);
     const weatherimagesrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+
+    // Capitalize first letter of each word.
     const descweather = weatherData.weather[0].description;
+    const descweatherdisplay = descweather.split(" ");
+    for (var i = 0; i < descweatherdisplay.length; i++) {
+        descweatherdisplay[i] = descweatherdisplay[i].charAt(0).toUpperCase() + descweatherdisplay[i].slice(1);
+    }
+    const descweather2 = descweatherdisplay.join(" ");
+
     const descwind = weatherData.wind.speed.toFixed(1);
     weatherIcon.setAttribute("src", weatherimagesrc);
     weatherIcon.setAttribute("alt", descweather);
-    weatherDesc.innerHTML = descweather;
+    weatherDesc.innerHTML = descweather2;
     windDesc.innerHTML = descwind;
 }
 
