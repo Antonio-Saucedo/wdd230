@@ -5,20 +5,15 @@ const weatherIcon = document.querySelector("#weather-icon");
 const weatherDesc = document.querySelector("figcaption");
 const windDesc = document.querySelector("#wind-desc");
 
-const imagesURL =
-  "https://antonio-saucedo.github.io/wdd230/chamber/json/weatherIcons.json";
-
 const url = `https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=Imperial&appid=fc6f9211ad045deb2b01c57bb94315bc`;
 
 apiFetch(url);
 
 function displayResults (weatherData) {
-    let imageInfo = getImages();
-    let info = imageInfo.icons;
     currentTemp.innerHTML = weatherData.main.temp.toFixed(1);
     minTemp.innerHTML = weatherData.main.temp_min.toFixed(1);
     maxTemp.innerHTML = weatherData.main.temp_max.toFixed(1);
-    const weatherimagesrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+    const weatherimagesrc = `https://antonio-saucedo.github.io/wdd230/chamber/images/weatherIcons/${weatherData.weather[0].icon}.png`;
 
     // Capitalize first letter of each word.
     const descweather = weatherData.weather[0].description;
@@ -33,16 +28,6 @@ function displayResults (weatherData) {
     weatherIcon.setAttribute("alt", descweather);
     weatherDesc.innerHTML = descweather2;
     windDesc.innerHTML = descwind;
-}
-
-function getImages() {
-  let response = fetch(imagesURL);
-  if (response.ok) {
-    let data = response.json();
-    return data;
-  } else {
-    throw Error(response.statusText);
-  }
 }
 
 async function apiFetch(apiURL) {
