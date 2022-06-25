@@ -3,7 +3,7 @@ const weatherIcon = document.querySelector("#weather-icon");
 const weatherDesc = document.querySelector("#condition");
 const windDesc = document.querySelector("#windSpeed");
 
-const url = `https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=Imperial&appid=fc6f9211ad045deb2b01c57bb94315bc`;
+const url = `https://api.openweathermap.org/data/2.5/weather?q=Lausanne&units=Imperial&appid=fc6f9211ad045deb2b01c57bb94315bc`;
 
 apiFetch(url);
 
