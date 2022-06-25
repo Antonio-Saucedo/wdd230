@@ -52,6 +52,7 @@
   .joinbox {
     grid-column: 1/4;
   }
+
   /* class selector */
   .title h1 {
     font-size: 25px;
@@ -163,6 +164,10 @@
 
   .footer {
     grid-template-columns: 1fr 130px 1fr;
+  }
+
+  .footer p:nth-child(5) {
+    grid-column: 1/5;
   }
 
   .mainTitle,

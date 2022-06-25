@@ -42,6 +42,7 @@ header,
 header button,
 nav ul li.active a,
 footer,
+footer p a,
 .mainInfo a {
   color: #fff;
 }
@@ -119,7 +120,8 @@ nav ul li a,
 .events a,
 .hero a,
 .mainInfo a,
-.joinbox a {
+.joinbox a,
+footer p a {
   text-decoration: none;
 }
 
