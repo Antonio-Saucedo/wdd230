@@ -1,0 +1,76 @@
+{
+    "icons": [
+        {
+            "name": "01d.png",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/chamber/images/weatherIcons/01d.png"
+        },
+        {
+            "name": "01n.png",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/chamber/images/weatherIcons/01n.png"
+        },
+        {
+            "name": "02d.png",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/chamber/images/weatherIcons/02d.png"
+        },
+        {
+            "name": "02n.png",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/chamber/images/weatherIcons/02n.png"
+        },
+        {
+            "name": "03d.png",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/chamber/images/weatherIcons/03d.png"
+        },
+        {
+            "name": "03n.png",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/chamber/images/weatherIcons/03n.png"
+        },
+        {
+            "name": "04d.png",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/chamber/images/weatherIcons/04d.png"
+        },
+        {
+            "name": "04n.png",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/chamber/images/weatherIcons/04n.png"
+        },
+        {
+            "name": "09d.png",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/chamber/images/weatherIcons/09d.png"
+        },
+        {
+            "name": "09n.png",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/chamber/images/weatherIcons/09n.png"
+        },
+        {
+            "name": "10d.png",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/chamber/images/weatherIcons/10d.png"
+        },
+        {
+            "name": "10n.png",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/chamber/images/weatherIcons/10n.png"
+        },
+        {
+            "name": "11d.png",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/chamber/images/weatherIcons/11d.png"
+        },
+        {
+            "name": "11n.png",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/chamber/images/weatherIcons/11n.png"
+        },
+        {
+            "name": "13d.png",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/chamber/images/weatherIcons/13d.png"
+        },
+        {
+            "name": "13n.png",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/chamber/images/weatherIcons/13n.png"
+        },
+        {
+            "name": "50d.png",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/chamber/images/weatherIcons/50d.png"
+        },
+        {
+            "name": "50n.png",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/chamber/images/weatherIcons/50n.png"
+        }
+    ]
+}
