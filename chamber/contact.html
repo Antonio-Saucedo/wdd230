@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="This is a thank you screen for applying to join the Geneva Chamber of Commerce."
+      content="This is the Geneva First Chamber of Commerce contact Information."
     />
-    <title>Thank You • Geneva First Chamber of Commerce</title>
+    <title>Contact • Geneva First Chamber of Commerce</title>
     <script src="scripts/main.js" defer></script>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="styles/small.css" />
@@ -21,7 +21,7 @@
           <img src="images/logo.webp" alt="GFCC Logo" />
         </picture>
         <div class="title">
-          <h1>Geneva First Chamber of Commerce</h1>
+          <h1>Geneva First<br />Chamber of Commerce</h1>
         </div>
         <div class="socialMedia">
           <span>
@@ -67,8 +67,8 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="discover.html">Discover</a></li>
           <li><a href="directory.html">Directory</a></li>
-          <li class="active"><a href="join.html">Join</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
       <div id="joinUs">
@@ -78,24 +78,58 @@
         </h2>
       </div>
     </header>
-    <main>
-      <div class="section thankyou">
-        <picture>
-          <img src="images/check.png" alt="Check Mark" />
-        </picture>
-        <h2>Thank you!</h2>
-        <p>
-          We will contact you within a week with a responce to your application.
-        </p>
+    <main class="join">
+      <div>
+        <form method="get" action="submitted.html">
+          <fieldset>
+            <legend>Contact Us</legend>
+            <label class="top">
+              First name*<input type="text" name="fname" required />
+            </label>
+            <label class="top">
+              Last name*<input type="text" name="lname" required />
+            </label>
+            <label class="top"
+              >Email*<input
+                type="email"
+                name="email"
+                placeholder="someone@gmail.com"
+                required
+            /></label>
+            <label class="top"
+              >Phone Number<input
+                type="tel"
+                name="phone"
+                placeholder="123-444-5678"
+                pattern="[0-9]{10}"
+            /></label>
+            <label class="top">
+              Questions/Concerns<textarea
+                name="description"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </label>
+            <label>
+              <input type="hidden" id="fdate" name="fdate" />
+            </label>
+          </fieldset>
+          <label class="joininput">
+            <input type="submit" value="Contact Geneva First" class="joinBtn" />
+          </label>
+        </form>
       </div>
     </main>
     <footer>
       <div class="main">
         <picture>
-          <img src="images/logo.webp" alt="GFCC Logo" />
+          <img src="images/logo.webp" alt=" GFCC Logo" />
         </picture>
         <div class="mainTitle">
-          <h2>Geneva First Chamber of Commerce</h2>
+          <h2>
+            Geneva First<br />
+            Chamber of Commerce
+          </h2>
           <p>Pl. de la Riponne 6<br />1005 Lausanne, Switzerland</p>
         </div>
         <div class="mainInfo">
