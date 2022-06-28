@@ -198,6 +198,10 @@ p {
   font-size: 15px;
 }
 
+iframe {
+  height: 300px;
+  width: 100%;
+}
 /* id selector */
 #today {
   background-color: rgba(37, 150, 190, 0.5);
@@ -374,8 +378,12 @@ footer,
 }
 
 /* Form */
-form fieldset {
+form fieldset,
+.map {
   margin: 10px 15px;
+}
+
+form fieldset {
   border: 1px solid #0a2032;
   padding: 10px;
 }

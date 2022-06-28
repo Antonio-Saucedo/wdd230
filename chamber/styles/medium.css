@@ -36,6 +36,10 @@
     padding: 0 10px;
   }
 
+  iframe {
+    margin: 24px auto;
+    height: 618px;
+  }
   /* id selector */
   #today {
     width: 97%;
@@ -112,7 +116,8 @@
 
   .spot1,
   .spot3,
-  article {
+  article,
+  .map {
     margin: 0;
   }
 
@@ -136,10 +141,6 @@
     margin: 20px 0;
   }
 
-  .mainInfo {
-    margin: auto;
-  }
-
   .mainTitle,
   .footer p:nth-child(3) {
     text-align: left;
@@ -152,6 +153,7 @@
   .mainInfo {
     position: relative;
     padding-bottom: 0;
+    margin: auto;
   }
 
   .footer {
