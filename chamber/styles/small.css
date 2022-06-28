@@ -93,7 +93,8 @@ header button,
 }
 
 header button,
-.section p {
+.section p,
+.spots a {
   padding: 5px 10px;
 }
 
@@ -117,18 +118,20 @@ section {
 }
 
 nav ul li a,
+footer p a,
 .events a,
 .hero a,
 .mainInfo a,
 .joinbox a,
-footer p a {
+.spots a {
   text-decoration: none;
 }
 
 nav ul li a,
+section a,
 #joinUs,
 .events a,
-section a {
+.spots a {
   color: #000;
 }
 
@@ -171,7 +174,11 @@ footer p,
   padding: 5px;
 }
 
-footer picture img {
+footer picture img,
+section img,
+.spot1 picture img,
+.spot2 picture img,
+.spot3 picture img {
   width: 200px;
 }
 
@@ -494,7 +501,8 @@ section {
   padding: 15px;
 }
 
-section a {
+section a,
+.spots h3 {
   word-wrap: break-word;
 }
 
@@ -516,8 +524,4 @@ section a {
 
 section h3 {
   font-size: 24px;
-}
-
-section img {
-  width: 200px;
 }

@@ -32,7 +32,6 @@ async function apiFetch(apiURL) {
         if (response.ok) {
             const data = await response.json();
             displayResults(data);
-            console.log(data);
         } else {
             throw Error(await response.text());
         }
