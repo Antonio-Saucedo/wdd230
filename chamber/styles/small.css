@@ -133,7 +133,8 @@ nav ul li a,
 section a,
 #joinUs,
 .events a,
-.spots a {
+.spots a,
+.socialMedia a {
   color: #000;
 }
 
