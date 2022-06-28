@@ -336,7 +336,8 @@ iframe {
 .join .section,
 .join .section:nth-child(2) div:nth-child(n + 1),
 .thankyou picture img,
-.hero a {
+.hero a,
+.section h3 {
   padding: 10px;
 }
 
@@ -366,7 +367,6 @@ footer,
   margin: 0 auto 15px;
 }
 
-.section h3,
 .mainInfo {
   padding-bottom: 20px;
 }
