@@ -108,11 +108,12 @@ nav ul {
 }
 
 nav ul li a,
+section,
 .visits,
 .section,
 .join .section:nth-child(2) div:nth-child(n + 1),
 .directorymenu,
-section {
+#joinUs {
   background-color: #00a8f3;
   box-shadow: 1px -1px 10px 1px #000;
 }
@@ -123,7 +124,8 @@ footer p a,
 .hero a,
 .mainInfo a,
 .joinbox a,
-.spots a {
+.spots a,
+.socialMedia a {
   text-decoration: none;
 }
 
@@ -215,19 +217,14 @@ iframe {
   width: 96%;
 }
 
-#joinUs {
-  background-color: #00a8f3;
+#joinUs,
+.visits {
+  margin-top: 15px;
 }
 
 /* class selector */
 .title {
   margin: auto 0;
-}
-
-.visits,
-.section,
-#joinUs {
-  margin: 15px auto;
 }
 
 .visits {
@@ -275,6 +272,7 @@ iframe {
 }
 
 .section {
+  margin: 15px auto;
   width: fit-content;
 }
 

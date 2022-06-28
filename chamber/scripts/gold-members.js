@@ -41,7 +41,6 @@ async function getBusinesses() {
   let response = await fetch(URL);
   if (response.ok) {
     let data = await response.json();
-    console.log(data);
     buildBusinessCards(data);
   } else {
     throw Error(response.statusText);
