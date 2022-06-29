@@ -81,7 +81,8 @@
     left: 25%;
     top: 5%;
   }
-  margin-b .news {
+
+  .news {
     grid-row: 2;
   }
 
@@ -102,7 +103,7 @@
 
   .events,
   .weather,
-  .section {
+  .membership {
     margin-bottom: 15px;
   }
 
@@ -119,7 +120,11 @@
     top: 8%;
   }
 
-  .spots {
+  .spots,
+  .spot2,
+  .hero,
+  .news,
+  .joinbox {
     margin-bottom: 0;
   }
 

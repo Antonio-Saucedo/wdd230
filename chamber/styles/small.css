@@ -302,6 +302,7 @@ iframe {
 }
 
 .spots,
+.spot1,
 .discover:nth-last-child(1) {
   margin-bottom: 15px;
 }
