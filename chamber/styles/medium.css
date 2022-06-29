@@ -103,7 +103,8 @@
 
   .events,
   .weather,
-  .membership {
+  .membership,
+  .list section {
     margin-bottom: 15px;
   }
 
@@ -124,7 +125,8 @@
   .spot2,
   .hero,
   .news,
-  .joinbox {
+  .joinbox,
+  .list section:nth-last-child(1) {
     margin-bottom: 0;
   }
 
@@ -232,37 +234,35 @@
     margin: 0 auto;
   }
 
-  .list,
-  .list section {
-    display: flex;
-  }
+  @media (min-width: 40em) {
+    .list,
+    .list section {
+      display: flex;
+    }
 
-  .list {
-    flex-direction: column;
-  }
+    .list {
+      flex-direction: column;
+    }
 
-  .list section {
-    justify-content: left;
-    align-items: center;
-  }
+    .list section {
+      justify-content: left;
+      align-items: center;
+    }
 
-  .list section {
-    margin: 12px 0;
-  }
+    .list section h2 {
+      width: 200px;
+    }
 
-  .list section h2 {
-    width: 200px;
-  }
+    .list section a {
+      width: 150px;
+    }
 
-  .list section a {
-    width: 150px;
-  }
+    .list section p:nth-child(2) {
+      width: 160px;
+    }
 
-  .list section p:nth-child(2) {
-    width: 160px;
-  }
-
-  .list section p:nth-child(3) {
-    width: 100px;
+    .list section p:nth-child(3) {
+      width: 100px;
+    }
   }
 }
