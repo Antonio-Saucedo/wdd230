@@ -273,7 +273,7 @@ iframe {
 }
 
 .section {
-  margin: 15px auto;
+  margin: 15px auto 0;
   width: fit-content;
 }
 
@@ -299,6 +299,11 @@ iframe {
 .climate,
 .spots {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.spots,
+.discover:nth-last-child(1) {
+  margin-bottom: 15px;
 }
 
 .spot1,
@@ -374,6 +379,10 @@ footer,
   width: 20px;
 }
 
+.discover p {
+  padding: 0 10px 10px;
+}
+
 .discover picture img[data-src] {
   filter: blur(0.2em);
 }
@@ -383,15 +392,15 @@ footer,
   transition: filter 0.5s;
 }
 
-/* Form */
-form fieldset,
 .map {
-  margin: 10px 15px;
+  margin: 0 15px 15px;
 }
 
+/* Form */
 form fieldset {
   border: 1px solid #0a2032;
   padding: 10px;
+  margin: 15px;
 }
 
 form legend,
@@ -455,7 +464,7 @@ form input.joinBtn {
   background-color: #0a2032;
   color: white;
   padding: 12px 24px;
-  margin: 10px 30px 5px 30px;
+  margin: 0px 30px 15px 30px;
 }
 
 form label.top input:required {
@@ -478,9 +487,8 @@ form input[type="radio"] {
 }
 
 /* Directory */
-.directorymenu,
-article {
-  margin: 16px 0;
+.directorymenu {
+  margin-top: 15px;
 }
 
 .directorymenu,
@@ -489,15 +497,13 @@ section img,
   padding: 10px 0;
 }
 
-section h2,
-section p,
-section a {
-  padding: 2px 0;
-}
-
 .directorymenu button,
 section {
   padding: 15px;
+}
+
+article {
+  margin: 15px 0;
 }
 
 section a,
@@ -507,6 +513,8 @@ section a,
 
 .grid {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 15px;
+  row-gap: 15px;
 }
 
 .grid section {

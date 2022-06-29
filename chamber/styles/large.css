@@ -61,6 +61,11 @@
   }
 
   .events,
+  .weather {
+    margin-bottom: 0;
+  }
+
+  .events,
   .joinbox,
   .news,
   .weather {
@@ -86,6 +91,12 @@
 
   .hero picture img {
     height: 100%;
+  }
+
+  .spots,
+  .joinbox,
+  .news {
+    margin-bottom: 15px;
   }
 
   .spots,

@@ -81,8 +81,7 @@
     left: 25%;
     top: 5%;
   }
-
-  .news {
+  margin-b .news {
     grid-row: 2;
   }
 
@@ -95,15 +94,21 @@
     padding: 10px 42%;
   }
 
-  .events,
-  .weather {
-    grid-row: 5;
-  }
-
   .joinbox p,
   .events h2,
   .events h3 {
     padding: 25px 10px;
+  }
+
+  .events,
+  .weather,
+  .section {
+    margin-bottom: 15px;
+  }
+
+  .events,
+  .weather {
+    grid-row: 5;
   }
 
   .events h3 {
@@ -114,9 +119,12 @@
     top: 8%;
   }
 
+  .spots {
+    margin-bottom: 0;
+  }
+
   .spot1,
   .spot3,
-  article,
   .map {
     margin: 0;
   }
@@ -210,7 +218,7 @@
   }
 
   form input.joinBtn {
-    margin: 10px 12px 15px 12px;
+    margin: 0px 12px 15px 12px;
   }
 
   section h2,
@@ -251,9 +259,5 @@
 
   .list section p:nth-child(3) {
     width: 100px;
-  }
-
-  .grid section {
-    margin: 12px;
   }
 }
