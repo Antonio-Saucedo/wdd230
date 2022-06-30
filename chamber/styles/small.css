@@ -204,7 +204,8 @@ h2,
 .visits p,
 .joinbox a,
 .hero a,
-.title h1 {
+.title h1,
+nav ul li a {
   font-size: 20px;
 }
 
