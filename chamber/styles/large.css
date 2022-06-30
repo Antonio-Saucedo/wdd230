@@ -111,6 +111,12 @@
     grid-column: 3;
   }
 
+  .spot1,
+  .spot2,
+  .spot3 {
+    min-height: 256px;
+  }
+
   .spot2,
   .spot3 {
     margin-top: 10px;
@@ -158,7 +164,7 @@
   }
 
   .list section a {
-    width: 280px;
+    width: 210px;
   }
 
   .list section p:nth-child(2) {
