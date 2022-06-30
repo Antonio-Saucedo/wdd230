@@ -9,9 +9,9 @@ function buildBusinessCards(info) {
   let data = info.businesses.filter(
     (p) => p.membership == "Gold" || p.membership == "Silver"
   );
-  for (let i = 0; i < 2; i++) {
-  randnum = random;
-  data.splice(randnum, 1)[0];
+  for (let i = 0; i <= 2; i++) {
+    randnum = random;
+    data.splice(randnum, 1)[0];
   }
   data.forEach((business) => {
     let card = document.createElement("div");
