@@ -1,10 +1,18 @@
 const URL = "https://antonio-saucedo.github.io/wdd230/chamber/json/data.json";
 
 const display = document.getElementById("spots");
-var num = 1;
+const random = Math.floor(Math.random() * 4);
+let num = 1;
+let randnum = 0;
 
 function buildBusinessCards(info) {
-  let data = info.businesses.filter((p) => p.membership == "Gold");
+  let data = info.businesses.filter(
+    (p) => p.membership == "Gold" || p.membership == "Silver"
+  );
+  for (let i = 0; i < 2; i++) {
+  randnum = random;
+  data.splice(randnum, 1)[0];
+  }
   data.forEach((business) => {
     let card = document.createElement("div");
     let h2 = document.createElement("h2");
