@@ -29,14 +29,6 @@ footer,
   font-family: "Trebuchet MS";
 }
 
-body {
-  background-color:#2596be80;
-}
-
-main {
-  background-color: #fff;
-}
-
 header picture img body {
   vertical-align: middle;
 }
@@ -312,7 +304,8 @@ iframe {
 
 .spots,
 .spot1,
-.discover:nth-last-child(1) {
+.discover:nth-last-child(1),
+.thankyou {
   margin-bottom: 15px;
 }
 

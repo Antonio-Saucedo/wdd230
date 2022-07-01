@@ -6,6 +6,10 @@
     max-width: 700px;
   }
 
+  body {
+    background-color: #2596be80;
+  }
+
   header picture img {
     width: 120px;
   }
@@ -198,6 +202,14 @@
 
   .discover picture img:hover {
     box-shadow: inset 0 0 30px #76d6ff;
+  }
+
+  .join,
+  .directory,
+  .discoverPage,
+  .home,
+  .submittedPage {
+    background-color: #fff;
   }
 
   .join {
