@@ -1,0 +1,62 @@
+@media (min-width: 45em) {
+  body {
+    background-color: #2a3249;
+  }
+
+  footer div:first-child,
+  .check {
+    padding: 10px;
+  }
+
+  footer div:first-child,
+  .temple div:nth-child(2) {
+    margin: auto;
+  }
+
+  footer div:nth-child(3),
+  .footer-nav {
+    margin: auto 0;
+  }
+
+  /* Class Selector */
+  .hero-container {
+    position: relative;
+    height: 332px;
+    z-index: -1;
+  }
+
+  .hero-container a {
+    bottom: 140px;
+  }
+
+  .cards {
+    padding: 20px;
+    border-radius: 30px;
+    width: 95%;
+    margin: -80px auto 20px;
+  }
+
+  .hero {
+    position: absolute;
+    left: 0;
+  }
+
+  .temple {
+    display: grid;
+    grid-auto-flow: column;
+  }
+
+  .footer-nav {
+    display: block;
+  }
+
+  .info {
+    grid-column: 1/4;
+  }
+
+  @media (min-width: 54.625em) {
+    .cards .grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+}

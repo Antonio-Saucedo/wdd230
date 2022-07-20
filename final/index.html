@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="We are here to provide services and fill the needs of our temple workers, patrons, their families, and everyone willing to abide by the terms and policies outlined by Temple Inn & Suites."
+    />
+    <title>Temple Inn & Suites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/main.js" defer></script>
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1 class="hidden">Temple Inn & Suites</h1>
+        <picture>
+          <img src="images/temple-inn-suites-logo.png" alt="Temple Logo" />
+        </picture>
+      </div>
+      <div class="nav-bar">
+        <nav>
+          <ul id="primary-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="temple.html">Temple</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="social-media">
+          <a href="https://www.pinterest.com/">
+            <picture>
+              <img src="images/pinterest-logo.png" alt="Pinterest" />
+            </picture>
+          </a>
+          <a href="https://www.instagram.com/">
+            <picture>
+              <img src="images/instagram-logo.png" alt="Instagram" />
+            </picture>
+          </a>
+          <a href="https://twitter.com/">
+            <picture>
+              <img src="images/twitter-logo.png" alt="Twitter" />
+            </picture>
+          </a>
+          <a href="https://www.facebook.com/">
+            <picture>
+              <img src="images/facebook-logo.png" alt="Facebook" />
+            </picture>
+          </a>
+          <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        </div>
+      </div>
+      <div class="check">
+        <form method="get" action="reservation.html">
+          <label class="top">
+            Arrival*<input type="date" name="arrive-date" required />
+          </label>
+          <label class="top"
+            >Departure*<input type="date" name="depart-date" required
+          /></label>
+          <label class="top"
+            >Adults*<input type="number" name="adults" required
+          /></label>
+          <label class="top"
+            >Children<input type="number" name="children"
+          /></label>
+          <label class="check-input">
+            <input type="submit" value="Check Availability" class="checkBtn" />
+          </label>
+        </form>
+      </div>
+    </header>
+    <main class="home">
+      <div class="hero-container">
+        <picture class="hero">
+          <img src="images/home-hero-image.png" alt="Lobby" />
+        </picture>
+        <a class="all-caps" href="reservations.html">Stay with us</a>
+      </div>
+      <div class="cards">
+        <div class="grid">
+          <div class="boundary">
+            <picture>
+              <source media="(max-width: 874px)" srcset="images/home-missionary-accommodations-162px.png">
+              <img
+                src="images/home-missionary-accommodations-236px.png"
+                alt="Missionary"
+              />
+            </picture>
+          </div>
+          <div class="boundary">
+            <picture>
+              <source media="(max-width: 874px)" srcset="images/home-visit-nauvoo-162px.png">
+              <img
+                src="images/home-visit-nauvoo-236px.png"
+                alt="Nauvoo Statues"
+              />
+            </picture>
+          </div>
+          <div class="boundary">
+            <picture>
+              <source media="(max-width: 874px)" srcset="images/home-weddings-162px.png">
+              <img src="images/home-weddings.png" alt="Wedding Room" />
+            </picture>
+          </div>
+          <div class="boundary">
+            <picture>
+              <source media="(max-width: 874px)" srcset="images/home-family-history-162px.png">
+              <img src="images/home-family-history-236px.png" alt="Wagon" />
+            </picture>
+          </div>
+          <div class="boundary">
+            <picture>
+              <source media="(max-width: 874px)" srcset="images/home-local-sites-162px.png">
+              <img src="images/home-local-sites-236px.png" alt="Outdoors" />
+            </picture>
+          </div>
+          <div class="boundary">
+            <picture>
+              <source media="(max-width: 874px)" srcset="images/home-dining-162px.png">
+              <img src="images/home-dining-236px.png" alt="Dining Room" />
+            </picture>
+          </div>
+        </div>
+        <div class="temple boundary">
+          <div class="boundary">
+            <picture>
+              <source media="(max-width: 1000px)" srcset="images/temple-nauvoo-200px.png">
+              <img src="images/temple-nauvoo-300px.png" alt="Nauvoo Temple" />
+            </picture>
+          </div>
+          <div>
+            <h2 class="all-caps">Visit the temple</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
+              nisi eos quo praesentium ipsum eaque quis ad? Voluptatem similique
+              voluptatum, facere quo dicta animi omnis excepturi, tenetur
+              assumenda corrupti vel?
+            </p>
+          </div>
+        </div>
+        <div class="weather">
+          <div>
+            <div>
+              <picture id="weather-today">
+                <img src="" alt="Weather for today" />
+              </picture>
+              <h2>Nauvoo, IL</h2>
+            </div>
+            <div>
+              <p>Today</p>
+              <span
+                ><p id="temperature-today"></p>
+                °F</span
+              >
+              <p id="condition"></p>
+              <span
+                >Humidity:
+                <p id="humidity"></p
+              ></span>
+            </div>
+          </div>
+          <div>
+            <picture id="weather-one-day">
+              <img src="" alt="Weather for tomorrow" />
+            </picture>
+            <span
+              ><p id="temperature-1-day"></p>
+              °F</span
+            >
+          </div>
+          <div>
+            <picture id="weather-two-day">
+              <img src="" alt="Weather for next day" />
+            </picture>
+            <span
+              ><p id="temperature-2-day"></p>
+              °F</span
+            >
+          </div>
+          <div>
+            <picture id="weather-three-day">
+              <img src="" alt="Weather for next next day" />
+            </picture>
+            <span
+              ><p id="temperature-3-day"></p>
+              °F</span
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <picture>
+          <img
+            src="images/temple-inn-suites-logo-small.png"
+            alt="Temple Logo"
+          />
+        </picture>
+      </div>
+      <div class="footer-nav">
+        <h2 class="all-caps">Site index</h2>
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="temple.html">Temple</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="revervation.html">Reservation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="all-caps">Visit us</p>
+        <p>50 N Wells St</p>
+        <p>Nauvoo, IL 62354</p>
+        <p>(217) 453-6252</p>
+        <p>
+          <a
+            href="https://www.churchofjesuschrist.org/temples/map?lang=eng&templeName=nauvoo-illinois-temple"
+            ><img src="images/pin.png" alt="Location" />Location</a
+          >
+        </p>
+      </div>
+      <div class="info">
+        <p>&#169; 2022 Temple Inn & Suites</p>
+        <p>Antonio Saucedo</p>
+        <p>WDD 230 Final</p>
+        <p id="updated"></p>
+        <p>
+          Weather Information ->
+          <a href="https://openweathermap.org/">OpenWeatherMap</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
