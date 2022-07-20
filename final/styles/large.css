@@ -22,10 +22,6 @@
     background-color: rgba(42, 50, 73, 0.7);
   }
 
-  form {
-    grid-template-columns: repeat(5, 1fr);
-  }
-
   /* ID Selector */
   #hamburgerBtn {
     display: none;
@@ -34,15 +30,6 @@
   /* Class Selector */
   .social-media {
     grid-column: 2;
-  }
-
-  .check-input {
-    grid-column: 5;
-  }
-
-  .checkBtn {
-    margin: 27px 0 0;
-    padding: 5px 10px;
   }
 
   .hero-container a {

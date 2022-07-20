@@ -3,8 +3,7 @@
     background-color: #2a3249;
   }
 
-  footer div:first-child,
-  .check {
+  footer div:first-child {
     padding: 10px;
   }
 
