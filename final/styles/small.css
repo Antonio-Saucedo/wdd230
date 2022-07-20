@@ -15,9 +15,15 @@ body,
 
 header,
 main,
+footer,
+form * {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+header,
+main,
 footer {
   text-align: center;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -27,14 +33,20 @@ header {
 header picture img,
 nav ul.open,
 nav ul li a,
+.footer-nav ul li a,
 #hamburgerBtn.open span:nth-child(2),
 .hero img,
 .boundary img,
+form label.top,
+form label.top *,
+form textarea,
+form input.reserveBtn,
 footer img {
   display: block;
 }
 
-header picture img {
+header picture img,
+.reserveBtn {
   margin: 0 auto;
 }
 
@@ -46,18 +58,21 @@ nav {
 nav,
 nav ul li a,
 #hamburgerBtn:hover,
-.nav-bar,
 .active,
 .hero-container a,
 .weather,
 .temple,
+.reserveBtn,
 footer,
-.footer-nav ul li a,
+.footer-nav ul li.active a,
+.footer-nav ul li a:hover,
 .info p a {
   color: #fff;
 }
 
 nav ul li a:hover,
+.footer-nav,
+.footer-nav ul li a,
 footer div:nth-child(3) p,
 footer div:nth-child(3) p a {
   color: #000;
@@ -69,12 +84,14 @@ header,
 .logo,
 .footer-nav ul li:hover,
 .hero-container a:hover,
-.weather {
+.weather,
+.reserveBtn {
   background-color: #2a3249;
 }
 
 nav ul,
-.footer-nav ul {
+.footer-nav ul,
+.room ul li {
   list-style: none;
 }
 
@@ -93,8 +110,11 @@ nav ul li a,
 .hero-container a,
 .temple,
 .temple h2,
+.room,
+.thanks .cards,
 .weather,
-.weather div {
+.weather div,
+footer div:nth-child(odd) {
   padding: 10px;
 }
 
@@ -125,32 +145,70 @@ h2,
 }
 
 h3,
-p {
+p,
+form,
+form input,
+form select,
+form textarea,
+.footer-nav,
+.footer-nav h2 {
   font-size: 20px;
 }
 
-.nav-bar,
-.grid,
-.weather,
-footer {
-  display: grid;
+form {
+  margin-top: 10px;
 }
 
-.social-media,
-.grid,
-.weather,
-footer {
-  gap: 10px;
+form label,
+.thanks .cards img {
+  padding-top: 10px;
 }
 
-.nav-bar.active,
-.hero img,
-.hero-container {
+form label {
+  text-align: left;
+}
+
+form fieldset,
+.reserveBtn {
+  margin-bottom: 10px;
+}
+
+form fieldset {
+  padding: 20px;
+}
+
+form legend {
+  padding: 0 10px;
+}
+
+form input,
+form select,
+form textarea {
+  padding: 5px;
+}
+
+form textarea,
+.hero-container,
+.hero img {
   width: 100%;
 }
 
 footer p {
   font-size: 16px;
+}
+
+footer,
+.nav-bar,
+.grid,
+.weather {
+  display: grid;
+}
+
+footer,
+.social-media,
+.grid,
+.weather {
+  gap: 10px;
 }
 
 footer,
@@ -160,12 +218,9 @@ footer,
 
 footer div:nth-child(odd),
 .boundary,
-.cards .grid {
+.cards .grid,
+.room picture {
   margin: auto;
-}
-
-footer div:nth-child(odd) {
-  padding: 10px;
 }
 
 footer div:nth-child(3) p a,
@@ -217,7 +272,8 @@ footer div:nth-child(3) p a {
   background-color: #68656e;
 }
 
-.info {
+.info,
+.room h2 {
   grid-column: 1/3;
 }
 
@@ -230,21 +286,39 @@ footer div:nth-child(3) p a {
   text-transform: uppercase;
 }
 
-.hero-container a {
+.hero-container a,
+.reserveBtn:hover {
   background-color: rgba(42, 50, 73, 0.7);
+}
+
+.hero-container a {
   bottom: 40px;
   left: 25%;
   right: 25%;
 }
 
-.cards .grid {
-  width: 95%;
+.home .cards .grid,
+.decoration img,
+.thanks .cards p {
   padding: 10px 0;
+}
+
+.home .cards .grid,
+.decoration img {
+  width: 95%;
+}
+
+.room ul li {
+  text-align: left;
+}
+
+.weather,
+.room {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .weather {
   margin: 10px;
-  grid-template-columns: repeat(2, 1fr);
 }
 
 .weather div {

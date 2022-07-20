@@ -62,13 +62,213 @@
         </div>
       </div>
     </header>
-    <main class="home">
+    <main class="reservations">
       <div class="hero-container">
         <picture class="hero">
           <img src="images/room-door.png" alt="Lobby" />
         </picture>
       </div>
       <div class="cards">
+        <div class="room grid">
+          <h2>Standard Double Queen</h2>
+          <picture>
+            <img src="images/room-queen-standard.png" alt="Queen Room" />
+          </picture>
+          <ul>
+            <li>Non-Smoking</li>
+            <li>No Pets Allowed</li>
+            <li>Flat Screen TV</li>
+            <li>Desk with Ergonomic Chair</li>
+            <li>Hair Dryer</li>
+            <li>Iron and Ironing Board</li>
+            <li>Air Conditioning</li>
+            <li>AM/FM Clock Radio</li>
+            <li>Free Wifi</li>
+          </ul>
+        </div>
+        <picture class="decoration">
+          <img src="images/divider-line.png" alt="Decoration">
+        </picture>
+        <div class="room grid">
+          <h2>Standard King</h2>
+          <picture>
+            <img src="images/room-king-standard.png" alt="King Room" />
+          </picture>
+          <ul>
+            <li>Non-Smoking</li>
+            <li>No Pets Allowed</li>
+            <li>Flat Screen TV</li>
+            <li>Desk with Ergonomic Chair</li>
+            <li>Hair Dryer</li>
+            <li>Iron and Ironing Board</li>
+            <li>Air Conditioning</li>
+            <li>AM/FM Clock Radio</li>
+            <li>Free Wifi</li>
+          </ul>
+        </div>
+        <picture class="decoration">
+          <img src="images/divider-line.png" alt="Decoration">
+        </picture>
+        <div class="room grid">
+          <h2>Double Queen Suite</h2>
+          <picture>
+            <img src="images/room-queen-suite.png" alt="Queen Suite" />
+          </picture>
+          <ul>
+            <li>2-Person Sofabed</li>
+            <li>1 Room Suite</li>
+            <li>No Pets Allowed</li>
+            <li>Refrigerator</li>
+            <li>Iron and Ironing Board</li>
+            <li>Microwave</li>
+            <li>Table and Chairs</li>
+            <li>Air Conditioning</li>
+            <li>AM/FM Clock Radio</li>
+            <li>Free Wifi</li>
+          </ul>
+        </div>
+        <picture class="decoration">
+          <img src="images/divider-line.png" alt="Decoration">
+        </picture>
+        <div class="room grid">
+          <h2>King Suite</h2>
+          <picture>
+            <img src="images/room-king-suite.png" alt="King Suite" />
+          </picture>
+          <ul>
+            <li>2-Person Sofabed</li>
+            <li>1 Room Suite</li>
+            <li>No Pets Allowed</li>
+            <li>Refrigerator</li>
+            <li>Iron and Ironing Board</li>
+            <li>Microwave</li>
+            <li>Table and Chairs</li>
+            <li>Air Conditioning</li>
+            <li>AM/FM Clock Radio</li>
+            <li>Free Wifi</li>
+          </ul>
+        </div>
+        <picture class="decoration">
+          <img src="images/divider-line.png" alt="Decoration">
+        </picture>
+        <div class="room grid">
+          <h2>Honeymoon Suite</h2>
+          <picture>
+            <img src="images/room-honeymoon-suite.png" alt="Honeymoon Suite" />
+          </picture>
+          <ul>
+            <li>King bed</li>
+            <li>Rose petals and chocolates welcome on bed</li>
+            <li>Jetted bathtub and separate shower</li>
+            <li>Sitting area</li>
+            <li>No Pets Allowed</li>
+            <li>Refrigerator</li>
+            <li>Iron and Ironing Board</li>
+            <li>Microwave</li>
+            <li>Table and Chairs</li>
+            <li>Air Conditioning</li>
+            <li>AM/FM Clock Radio</li>
+            <li>Free Wifi</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cards">
+        <form method="get" action="reservation-thanks.html">
+          <fieldset>
+            <legend>Room Information</legend>
+            <legend>Location: Nauvoo Temple</legend>
+            <label class="top">
+              Arrival*<input type="date" name="arrive-date" required />
+            </label>
+            <label class="top"
+              >Departure*<input type="date" name="depart-date" required
+            /></label>
+            <label class="top"
+              >Standard Double Queen
+              <select name="room">
+                <option value="0">0</option>
+                <option value="1 queen">1</option>
+                <option value="2 queen">2</option>
+                <option value="3 queen">3</option>
+                <option value="4 queen">4</option>
+                <option value="5 queen">5</option>
+              </select>
+            </label>
+            <label class="top"
+              >Standard King
+              <select name="room">
+                <option value="0">0</option>
+                <option value="1 king">1</option>
+                <option value="2 king">2</option>
+                <option value="3 king">3</option>
+                <option value="4 king">4</option>
+                <option value="5 king">5</option>
+              </select>
+            </label>
+            <label class="top"
+              >Double Queen Suite
+              <select name="room">
+                <option value="0">0</option>
+                <option value="1 queen-suite">1</option>
+                <option value="2 queen-suite">2</option>
+                <option value="3 queen-suite">3</option>
+                <option value="4 queen-suite">4</option>
+                <option value="5 queen-suite">5</option>
+              </select>
+            </label>
+            <label class="top"
+              >King Suite
+              <select name="room">
+                <option value="0">0</option>
+                <option value="1 king-suite">1</option>
+                <option value="2 king-suite">2</option>
+                <option value="3 king-suite">3</option>
+                <option value="4 king-suite">4</option>
+                <option value="5 king-suite">5</option>
+              </select>
+            </label>
+            <label class="top"
+              >Honeymoon Suite
+              <select name="room">
+                <option value="0">0</option>
+                <option value="1 honeymoon">1</option>
+              </select>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Guest Information</legend>
+            <label class="top">
+              First Name*<input type="text" name="fname" required />
+            </label>
+            <label class="top">
+              Last Name*<input type="text" name="lname" required />
+            </label>
+            <label class="top">
+              Email*<input type="email" name="email" required />
+            </label>
+            <label class="top">
+              Phone Number*<input type="tel" name="phone" required />
+            </label>
+            <label class="top">
+              Street<input type="text" name="street" />
+            </label>
+            <label class="top"> City<input type="text" name="city" /> </label>
+            <label class="top"> State<input type="text" name="state" /> </label>
+            <label class="top">
+              zip<input type="number" name="zip" pattern="[0-9]{5}" />
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Comments & Special Accomodations</legend>
+            <textarea
+              placeholder="Comments & Special Requests"
+              name="description"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </fieldset>
+          <input type="submit" value="Reserve Now" class="reserveBtn" />
+        </form>
       </div>
     </main>
     <footer>
