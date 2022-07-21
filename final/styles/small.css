@@ -312,6 +312,14 @@ footer div:nth-child(3) p a {
   text-align: left;
 }
 
+.temples p {
+  font-size: 14px;
+}
+
+.temple-section p {
+  word-wrap: break-word;
+}
+
 .weather,
 .room {
   grid-template-columns: repeat(2, 1fr);

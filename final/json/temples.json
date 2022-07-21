@@ -2,7 +2,9 @@
     "temples": [
         {
             "name": "Nauvoo Illinois",
-            "address": "50 N Wells St, Nauvoo IL 62354 United States",
+            "street": "50 N Wells St",
+            "city": "Nauvoo IL 62354",
+            "country": "United States",
             "phone":"+1 (217) 453-6252",
             "email":"nauvooillinoistemple@churchofjesuschrist.org",
             "website": "https://www.churchofjesuschrist.org/temples/details/nauvoo-illinois-temple?lang=eng",
@@ -17,7 +19,9 @@
         },
         {
             "name": "Winter Quarters Nebraska",
-            "address": "8283 N 34th St Omaha NE 68112 United States",
+            "street": "8283 N 34th St",
+            "city": "Omaha NE 68112",
+            "country": "United States",
             "phone":"+1 (402) 453-3406",
             "email":"omahanebraskatemple@churchofjesuschrist.org",
             "website": "https://www.churchofjesuschrist.org/temples/details/winter-quarters-nebraska-temple?lang=eng",
@@ -32,7 +36,9 @@
         },
         {
             "name": "Chicago Illinois",
-            "address": "4151 W Lake Ave Glenview IL 60025-1240 United States",
+            "street": "4151 W Lake Ave",
+            "city": "Glenview IL 60025-1240",
+            "country": "United States",
             "phone":"+1 (847) 299-6500",
             "email":"chicagoillinoistemple@churchofjesuschrist.org",
             "website": "https://www.churchofjesuschrist.org/temples/details/chicago-illinois-temple?lang=eng",
@@ -47,7 +53,9 @@
         },
         {
             "name": "Kansas City Missouri",
-            "address": "7001 Searcy Creek Pkwy Kansas City MO 64119-5336 United States",
+            "street": "7001 Searcy Creek Pkwy",
+            "city": "Kansas City MO 64119-5336",
+            "country": "United States",
             "phone":"+1 (816) 413-1430",
             "email":"kansascitymissouritemple@churchofjesuschrist.org",
             "website": "https://www.churchofjesuschrist.org/temples/details/kansas-city-missouri-temple?lang=eng",
@@ -59,21 +67,6 @@
             "session": "Appointment Encouraged",
             "closure22": ["Monday, 19 September - Monday, 19 December", "Saturday, 24 December"],
             "closure23": ["Monday, 17 April - Monday, 1 May", "Monday, 9 October - Monday, 16 October"]
-        },
-        {
-            "name": "St Louis Missouri",
-            "address": "12555 N Outer Forty Dr St. Louis MO 63141-8620 United States",
-            "phone":"+1 (314) 514-1122",
-            "email":"stlouismissouritemple@churchofjesuschrist.org",
-            "website": "https://www.churchofjesuschrist.org/temples/details/st.-louis-missouri-temple?lang=eng",
-            "site": "www.churchofjesuschrist.org/st.-louis-missouri-temple",
-            "imageurl": "https://antonio-saucedo.github.io/wdd230/final/images/temple-stlouis-200px.png",
-            "services": ["Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
-            "history": ["Announced: 29 December 1990", "Groundbreaking: 30 October 1993", "Dedicated: 1 June 1997"],
-            "ordinance": "Appointment Encouraged",
-            "session": "Appointment Encouraged",
-            "closure22": ["Monday, 29 August - Monday, 5 December", "Saturday, 24 December", "Saturday, 31 December"],
-            "closure23": ["Monday, 20 March - Monday, 3 April", "Tuesday, 4 July", "Monday, 18 September - Monday, 2 October", "Wednesday, 22 November - Thursday, 23 November"]
         }
     ]
 }
