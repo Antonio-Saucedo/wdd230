@@ -9,7 +9,8 @@ body {
 }
 
 body,
-.cards {
+.cards,
+.services .cards .service-section {
   background-color: #fff;
 }
 
@@ -41,6 +42,7 @@ form label.top,
 form label.top *,
 form textarea,
 form input.reserveBtn,
+.services .cards div:last-child picture img,
 footer img {
   display: block;
 }
@@ -63,6 +65,7 @@ nav ul li a,
 .weather,
 .temple,
 .reserveBtn,
+.service-section a,
 footer,
 .footer-nav ul li.active a,
 .footer-nav ul li a:hover,
@@ -71,6 +74,7 @@ footer,
 }
 
 nav ul li a:hover,
+.services .cards .service-section,
 .footer-nav,
 .footer-nav ul li a,
 footer div:nth-child(3) p,
@@ -82,6 +86,7 @@ nav,
 #hamburgerBtn:hover,
 header,
 .logo,
+.service-section a,
 .footer-nav ul li:hover,
 .hero-container a:hover,
 .weather,
@@ -91,7 +96,8 @@ header,
 
 nav ul,
 .footer-nav ul,
-.room ul li {
+.room ul li,
+.services .cards .service-section ul li {
   list-style: none;
 }
 
@@ -112,6 +118,12 @@ nav ul li a,
 .temple h2,
 .room,
 .thanks .cards,
+.temples-section .cards,
+.temples-section .cards h2,
+.temples-section .cards h3,
+.services .cards .service-section p,
+.services .cards .service-section h2,
+.service-section a,
 .weather,
 .weather div,
 footer div:nth-child(odd) {
@@ -128,6 +140,7 @@ footer {
 
 nav ul li a,
 .hero-container a,
+.service-section a,
 .footer-nav ul li a,
 footer div:nth-child(3) p a,
 .info p a {
@@ -150,6 +163,7 @@ form,
 form input,
 form select,
 form textarea,
+.temples-section .cards h2,
 .footer-nav,
 .footer-nav h2 {
   font-size: 20px;
@@ -189,11 +203,14 @@ form textarea {
 
 form textarea,
 .hero-container,
-.hero img {
+.hero img,
+.services .cards div:last-child picture img {
   width: 100%;
 }
 
-footer p {
+footer p,
+.services .cards .service-section p,
+.services .cards .service-section ul li {
   font-size: 16px;
 }
 
@@ -287,7 +304,8 @@ footer div:nth-child(3) p a {
 }
 
 .hero-container a,
-.reserveBtn:hover {
+.reserveBtn:hover,
+.service-section a:hover {
   background-color: rgba(42, 50, 73, 0.7);
 }
 
@@ -312,12 +330,17 @@ footer div:nth-child(3) p a {
   text-align: left;
 }
 
-.temples p {
+.temples-section p {
   font-size: 14px;
 }
 
-.temple-section p {
+.temples-section .cards p {
   word-wrap: break-word;
+}
+
+.services .cards .service-section,
+.services .cards .service-section div {
+  margin: auto 80px;
 }
 
 .weather,

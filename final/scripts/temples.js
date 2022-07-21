@@ -21,7 +21,6 @@ function buildTempleCards(info) {
     let p5 = document.createElement("p");
     let p6 = document.createElement("p");
     let p7 = document.createElement("p");
-    let a = document.createElement("a");
 
     img.setAttribute("src", `${temple.imageurl}`);
     img.setAttribute("alt", `Visit The ${temple.name} Temple`);
@@ -39,8 +38,6 @@ function buildTempleCards(info) {
     p5.innerHTML = `${temple.email}`;
     p6.innerHTML = `Ordinance: ${temple.ordinance}`;
     p7.innerHTML = `Session: ${temple.session}`;
-    a.innerHTML = `${temple.site}`;
-    a.setAttribute("href", `${temple.website}`);
 
     card.appendChild(pic);
     pic.appendChild(img);
@@ -50,7 +47,6 @@ function buildTempleCards(info) {
     card.appendChild(p3);
     card.appendChild(p4);
     card.appendChild(p5);
-    card.appendChild(a);
 
     card.appendChild(h31);
     for (let i = 0; i < temple.services.length; i++) {
@@ -83,7 +79,9 @@ function buildTempleCards(info) {
       card.appendChild(p);
     }
 
-    card.classList.add("temple-section")
+    img.classList.add("boundary");
+    h2.classList.add("all-caps");
+    card.classList.add("cards");
     display.append(card);
   });
 }
