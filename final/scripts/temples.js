@@ -3,6 +3,11 @@ const URL = "https://antonio-saucedo.github.io/wdd230/final/json/temples.json";
 const display = document.getElementById("temple-cards");
 
 let count = 1;
+const likeItems = [""];
+likeItems.push(localStorage.getItem("likenauvoo"));
+likeItems.push(localStorage.getItem("likewinterquarters"));
+likeItems.push(localStorage.getItem("likechicago"));
+likeItems.push(localStorage.getItem("likekansas"));
 
 function buildTempleCards(info) {
   let data = info.temples;
@@ -100,7 +105,13 @@ function buildTempleCards(info) {
     }
 
     img.classList.add("boundary");
-    img3.classList.add("hidden");
+
+    if (likeItems[count] == 1) {
+      img2.classList.add("hidden");
+    } else {
+      img3.classList.add("hidden");
+    }
+
     h2.classList.add("all-caps");
     card.classList.add("cards");
     display.append(card);

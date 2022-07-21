@@ -113,13 +113,17 @@
       </div>
     </footer>
     <script>
+      const temples = ["nauvoo", "winterquarters", "chicago", "kansas"];
+
       function hideHeart(num) {
         document.getElementById(`heart${num}`).classList.add("hidden");
         document.getElementById(`redheart${num}`).classList.remove("hidden");
+        localStorage.setItem(`like${temples[num - 1]}`, 1);
       }
       function hideRedHeart(num) {
         document.getElementById(`heart${num}`).classList.remove("hidden");
         document.getElementById(`redheart${num}`).classList.add("hidden");
+        localStorage.setItem(`like${temples[num - 1]}`, 0);
       }
     </script>
   </body>
