@@ -263,7 +263,7 @@ footer div:nth-child(3) p a,
 footer div:nth-child(3) p img,
 .hero-container a,
 .cards button,
-.cards picture:nth-child(2) {
+.temples-section .cards picture:nth-child(2) {
   position: absolute;
 }
 
@@ -360,7 +360,7 @@ footer div:nth-child(3) p a {
 }
 
 .cards button,
-.cards picture:nth-child(2) {
+.temples-section .cards picture:nth-child(2) {
   right: 80px;
   bottom: 210px;
   background-color: transparent;
