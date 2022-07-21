@@ -1,4 +1,4 @@
-const URL = "https://antonio-saucedo.github.io/wdd230/chamber/json/data.json";
+const URL = "https://antonio-saucedo.github.io/wdd230/final/json/temples.json";
 
 const display = document.getElementById("temple-cards");
 
