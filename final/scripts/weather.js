@@ -4,6 +4,30 @@ const url = `https://api.openweathermap.org/data/2.5/onecall?lat=40.0003&lon=-89
 
 apiFetch(url);
 
+const weekday = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+const month = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
 function createDailyCards(weatherData) {
     for (let i = 1; i < 4; i++) {
         let card = document.createElement("div");
@@ -14,13 +38,8 @@ function createDailyCards(weatherData) {
         let p2 = document.createElement("p");
         let p3 = document.createElement("p");
 
-        if (i == 1) {
-            h2.innerHTML = `Tomorrow`;
-        } else if (i == 2) {
-            h2.innerHTML = `two day`;
-        } else {
-            h2.innerHTML = `three day`;
-        }
+        const d = new Date(+new Date() + 86400000 * i);
+        h2.innerHTML = `${weekday[d.getDay()]}, ${month[d.getMonth()]} ${d.getFullYear()}`;
         img.setAttribute("src", `https://antonio-saucedo.github.io/wdd230/final/images/weatherIcons/${weatherData.daily[i].weather[0].icon}.png`);
 
         // Capitalize first letter of each word.
