@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/medium.css" />
     <link rel="stylesheet" href="styles/large.css" />
@@ -123,25 +124,22 @@
           <div>
             <h2 class="all-caps">Visit the temple</h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-              nisi eos quo praesentium ipsum eaque quis ad? Voluptatem similique
-              voluptatum, facere quo dicta animi omnis excepturi, tenetur
-              assumenda corrupti vel?
+              The Nauvoo Illinois Temple stands on a high bluff overlooking a bend in the Mississippi River. The majestic building is a faithful reproduction of the original Nauvoo Temple built by settlers of the Church in the 1840s and destroyed by arson fire in 1848 and tornado-force winds in 1850. Featured on the grounds west of the temple is a handsome statue depicting Church founder Joseph Smith and brother Hyrum Smith on horseback; both were martyred in Carthage Jail during construction of the original temple. Nauvoo is rich in Church history and the destination of thousands of tourists each year. The temple operates an accelerated summer schedule to accommodate demand. Summer is also the season of the popular Nauvoo Pageant: A Tribute to Joseph Smith.
             </p>
           </div>
         </div>
         <div class="weather">
           <div>
             <div>
-              <picture id="weather-today">
-                <img src="" alt="Weather for today" />
+              <picture>
+                <img id="weather-today" src="" alt="Weather for today" />
               </picture>
               <h2>Nauvoo, IL</h2>
             </div>
             <div>
               <p>Today</p>
               <span
-                ><p id="temperature-today"></p>
+                ><p id="temperature"></p>
                 °F</span
               >
               <p id="condition"></p>
