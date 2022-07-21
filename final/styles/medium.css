@@ -8,14 +8,12 @@
   }
 
   footer div:first-child,
-  .temple div:nth-child(2),
-  .services {
+  .temple div:nth-child(2) {
     margin: auto;
   }
 
   footer div:nth-child(3),
   .footer-nav,
-  .service-section:nth-child(2) form,
   .daily p {
     margin: auto 0;
   }
@@ -48,7 +46,7 @@
   .temples-section,
   .weather,
   .daily,
-  .services .cards .service-section {
+  .service-section {
     display: grid;
   }
 
@@ -67,14 +65,12 @@
 
   .reservations,
   .temples-section,
-  .services .cards .service-section {
+  .service-section {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .reservations .hero-container,
-  .temples-section .hero-container,
-  .services .hero-container,
-  .services .cards .service-section h2 {
+  .hero-container,
+  .service-section h2 {
     grid-column: 1/3;
   }
 

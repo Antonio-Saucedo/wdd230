@@ -10,7 +10,7 @@ body {
 
 body,
 .cards,
-.services .cards .service-section {
+.service-section {
   background-color: #fff;
 }
 
@@ -74,7 +74,7 @@ footer,
 }
 
 nav ul li a:hover,
-.services .cards .service-section,
+.service-section,
 .footer-nav,
 .footer-nav ul li a,
 footer div:nth-child(3) p,
@@ -97,7 +97,7 @@ header,
 nav ul,
 .footer-nav ul,
 .room ul li,
-.services .cards .service-section ul li {
+.service-section ul li {
   list-style: none;
 }
 
@@ -122,8 +122,7 @@ nav ul li a,
 .temples-section .cards,
 .temples-section .cards h2,
 .temples-section .cards h3,
-.services .cards .service-section p,
-.services .cards .service-section h2,
+.service-section h2,
 .weather,
 .weather div,
 .weather div:first-child img,
@@ -135,7 +134,7 @@ nav ul li:hover,
 .nav-bar,
 #hamburgerBtn,
 footer,
-.cards button {
+.temples-section .cards button {
   border: none;
 }
 
@@ -221,8 +220,8 @@ form textarea,
 
 footer p,
 .temple p,
-.services .cards .service-section p,
-.services .cards .service-section ul li,
+.service-section p,
+.service-section ul li,
 .service-section form * {
   font-size: 16px;
 }
@@ -237,7 +236,8 @@ footer,
 .social-media,
 .grid,
 .weather,
-.daily {
+.daily,
+.service-section {
   gap: 10px;
 }
 
@@ -248,9 +248,10 @@ footer,
 
 footer div:nth-child(odd),
 .boundary,
-.cards .grid,
 .room picture,
-.temples-section .cards div {
+.temples-section .cards div,
+.service-section form,
+.service-section p {
   margin: auto;
 }
 
@@ -366,13 +367,16 @@ footer div:nth-child(3) p a {
   background-color: transparent;
 }
 
-.service-section,
-.service-section:nth-child(3) div {
-  margin: auto 80px;
-}
-
 .service-section:nth-child(2) div {
   margin: auto 20px;
+}
+
+.service-section form {
+  width: 300px;
+}
+
+.service-section p {
+  width: 250px;
 }
 
 .weather,
