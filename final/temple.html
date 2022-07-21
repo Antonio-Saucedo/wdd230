@@ -112,5 +112,15 @@
         <p><a href="sources.html">Sources</a></p>
       </div>
     </footer>
+    <script>
+      function hideHeart(num) {
+        document.getElementById(`heart${num}`).classList.add("hidden");
+        document.getElementById(`redheart${num}`).classList.remove("hidden");
+      }
+      function hideRedHeart(num) {
+        document.getElementById(`heart${num}`).classList.remove("hidden");
+        document.getElementById(`redheart${num}`).classList.add("hidden");
+      }
+    </script>
   </body>
 </html>

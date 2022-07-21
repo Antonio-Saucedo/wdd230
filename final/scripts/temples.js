@@ -2,12 +2,19 @@ const URL = "https://antonio-saucedo.github.io/wdd230/final/json/temples.json";
 
 const display = document.getElementById("temple-cards");
 
+let count = 1;
+
 function buildTempleCards(info) {
   let data = info.temples;
   data.forEach((temple) => {
     let card = document.createElement("div");
+    let div = document.createElement("div");
     let pic = document.createElement("picture");
     let img = document.createElement("img");
+    let img2 = document.createElement("img");
+    let img3 = document.createElement("img");
+    let button = document.createElement("button");
+    let button2 = document.createElement("button");
     let h2 = document.createElement("h2");
     let h31 = document.createElement("h3");
     let h32 = document.createElement("h3");
@@ -25,6 +32,14 @@ function buildTempleCards(info) {
     img.setAttribute("src", `${temple.imageurl}`);
     img.setAttribute("alt", `Visit The ${temple.name} Temple`);
     img.setAttribute("loading", "lazy");
+    img2.setAttribute("src", `images/like-button.png`);
+    img2.setAttribute("alt", `Heart`);
+    img2.setAttribute("id", `heart${count}`);
+    img3.setAttribute("src", `images/like-button-clicked.png`);
+    img3.setAttribute("alt", `Red Heart`);
+    img3.setAttribute("id", `redheart${count}`);
+    button.setAttribute("onclick", `hideHeart(${count})`);
+    button2.setAttribute("onclick", `hideRedHeart(${count})`);
     h2.innerHTML = `${temple.name}`;
     h31.innerHTML = "Services";
     h32.innerHTML = "History";
@@ -41,6 +56,11 @@ function buildTempleCards(info) {
 
     card.appendChild(pic);
     pic.appendChild(img);
+    card.appendChild(div);
+    div.appendChild(button);
+    button.appendChild(img2);
+    div.appendChild(button2)
+    button2.appendChild(img3);
     card.appendChild(h2);
     card.appendChild(p);
     card.appendChild(p2);
@@ -80,9 +100,11 @@ function buildTempleCards(info) {
     }
 
     img.classList.add("boundary");
+    img3.classList.add("hidden");
     h2.classList.add("all-caps");
     card.classList.add("cards");
     display.append(card);
+    count++;
   });
 }
 

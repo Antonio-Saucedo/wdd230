@@ -134,9 +134,16 @@ footer div:nth-child(odd) {
 nav ul li:hover,
 .nav-bar,
 #hamburgerBtn,
+footer,
+.cards button {
+  border: none;
+}
+
+nav ul li:hover,
+.nav-bar,
+#hamburgerBtn,
 footer {
   background-color: #9396a1;
-  border: none;
 }
 
 nav ul li a,
@@ -242,17 +249,21 @@ footer,
 footer div:nth-child(odd),
 .boundary,
 .cards .grid,
-.room picture {
+.room picture,
+.temples-section .cards div {
   margin: auto;
 }
 
 footer div:nth-child(3) p a,
-.hero-container {
+.hero-container,
+.temples-section .cards div {
   position: relative;
 }
 
 footer div:nth-child(3) p img,
-.hero-container a {
+.hero-container a,
+.cards button,
+.cards picture:nth-child(2) {
   position: absolute;
 }
 
@@ -342,6 +353,17 @@ footer div:nth-child(3) p a {
 
 .temples-section .cards p {
   word-wrap: break-word;
+}
+
+.temples-section .cards div {
+  width: 10px;
+}
+
+.cards button,
+.cards picture:nth-child(2) {
+  right: 80px;
+  bottom: 210px;
+  background-color: transparent;
 }
 
 .service-section,
