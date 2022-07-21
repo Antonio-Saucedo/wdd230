@@ -52,9 +52,9 @@
             "imageurl": "https://antonio-saucedo.github.io/wdd230/final/images/temple-kansascity-200px.png",
             "services": ["Clothing rental available", "No cafeteria available", "No patron housing available", "No distribution center nearby"],
             "history": ["Announced: 4 October 2008", "Groundbreaking: 8 May 2010", "Dedicated: 6 May 2012"],
-            "ordinance-schedule": "Appointment Encouraged",
-            "session-schedule": "Appointment Encouraged",
-            "closure-schedule": [{"2022": ["Monday, 19 September - Monday, 19 December", "Saturday, 24 December"], "2023": ["Monday, 17 April - Monday, 1 May", "Monday, 9 October - Monday, 16 October"]}]
+            "ordinance": "Appointment Encouraged",
+            "session": "Appointment Encouraged",
+            "closure": [{"2022": ["Monday, 19 September - Monday, 19 December", "Saturday, 24 December"], "2023": ["Monday, 17 April - Monday, 1 May", "Monday, 9 October - Monday, 16 October"]}]
         },
         {
             "name": "St Louis Missouri",

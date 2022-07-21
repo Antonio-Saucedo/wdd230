@@ -29,8 +29,8 @@ function buildTempleCards(info) {
     p.innerHTML = `${temple.address}`;
     p2.innerHTML = `${temple.phone}`;
     p3.innerHTML = `${temple.email}`;
-    p4.innerHTML = `${temple.ordinance-schedule}`;
-    p5.innerHTML = `${temple.session-schedule}`;
+    p4.innerHTML = `${temple.ordinance}`;
+    p5.innerHTML = `${temple.session}`;
     a.innerHTML = `${temple.site}`;
     a.setAttribute("href", `${temple.website}`);
 
@@ -59,12 +59,12 @@ function buildTempleCards(info) {
     card.appendChild(h24);
     card.appendChild(p4);
     card.appendChild(p5);
-    temple.closure-schedule[0].forEach((item) => {
+    temple.closure[0].forEach((item) => {
       let p = document.createElement("p");
       p.innerHTML = `${item}`;
       card.appendChild(p);
     });
-    temple.closure-schedule[1].forEach((item) => {
+    temple.closure[1].forEach((item) => {
         let p = document.createElement("p");
         p.innerHTML = `${item}`;
         card.appendChild(p);
