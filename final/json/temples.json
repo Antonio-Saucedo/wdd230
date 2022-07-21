@@ -1,0 +1,74 @@
+{
+    "temples": [
+        {
+            "name": "Nauvoo Illinois",
+            "address": "50 N Wells St, Nauvoo IL 62354 United States",
+            "phone":"+1 (217) 453-6252",
+            "email":"nauvooillinoistemple@churchofjesuschrist.org",
+            "website": "https://www.churchofjesuschrist.org/temples/details/nauvoo-illinois-temple?lang=eng",
+            "site": "www.churchofjesuschrist.org/nauvoo-illinois-temple",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/final/images/temple-nauvoo-200px.png",
+            "services": ["Clothing rental available", "No cafeteria available", "Patron housing available", "No distribution center nearby"],
+            "history": ["Announced: 4 April 1999", "Groundbreaking: 24 October 1999", "Dedicated: 27 June 2002"],
+            "ordinance-schedule": "Appointment Only",
+            "session-schedule": "Appointment Only",
+            "closure-schedule": [{"2022": ["Monday, 26 September - Monday, 24 October", "Thursday, 24 November", "Saturday, 24 December", "Saturday, 31 December"], "2023": ["Monday, 13 March - Monday, 27 March", "Monday, 16 October - Monday, 30 October"]}]
+        },
+        {
+            "name": "Winter Quarters Nebraska",
+            "address": "8283 N 34th St Omaha NE 68112 United States",
+            "phone":"+1 (402) 453-3406",
+            "email":"omahanebraskatemple@churchofjesuschrist.org",
+            "website": "https://www.churchofjesuschrist.org/temples/details/winter-quarters-nebraska-temple?lang=eng",
+            "site": "www.churchofjesuschrist.org/winter-quarters-nebraska-temple",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/final/images/temple-winterquarters-200px.png",
+            "services": ["No clothing rental available", "No cafeteria available", "No patron housing available", "No distribution center nearby"],
+            "history": ["Announced: 14 June 1999", "Groundbreaking: 28 November 1999", "Dedicated: 22 April 2001"],
+            "ordinance-schedule": "Appointment Encouraged",
+            "session-schedule": "Appointment Encouraged",
+            "closure-schedule": [{"2022": ["Monday, 29 August - Monday, 26 September", "Saturday, 1 October", "Thursday, 24 November", "Saturday, 24 December", "Saturday, 31 December"], "2023": ["Monday, 13 March - Monday, 20 March", "Saturday, 1 April", "Tuesday, 4 July", "Monday, 14 August - Monday, 18 December"]}]
+        },
+        {
+            "name": "Chicago Illinois",
+            "address": "4151 W Lake Ave Glenview IL 60025-1240 United States",
+            "phone":"+1 (847) 299-6500",
+            "email":"chicagoillinoistemple@churchofjesuschrist.org",
+            "website": "https://www.churchofjesuschrist.org/temples/details/chicago-illinois-temple?lang=eng",
+            "site": "www.churchofjesuschrist.org/chicago-illinois-temple",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/final/images/temple-chicago-200px.png",
+            "services": ["clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
+            "history": ["Announced: 1 April 1981", "Groundbreaking: 13 August 1983", "Dedicated: 9 August 1985" , "Rededicated: 8 October 1989"],
+            "ordinance-schedule": "Appointment Encouraged",
+            "session-schedule": "Appointment Encouraged",
+            "closure-schedule": [{"2022": ["Monday, 29 August - Monday, 12 September", "Saturday, 1 October", "Wednesday, 23 November (Limited Operations)", "Thursday, 24 November", "Saturday, 24 December", "Saturday, 31 December"], "2023": ["Monday, 28 August - Monday, 11 September"]}]
+        },
+        {
+            "name": "Kansas City Missouri",
+            "address": "7001 Searcy Creek Pkwy Kansas City MO 64119-5336 United States",
+            "phone":"+1 (816) 413-1430",
+            "email":"kansascitymissouritemple@churchofjesuschrist.org",
+            "website": "https://www.churchofjesuschrist.org/temples/details/kansas-city-missouri-temple?lang=eng",
+            "site": "www.churchofjesuschrist.org/kansas-city-missouri-temple",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/final/images/temple-kansascity-200px.png",
+            "services": ["Clothing rental available", "No cafeteria available", "No patron housing available", "No distribution center nearby"],
+            "history": ["Announced: 4 October 2008", "Groundbreaking: 8 May 2010", "Dedicated: 6 May 2012"],
+            "ordinance-schedule": "Appointment Encouraged",
+            "session-schedule": "Appointment Encouraged",
+            "closure-schedule": [{"2022": ["Monday, 19 September - Monday, 19 December", "Saturday, 24 December"], "2023": ["Monday, 17 April - Monday, 1 May", "Monday, 9 October - Monday, 16 October"]}]
+        },
+        {
+            "name": "St Louis Missouri",
+            "address": "12555 N Outer Forty Dr St. Louis MO 63141-8620 United States",
+            "phone":"+1 (314) 514-1122",
+            "email":"stlouismissouritemple@churchofjesuschrist.org",
+            "website": "https://www.churchofjesuschrist.org/temples/details/st.-louis-missouri-temple?lang=eng",
+            "site": "www.churchofjesuschrist.org/st.-louis-missouri-temple",
+            "imageurl": "https://antonio-saucedo.github.io/wdd230/final/images/temple-stlouis-200px.png",
+            "services": ["Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
+            "history": ["Announced: 29 December 1990", "Groundbreaking: 30 October 1993", "Dedicated: 1 June 1997"],
+            "ordinance-schedule": "Appointment Encouraged",
+            "session-schedule": "Appointment Encouraged",
+            "closure-schedule": [{"2022": ["Monday, 29 August - Monday, 5 December", "Saturday, 24 December", "Saturday, 31 December"], "2023": ["Monday, 20 March - Monday, 3 April", "Tuesday, 4 July", "Monday, 18 September - Monday, 2 October", "Wednesday, 22 November - Thursday, 23 November"]}]
+        }
+    ]
+}
