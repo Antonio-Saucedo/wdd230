@@ -126,6 +126,7 @@ nav ul li a,
 .services .cards .service-section h2,
 .weather,
 .weather div,
+.weather div:first-child img,
 footer div:nth-child(odd) {
   padding: 10px;
 }
@@ -164,7 +165,8 @@ form select,
 form textarea,
 .temples-section .cards h2,
 .footer-nav,
-.footer-nav h2 {
+.footer-nav h2,
+.daily h2 {
   font-size: 20px;
 }
 
@@ -227,7 +229,8 @@ footer,
 footer,
 .social-media,
 .grid,
-.weather {
+.weather,
+.daily {
   gap: 10px;
 }
 
