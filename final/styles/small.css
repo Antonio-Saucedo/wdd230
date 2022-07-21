@@ -116,6 +116,7 @@ nav ul li a,
 .hero-container a,
 .temple,
 .temple h2,
+.temple p,
 .room,
 .thanks .cards,
 .temples-section .cards,
@@ -182,7 +183,9 @@ form label {
 }
 
 form fieldset,
-.reserveBtn {
+.reserveBtn,
+.weather div:nth-child(odd),
+.weather div:nth-child(2) {
   margin-bottom: 10px;
 }
 
@@ -208,6 +211,7 @@ form textarea,
 }
 
 footer p,
+.temple p,
 .services .cards .service-section p,
 .services .cards .service-section ul li,
 .service-section form * {
@@ -216,8 +220,7 @@ footer p,
 
 footer,
 .nav-bar,
-.grid,
-.weather {
+.grid {
   display: grid;
 }
 

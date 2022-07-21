@@ -45,6 +45,7 @@
   .temple,
   .reservations,
   .temples-section,
+  .weather,
   .services .cards .service-section {
     display: grid;
   }
@@ -86,7 +87,9 @@
     grid-row: 2;
   }
 
-  .reserveBtn {
+  .reserveBtn,
+  .weather div:nth-child(odd),
+    .weather div:nth-child(2) {
     margin-bottom: 0;
   }
 

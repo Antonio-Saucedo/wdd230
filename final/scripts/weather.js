@@ -14,9 +14,14 @@ function displayResults (weatherData) {
     currentTemp.innerHTML = Math.round((weatherData.current.temp.toFixed(0) - 32) * (5/9));
     const weatherimagesrc = `https://antonio-saucedo.github.io/wdd230/final/images/weatherIcons/${weatherData.current.weather[0].icon}.png`;
     const weatherimagesrc2 = `https://antonio-saucedo.github.io/wdd230/final/images/weatherIcons/${weatherData.daily[1].weather[0].icon}.png`;
+    const weatherimagesrc3 = `https://antonio-saucedo.github.io/wdd230/final/images/weatherIcons/${weatherData.daily[2].weather[0].icon}.png`;
+    const weatherimagesrc4 = `https://antonio-saucedo.github.io/wdd230/final/images/weatherIcons/${weatherData.daily[3].weather[0].icon}.png`;
 
     // Capitalize first letter of each word.
     const descweather = weatherData.current.weather[0].description;
+    const descweather2 = weatherData.daily[1].weather[0].description;
+    const descweather3 = weatherData.daily[2].weather[0].description;
+    const descweather4 = weatherData.daily[3].weather[0].description;
     const descweatherdisplay = descweather.split(" ");
     for (var i = 0; i < descweatherdisplay.length; i++) {
         descweatherdisplay[i] = descweatherdisplay[i].charAt(0).toUpperCase() + descweatherdisplay[i].slice(1);
@@ -25,6 +30,12 @@ function displayResults (weatherData) {
     humidity.innerHTML = `${weatherData.current.humidity}%`;
     weatherIconToday.setAttribute("src", weatherimagesrc);
     weatherIconToday.setAttribute("alt", descweather);
+    weatherIcon1Day.setAttribute("src", weatherimagesrc2);
+    weatherIcon1Day.setAttribute("alt", descweather2);
+    weatherIcon2Day.setAttribute("src", weatherimagesrc3);
+    weatherIcon2Day.setAttribute("alt", descweather3);
+    weatherIcon3Day.setAttribute("src", weatherimagesrc4);
+    weatherIcon3Day.setAttribute("alt", descweather4);
     weatherDesc.innerHTML = descweatherdisplay.join(" ");
 }
 
