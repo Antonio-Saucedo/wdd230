@@ -59,12 +59,12 @@ function buildTempleCards(info) {
     card.appendChild(h24);
     card.appendChild(p4);
     card.appendChild(p5);
-    temple.closure[0].forEach((item) => {
+    temple.closure22.forEach((item) => {
       let p = document.createElement("p");
       p.innerHTML = `${item}`;
       card.appendChild(p);
     });
-    temple.closure[1].forEach((item) => {
+    temple.closure23.forEach((item) => {
         let p = document.createElement("p");
         p.innerHTML = `${item}`;
         card.appendChild(p);
