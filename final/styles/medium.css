@@ -14,7 +14,8 @@
   }
 
   footer div:nth-child(3),
-  .footer-nav {
+  .footer-nav,
+  .service-section:nth-child(2) form {
     margin: auto 0;
   }
 
@@ -94,8 +95,13 @@
     margin: 0 auto 20px;
   }
 
-  .services .cards .service-section picture {
+  .service-section:first-child picture,
+  .service-section:nth-child(2) form {
     grid-row: 2/5;
+  }
+
+  .service-section:nth-child(2) div {
+    grid-row: 3;
   }
 
   @media (min-width: 54.625em) {

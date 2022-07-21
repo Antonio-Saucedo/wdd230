@@ -65,7 +65,7 @@ nav ul li a,
 .weather,
 .temple,
 .reserveBtn,
-.service-section a,
+.service-section form input:nth-child(6),
 footer,
 .footer-nav ul li.active a,
 .footer-nav ul li a:hover,
@@ -86,9 +86,9 @@ nav,
 #hamburgerBtn:hover,
 header,
 .logo,
-.service-section a,
 .footer-nav ul li:hover,
 .hero-container a:hover,
+.service-section form input:nth-child(6),
 .weather,
 .reserveBtn {
   background-color: #2a3249;
@@ -123,7 +123,6 @@ nav ul li a,
 .temples-section .cards h3,
 .services .cards .service-section p,
 .services .cards .service-section h2,
-.service-section a,
 .weather,
 .weather div,
 footer div:nth-child(odd) {
@@ -140,7 +139,6 @@ footer {
 
 nav ul li a,
 .hero-container a,
-.service-section a,
 .footer-nav ul li a,
 footer div:nth-child(3) p a,
 .info p a {
@@ -169,7 +167,8 @@ form textarea,
   font-size: 20px;
 }
 
-form {
+form,
+.service-section form input:nth-child(6) {
   margin-top: 10px;
 }
 
@@ -210,7 +209,8 @@ form textarea,
 
 footer p,
 .services .cards .service-section p,
-.services .cards .service-section ul li {
+.services .cards .service-section ul li,
+.service-section form * {
   font-size: 16px;
 }
 
@@ -305,7 +305,7 @@ footer div:nth-child(3) p a {
 
 .hero-container a,
 .reserveBtn:hover,
-.service-section a:hover {
+.service-section form input:nth-child(6):hover {
   background-color: rgba(42, 50, 73, 0.7);
 }
 
@@ -338,9 +338,13 @@ footer div:nth-child(3) p a {
   word-wrap: break-word;
 }
 
-.services .cards .service-section,
-.services .cards .service-section div {
+.service-section,
+.service-section:nth-child(3) div {
   margin: auto 80px;
+}
+
+.service-section:nth-child(2) div {
+  margin: auto 20px;
 }
 
 .weather,
