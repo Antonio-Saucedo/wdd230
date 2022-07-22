@@ -69,7 +69,8 @@ nav ul li a,
 footer,
 .footer-nav ul li.active a,
 .footer-nav ul li a:hover,
-.info p a {
+.info p a,
+.alert button:hover {
   color: #fff;
 }
 
@@ -90,7 +91,8 @@ header,
 .hero-container a:hover,
 .service-section form input:nth-child(6),
 .weather,
-.reserveBtn {
+.reserveBtn,
+.alert button:hover {
   background-color: #2a3249;
 }
 
@@ -134,13 +136,15 @@ nav ul li:hover,
 .nav-bar,
 #hamburgerBtn,
 footer,
-.temples-section .cards button {
+.temples-section .cards button,
+.alert button {
   border: none;
 }
 
 nav ul li:hover,
 .nav-bar,
 #hamburgerBtn,
+.alert button,
 footer {
   background-color: #9396a1;
 }
@@ -159,7 +163,8 @@ h1 {
 }
 
 h2,
-#hamburgerBtn {
+#hamburgerBtn,
+.alert button {
   font-size: 25px;
 }
 
@@ -192,8 +197,8 @@ form label {
 
 form fieldset,
 .reserveBtn,
-.weather div:nth-child(odd),
-.weather div:nth-child(2) {
+.weather:last-child div:nth-child(odd),
+.weather:last-child div:nth-child(2) {
   margin-bottom: 10px;
 }
 
@@ -257,14 +262,16 @@ footer div:nth-child(odd),
 
 footer div:nth-child(3) p a,
 .hero-container,
-.temples-section .cards div {
+.temples-section .cards div,
+.alert div {
   position: relative;
 }
 
 footer div:nth-child(3) p img,
 .hero-container a,
 .temples-section .cards button,
-.temples-section .cards picture:nth-child(2) {
+.temples-section .cards picture:nth-child(2),
+.alert button {
   position: absolute;
 }
 
@@ -283,7 +290,8 @@ footer div:nth-child(3) p a {
 }
 
 /* ID Selector */
-#hamburgerBtn {
+#hamburgerBtn,
+.alert button {
   width: 40px;
 }
 
@@ -303,7 +311,8 @@ footer div:nth-child(3) p a {
 
 .active,
 .info,
-.temple {
+.temple,
+.alert div {
   background-color: #68656e;
 }
 
@@ -348,7 +357,8 @@ footer div:nth-child(3) p a {
   text-align: left;
 }
 
-.temples-section p {
+.temples-section p,
+.alert p {
   font-size: 14px;
 }
 
@@ -379,7 +389,7 @@ footer div:nth-child(3) p a {
   width: 250px;
 }
 
-.weather,
+.weather:last-child,
 .room {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -388,12 +398,20 @@ footer div:nth-child(3) p a {
   margin: 10px;
 }
 
-.weather div {
+.weather:last-child div {
   background-color: #495063;
 }
 
 .weather div:first-child {
   grid-row: 1/4;
+}
+
+.alert {
+  height: 100%;
+}
+
+.alert button {
+  right: 10px;
 }
 
 @media (min-width: 21.875em) {

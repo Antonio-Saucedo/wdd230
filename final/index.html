@@ -74,7 +74,10 @@
         <div class="grid">
           <div class="boundary">
             <picture>
-              <source media="(max-width: 874px)" srcset="images/home-missionary-accommodations-162px.png">
+              <source
+                media="(max-width: 874px)"
+                srcset="images/home-missionary-accommodations-162px.png"
+              />
               <img
                 src="images/home-missionary-accommodations-236px.png"
                 alt="Missionary"
@@ -83,7 +86,10 @@
           </div>
           <div class="boundary">
             <picture>
-              <source media="(max-width: 874px)" srcset="images/home-visit-nauvoo-162px.png">
+              <source
+                media="(max-width: 874px)"
+                srcset="images/home-visit-nauvoo-162px.png"
+              />
               <img
                 src="images/home-visit-nauvoo-236px.png"
                 alt="Nauvoo Statues"
@@ -92,25 +98,37 @@
           </div>
           <div class="boundary">
             <picture>
-              <source media="(max-width: 874px)" srcset="images/home-weddings-162px.png">
+              <source
+                media="(max-width: 874px)"
+                srcset="images/home-weddings-162px.png"
+              />
               <img src="images/home-weddings.png" alt="Wedding Room" />
             </picture>
           </div>
           <div class="boundary">
             <picture>
-              <source media="(max-width: 874px)" srcset="images/home-family-history-162px.png">
+              <source
+                media="(max-width: 874px)"
+                srcset="images/home-family-history-162px.png"
+              />
               <img src="images/home-family-history-236px.png" alt="Wagon" />
             </picture>
           </div>
           <div class="boundary">
             <picture>
-              <source media="(max-width: 874px)" srcset="images/home-local-sites-162px.png">
+              <source
+                media="(max-width: 874px)"
+                srcset="images/home-local-sites-162px.png"
+              />
               <img src="images/home-local-sites-236px.png" alt="Outdoors" />
             </picture>
           </div>
           <div class="boundary">
             <picture>
-              <source media="(max-width: 874px)" srcset="images/home-dining-162px.png">
+              <source
+                media="(max-width: 874px)"
+                srcset="images/home-dining-162px.png"
+              />
               <img src="images/home-dining-236px.png" alt="Dining Room" />
             </picture>
           </div>
@@ -118,19 +136,33 @@
         <div class="temple boundary">
           <div class="boundary">
             <picture>
-              <source media="(max-width: 1000px)" srcset="images/temple-nauvoo-200px.png">
+              <source
+                media="(max-width: 1000px)"
+                srcset="images/temple-nauvoo-200px.png"
+              />
               <img src="images/temple-nauvoo-300px.png" alt="Nauvoo Temple" />
             </picture>
           </div>
           <div>
             <h2 class="all-caps">Visit the temple</h2>
             <p>
-              The Nauvoo Illinois Temple stands on a high bluff overlooking a bend in the Mississippi River. The majestic building is a faithful reproduction of the original Nauvoo Temple built by settlers of the Church in the 1840s and destroyed by arson fire in 1848 and tornado-force winds in 1850. Featured on the grounds west of the temple is a handsome statue depicting Church founder Joseph Smith and brother Hyrum Smith on horseback; both were martyred in Carthage Jail during construction of the original temple. Nauvoo is rich in Church history and the destination of thousands of tourists each year. The temple operates an accelerated summer schedule to accommodate demand. Summer is also the season of the popular Nauvoo Pageant: A Tribute to Joseph Smith.
+              The Nauvoo Illinois Temple stands on a high bluff overlooking a
+              bend in the Mississippi River. The majestic building is a faithful
+              reproduction of the original Nauvoo Temple built by settlers of
+              the Church in the 1840s and destroyed by arson fire in 1848 and
+              tornado-force winds in 1850. Featured on the grounds west of the
+              temple is a handsome statue depicting Church founder Joseph Smith
+              and brother Hyrum Smith on horseback; both were martyred in
+              Carthage Jail during construction of the original temple. Nauvoo
+              is rich in Church history and the destination of thousands of
+              tourists each year. The temple operates an accelerated summer
+              schedule to accommodate demand. Summer is also the season of the
+              popular Nauvoo Pageant: A Tribute to Joseph Smith.
             </p>
           </div>
         </div>
-        <div class="weather" id="weather-info">
-        </div>
+        <div class="weather alert hidden" id="weather-alert"></div>
+        <div class="weather" id="weather-info"></div>
       </div>
     </main>
     <footer>
@@ -175,5 +207,10 @@
         <p><a href="sources.html">Sources</a></p>
       </div>
     </footer>
+    <script>
+      function hideAlert() {
+        document.getElementById("weather-alert").classList.add("hidden");
+      }
+    </script>
   </body>
 </html>

@@ -44,7 +44,7 @@
   .temple,
   .reservations,
   .temples-section,
-  .weather,
+  .weather:last-child,
   .daily,
   .service-section {
     display: grid;
@@ -87,8 +87,8 @@
   }
 
   .reserveBtn,
-  .weather div:nth-child(odd),
-  .weather div:nth-child(2) {
+  .weather:last-child div:nth-child(odd),
+  .weather:last-child div:nth-child(2) {
     margin-bottom: 0;
   }
 
@@ -106,7 +106,7 @@
     grid-row: 3;
   }
 
-  .weather div:first-child {
+  .weather:last-child div:first-child {
     padding: 20% 0;
   }
 
