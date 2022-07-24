@@ -174,7 +174,6 @@ async function apiFetch(apiURL) {
     const response = await fetch(apiURL);
     if (response.ok) {
       const data = await response.json();
-      console.log(data);
       if ("alerts" in data) {
         weatherAlert(data);
       }
