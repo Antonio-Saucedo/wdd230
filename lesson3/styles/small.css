@@ -8,24 +8,21 @@ body,
 header,
 main,
 footer {
-  width: 100%;
-  margin: 0 auto;
-}
-
-body,
-header,
-main,
-footer,
-.trebuchet {
   font-family: "Trebuchet MS";
+  margin: 0 auto;
+  width: 100%;
 }
 
 body {
-  background-color: slategrey;
+  background-color: #708090;
+  min-height: 100vh;
+  min-height: 100dvh;
+  flex-direction: column;
 }
 
 body,
 .colors {
+  display: flex;
   justify-content: center;
 }
 
@@ -36,22 +33,19 @@ header {
 header,
 nav,
 main,
-#footer,
-#date {
+footer * {
   text-align: center;
 }
 
 header,
 footer,
-.head,
-.foot {
+.colors :not(:nth-child(2)) {
   background-color: #0a2032;
 }
 
 header h1,
 header p,
-#footer,
-#date,
+footer *,
 .colors {
   color: #fff;
 }
@@ -67,12 +61,12 @@ header picture {
 }
 
 nav,
-.nav {
+.colors :nth-child(2) {
   background-color: #00a8f3;
 }
 
 nav a,
-.nav,
+.colors :nth-child(2),
 .active {
   color: #000;
 }
@@ -83,9 +77,12 @@ main h2,
 p,
 a,
 main picture,
-main ul li,
 .colors {
   padding: 10px;
+}
+
+main ul li {
+  padding: 11px 10px;
 }
 
 main {
@@ -101,13 +98,13 @@ ul li {
   list-style-type: none;
 }
 
-a {
+a,
+.colors li {
   display: block;
-  text-decoration: none;
 }
 
-footer {
-  height: 5rem;
+a {
+  text-decoration: none;
 }
 
 h1,
@@ -119,7 +116,7 @@ nav,
 }
 
 h1,
-.head {
+.colors :nth-child(1) {
   font-size: 30px;
 }
 
@@ -130,8 +127,7 @@ h2 {
 header p,
 nav,
 h3,
-.nav,
-.foot {
+.colors :not(:nth-child(1)) {
   font-size: 20px;
 }
 
@@ -139,24 +135,15 @@ p {
   font-size: 15px;
 }
 
-/* id selector */
-#footer,
-#date {
-  padding: 12px 0 0;
+footer * {
+  padding-top: 12px;
 }
 
-/* class selector */
-.colors {
-  display: flex;
-  min-height: 80px;
+footer p {
+  padding-bottom: 15px;
 }
 
-.colors li {
-  display: block;
+.colors * {
+  align-content: center;
   border: 1px solid #000;
-}
-
-.nav,
-.foot {
-  padding: 16px;
 }
