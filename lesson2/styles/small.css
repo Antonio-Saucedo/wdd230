@@ -16,37 +16,35 @@ body,
 header,
 main,
 footer {
-  width: 100%;
   font-family: "Trebuchet MS";
+  width: 100%;
 }
 
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-header, footer {
-  text-align: center;
+  min-width: 180px;
 }
 
 header,
 footer {
   background-color: #0a2032;
+  text-align: center;
 }
 
 header,
-#footer,
 section h3,
 section li,
-section p {
+section p,
+footer h4 {
   padding: 10px 1rem;
 }
 
 header h1,
 header h2,
 section h3,
-#footer {
+footer h4 {
   color: #fff;
 }
 
@@ -58,15 +56,10 @@ ul li {
   list-style: none;
 }
 
-footer {
-  height: 55px;
-}
-
 h1,
 h2,
 h3,
-h4,
-#footer {
+h4 {
   font-family: "Inter", sans-serif;
 }
 
@@ -87,16 +80,16 @@ p {
   font-size: 15px;
 }
 
-picture img{
-    display: block;
-    width: 92%;
+picture img {
+  display: block;
+  width: 92%;
 }
 
 section {
-  margin: 10px;
   background-color: #eee;
   border: 1px solid #aaa;
   border-radius: 20px 20px 0 0;
+  margin: 10px;
   overflow: hidden;
 }
 

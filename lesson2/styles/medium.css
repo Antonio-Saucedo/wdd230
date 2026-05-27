@@ -1,4 +1,4 @@
-@media (min-width: 32.5em) {
+@media (min-width: 35.3em) {
   body,
   header,
   main,
@@ -6,11 +6,6 @@
     width: 550px;
   }
 
-  footer {
-    height: 38px;
-  }
-
-  /* class selector */
   .last {
     grid-column: 1/3;
   }
