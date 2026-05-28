@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,46 +6,55 @@
     <title>Progressive Loading of Images • Antonio Saucedo</title>
     <meta
       name="description"
-      content="This demostrates progressive loading of images in a webpage."
+      content="A demo by Antonio Saucedo showcasing progressive image loading, where placeholder images are replaced with full images as they enter the viewport."
     />
-    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
-    <h1>Progressive Loading Images</h1>
-    <picture>
-      <img
-        src="images/placeholder.jpg"
-        data-src="images/chicken.jpg"
-        alt="chicken"
-      />
-    </picture>
-    <picture>
-      <img src="images/placeholder.jpg" data-src="images/goat.jpg" alt="goat" />
-    </picture>
-    <picture>
-      <img
-        src="images/placeholder.jpg"
-        data-src="images/horse.jpg"
-        alt="horse"
-      />
-    </picture>
-    <picture>
-      <img
-        src="images/placeholder.jpg"
-        data-src="images/rabbit.jpg"
-        alt="rabbit"
-      />
-    </picture>
-    <picture>
-      <img src="images/placeholder.jpg" data-src="images/ram.jpg" alt="ram" />
-    </picture>
-    <picture>
-      <img
-        src="images/placeholder.jpg"
-        data-src="images/sheep.jpg"
-        alt="sheep"
-      />
-    </picture>
+    <header>
+      <h1>Progressive Loading Images</h1>
+    </header>
+    <main>
+      <picture>
+        <img
+          src="images/placeholder.jpg"
+          data-src="images/chicken.jpg"
+          alt="chicken"
+        />
+      </picture>
+      <picture>
+        <img
+          src="images/placeholder.jpg"
+          data-src="images/goat.jpg"
+          alt="goat"
+        />
+      </picture>
+      <picture>
+        <img
+          src="images/placeholder.jpg"
+          data-src="images/horse.jpg"
+          alt="horse"
+        />
+      </picture>
+      <picture>
+        <img
+          src="images/placeholder.jpg"
+          data-src="images/llama.jpg"
+          alt="llama"
+        />
+      </picture>
+      <picture>
+        <img src="images/placeholder.jpg" data-src="images/ram.jpg" alt="ram" />
+      </picture>
+      <picture>
+        <img
+          src="images/placeholder.jpg"
+          data-src="images/sheep.jpg"
+          alt="sheep"
+        />
+      </picture>
+    </main>
+    <footer id="footer">©</footer>
   </body>
 </html>

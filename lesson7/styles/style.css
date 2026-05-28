@@ -6,13 +6,21 @@
 
 body {
   height: 100vh;
-  padding: 20px;
   text-align: center;
+}
+
+header {
+  padding-top: 20px;
+}
+
+main {
   display: flex;
   flex-direction: column;
+  padding: 20px;
 }
 
 body picture {
+  align-self: center;
   padding: 5px;
 }
 
@@ -21,6 +29,12 @@ picture img[data-src] {
 }
 
 picture img {
+  display: block;
   filter: blur(0em);
   transition: filter 0.5s;
+}
+
+footer {
+  font-size: 18px;
+  padding: 0 20px 20px;
 }
