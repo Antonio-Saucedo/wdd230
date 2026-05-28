@@ -1,93 +1,162 @@
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
 body {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: 18px;
-	font-family: Arial, sans-serif;
+  align-items: center;
+  background-color: #7a8dc0;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  height: 100vh;
+  height: 100dvh;
+  justify-content: center;
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  width: 100%;
 }
 
 h1 {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 main {
-	margin: 0.5rem auto;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	padding: 0.5rem;
-	background-color: #bed;
+  background-color: #1c2b5d;
+  border: 1px solid #000;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  width: 100%;
 }
 
 input,
 button {
-	padding: 0.35rem;
-	margin-left: 1rem;
-	font-size: 1.1rem;
+  font-size: 1.1rem;
+  margin-left: 1rem;
+  padding: 0.35rem;
 }
 
 input {
-	width: 188px;
+  width: 188px;
 }
 
-.input p {
-	font-size: 0.9rem;
-    font-weight: 700;
-	margin: auto 0;
+label {
+  align-items: anchor-center;
+  color: #fff;
+  display: flex;
 }
 
-.input {
-	margin: 5px 20px;
+.input-container {
+  display: flex;
+  margin: 5px 20px;
 }
 
-.input,
-.input label {
-	display: flex;
+.input-container label {
+  display: flex;
 }
 
-.input button {
-	width: 120px;
+.input-container p {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: auto 0;
 }
 
-.listcontainer {
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	margin: 1rem;
-	padding: 1rem;
-}
-
-.list {
-	margin: 0.2rem;
-}
-
-.list li button {
-	color: red;
-	font-weight: 700;
-	font-size: 20px;
-	padding: 6px 10px;
+.input-container button {
+  align-self: center;
+  min-width: 120px;
+  width: 120px;
 }
 
 ul {
-	margin: 1rem;
-	list-style: none;
+  list-style: none;
+  margin: 1rem;
+}
+
+.list-container {
+  border: 1px solid #fff;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.list {
+  margin: 0.2rem;
 }
 
 li {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin-bottom: 0.5rem;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  overflow-wrap: anywhere;
 }
 
-@media only screen and (min-width: 32.5em) {
-	h1 {
-		font-size: 2rem;
-	}
+.list li button {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 6px 10px;
+}
 
-	main {
-		width: 560px;
-	}
+.list li button img {
+  display: block;
+  width: 16px;
+}
+
+@media only screen and (min-width: 608px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    width: 590px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .input-container label {
+    display: block;
+  }
+
+  .input-container input {
+    margin-left: 0;
+    margin-right: 1rem;
+    width: stretch;
+  }
+
+  .input-container button {
+    align-self: end;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .input-container {
+    display: block;
+  }
+
+  .input-container input {
+    margin-right: 0;
+  }
+
+  .input-container button {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 160px) {
+  .input-container button {
+    min-width: 76px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 120px) {
+  body {
+    height: auto;
+    min-width: 120px;
+  }
 }
