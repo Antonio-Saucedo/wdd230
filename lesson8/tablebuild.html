@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="This shows a general design of a table in HTML."
+      content="A styled HTML table by Antonio Saucedo tracking ACME Wildwest monthly sales vs. goals from August–December, including a Black Friday entry."
     />
     <title>Table • Build</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,56 +14,60 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lateef&family=Ubuntu:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <table>
-      <caption>
-        ACME Wildwest
-      </caption>
-      <thead>
-        <tr class="columns">
-          <th>Period</th>
-          <th>Sales</th>
-          <th>Sales Goal</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="columns">
-          <td>August</td>
-          <td>$3,590</td>
-          <td>$4,000</td>
-        </tr>
-        <tr class="columns">
-          <td>September</td>
-          <td>$4,420</td>
-          <td>$5,000</td>
-        </tr>
-        <tr class="columns">
-          <td>October</td>
-          <td>$4,870</td>
-          <td>$5,000</td>
-        </tr>
-        <tr class="columns">
-          <td>November</td>
-          <td>$8,610</td>
-          <td>$7,500</td>
-        </tr>
-        <tr class="columns">
-          <td>Black Friday</td>
-          <td colspan="2">$3,200</td>
-        </tr>
-        <tr class="columns">
-          <td>December</td>
-          <td>$6,820</td>
-          <td class="highlight">$7,500</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="3">Compiled 6.09.2022 By ASaucedo</td>
-        </tr>
-      </tfoot>
-    </table>
+    <main>
+      <div class="table-container">
+        <table>
+          <caption>
+            <h1>ACME Wildwest</h1>
+          </caption>
+          <thead>
+            <tr>
+              <th>Period</th>
+              <th>Sales</th>
+              <th>Sales Goal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>August</td>
+              <td>$3,590</td>
+              <td>$4,000</td>
+            </tr>
+            <tr>
+              <td>September</td>
+              <td>$4,420</td>
+              <td>$5,000</td>
+            </tr>
+            <tr>
+              <td>October</td>
+              <td>$4,870</td>
+              <td>$5,000</td>
+            </tr>
+            <tr>
+              <td>November</td>
+              <td>$8,610</td>
+              <td>$7,500</td>
+            </tr>
+            <tr>
+              <td>Black Friday</td>
+              <td colspan="2">$3,200</td>
+            </tr>
+            <tr>
+              <td>December</td>
+              <td>$6,820</td>
+              <td class="highlight">$7,500</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Compiled 6.09.2022 By Antonio Saucedo</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </main>
   </body>
 </html>
