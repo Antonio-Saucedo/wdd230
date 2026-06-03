@@ -1,40 +1,41 @@
-const URL =
-  "https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json";
+const DATA_URL =
+  "https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json";
 const cards = document.querySelector(".cards");
+const page = document.body.dataset.page;
+const template = document.querySelector("#prophet-card");
 
 function buildProphetCards(info) {
-  let nonUtah = info.prophets.filter((p) => p.birthplace != "Utah");
-  nonUtah.forEach((prophet) => {
-    let card = document.createElement("section");
-    let h2 = document.createElement("h2");
-    let p = document.createElement("p");
-    let p2 = document.createElement("p");
-    let img = document.createElement("img");
-    let fullname = `${prophet.name} ${prophet.lastname}`;
+  document.querySelector(".loading")?.remove();
 
-    h2.innerHTML = `${prophet.name} ${prophet.lastname}`;
-    p.innerHTML = `Date of birth: <strong>${prophet.birthdate}</strong>`;
-    p2.innerHTML = `Place of birth: <strong>${prophet.birthplace}</strong>`;
-    img.setAttribute("src", `${prophet.imageurl}`);
-    img.setAttribute("alt", `Picture of President ${fullname}`);
-    img.setAttribute("loading", "lazy");
+  let cardData =
+    page === "home"
+      ? info.prophets
+      : info.prophets.filter((p) =>
+          page === "Utah" ? p.birthplace === "Utah" : p.birthplace !== "Utah",
+        );
 
-    card.append(h2);
-    card.appendChild(p);
-    card.appendChild(p2);
-    card.append(img);
+  cardData.forEach((prophet) => {
+    let fullName = `${prophet.name} ${prophet.lastname}`;
+    let clone = template.content.cloneNode(true);
 
-    cards.append(card);
+    clone.querySelector("img").src = prophet.imageurl;
+    clone.querySelector("img").alt = `Picture of President ${fullName}`;
+    clone.querySelector("h2").textContent = fullName;
+    clone.querySelector(".birthdate strong").textContent = prophet.birthdate;
+    clone.querySelector(".birthplace strong").textContent = prophet.birthplace;
+
+    cards.append(clone);
   });
 }
 
 async function getProphets() {
-  let response = await fetch(URL);
-  if (response.ok) {
+  try {
+    let response = await fetch(DATA_URL);
+    if (!response.ok) throw Error(response.statusText);
     let data = await response.json();
     buildProphetCards(data);
-  } else {
-    throw Error(response.statusText);
+  } catch (error) {
+    console.error("Failed to load prophets:", error);
   }
 }
 

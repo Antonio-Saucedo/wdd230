@@ -8,23 +8,89 @@
 body {
   font-size: 16px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
+  min-width: 175px;
+}
+
+body,
+nav ul li a,
+nav ul li a:hover {
+  color: #fff;
 }
 
 header,
+footer,
 main,
-footer {
-  margin: 16px;
+section div {
+  padding: 16px;
+}
+
+header,
+footer,
+.cards .loading {
   text-align: center;
 }
 
-h1 {
-  color: #000;
-  border-bottom: 1px solid #eee;
-  text-shadow: 0 0 15px #999;
+header,
+footer,
+nav {
+  background-color: #42286e;
+}
+
+header p,
+footer {
+  color: #c9a0dc;
+}
+
+main {
+  background-color: #fdf6f0;
 }
 
 h2 {
-  color: blue;
+  color: #42286e;
+}
+
+nav {
+  padding: 16px 16px 26px;
+}
+
+nav ul,
+section {
+  display: flex;
+}
+
+nav ul,
+.cards {
+  gap: 10px;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  border: 1px solid rgba(222, 220, 209, 0.3);
+  border-radius: 8px;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #7b52a8;
+}
+
+nav ul li.active a:hover,
+.active a,
+.cards .loading {
+  color: #000;
+}
+
+nav ul li.active a:hover {
+  background-color: #f5a880;
+}
+
+li.active a {
+  background-color: #ed7548;
 }
 
 .cards {
@@ -33,26 +99,39 @@ h2 {
 }
 
 section {
-  margin: 4px;
-  padding: 16px;
-  background-color: #b9b9cc;
-  border: 1px solid #6f6f7a;
-  display: flex;
+  background-color: #fff;
+  border-left: 5px solid;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #e8d8f0;
+  color: #5a3787;
   flex-direction: column;
-  align-items: center;
+  overflow: hidden;
 }
 
-section:nth-child(n) p:nth-child(3) {
-  min-height: 40px;
+section strong {
+  color: #2a1651;
 }
 
 img {
-  box-shadow: 0 0 30px #777;
-  width: 175px;
-  border: 1px solid #333;
+  max-height: 446px;
+  width: 100%;
 }
 
 footer {
-  border-top: 1px solid #555;
   padding: 20px;
+}
+
+@media (max-width: 472px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li a {
+    border-radius: 0;
+    display: block;
+  }
+
+  .cards {
+    grid-template-columns: unset;
+  }
 }
