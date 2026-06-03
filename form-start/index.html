@@ -1,65 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="This is a form build to demostrate good practice."
-    />
-
-    <!-- This start file was build by Paul Cheney  -->
-    <title>HTML5 Start Site by Paul Cheney</title>
-
     <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
-    <!-- <meta
+    <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
-    /> -->
-
-    <!-- STYLE SHEETS -->
+    />
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+    <meta
+      name="description"
+      content="A responsive web form demo using a starter template for submitting course proposals, covering applicant details, audience level, software needs, and funding."
+    />
+    <meta name="author" content="Antonio Saucedo" />
+    <title>Course Proposal • Web Forms</title>
     <link href="css/normalize.css" rel="stylesheet" />
-    <!-- phone-default -->
     <link href="css/small.css" rel="stylesheet" />
-    <!-- enhance-tablet -->
     <link href="css/medium.css" rel="stylesheet" />
-    <!-- enhance-desktop -->
     <link href="css/large.css" rel="stylesheet" />
+    <script src="scripts/main.js" defer></script>
   </head>
   <body>
-    <!-- HEADER HERE -->
     <header>
       <h1>Course Proposal</h1>
       <h2>Designing Web Forms</h2>
     </header>
-
-    <!-- NAVIGATION HERE -->
     <nav class="clearfix">
       <ul>
-        <li><a href="#">About</a></li>
-        <li class="active"><a href="#">Propose</a></li>
-        <li><a href="#">Winners</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="active"><a href="#">Proposal</a></li>
       </ul>
     </nav>
-
-    <!-- CONTENT HERE -->
     <main>
       <h1>Course Proposal Application</h1>
       <form method="get" action="thanks.html">
         <fieldset>
           <legend>Applicant Information</legend>
           <label class="top"
-            >First Name* <input type="text" name="fname" required
+            >First Name<span class="red">*</span
+            ><input type="text" name="fname" placeholder=" " required
           /></label>
           <label class="top"
-            >Last Name* <input type="text" name="lname" required
+            >Last Name<span class="red">*</span
+            ><input type="text" name="lname" required
           /></label>
           <label class="top"
             >Phone <input type="tel" name="phone" placeholder="1235551234"
           /></label>
           <label class="top"
-            >Email*
+            >Email<span class="red">*</span>
             <input
               type="email"
               name="email"
@@ -71,7 +59,7 @@
           /></label>
         </fieldset>
         <fieldset>
-          <legend>Course information</legend>
+          <legend>Course Information</legend>
           <div>Audience</div>
           <label class="sbs"
             ><input type="radio" name="audience" value="beginner" />
@@ -107,9 +95,8 @@
           <label class="top"
             >Anticipated Completion Date <input type="date" name="completeDate"
           /></label>
-          <label class="top"
-            >Course Subject
-            <select name="subject">
+          <label class="top" for="subject"
+            >Course Subject<select id="subject" name="subject">
               <option value="">Please Select &#9662;</option>
               <option value="software">Software Development</option>
               <option value="creative">Creative Professional</option>
@@ -125,14 +112,9 @@
             >How Many Authors <input type="number" name="authors"
           /></label>
         </fieldset>
-        <label class="input">
         <input type="submit" value="Propose My Course" class="submitBtn" />
-        </label>
       </form>
     </main>
-
-    <!-- FOOTER HERE -->
-    <footer>&copy; 2018 &bull; Paul Cheney &bull; 123-555-6789</footer>
-    <script src="js/scripts.js"></script>
+    <footer id="footer">©</footer>
   </body>
 </html>

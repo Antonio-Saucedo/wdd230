@@ -1,139 +1,183 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 
 /*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 /*----------- BODY --------------*/
 body {
-    font-size: 16px;
-    font-family: Verdana, sans-serif;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  min-width: 300px;
 }
-
 
 /*----------- HEADER --------------*/
 header {
-    padding: .5rem 2%;
-    background-color: #ddd;
+  padding: 0.5rem 2%;
+  background-color: #445ba9;
+  color: #fff;
 }
-header h1 {margin: 0;}
-header h2 {margin: 0; font-weight: normal;}
+
+header h1 {
+  margin: 0;
+}
+
+header h2 {
+  margin: 0;
+  font-weight: normal;
+}
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #666;
+  background-color: #e5e5e5;
 }
+
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
+
 nav ul li {
-    float: left;
-    width: 25%;
+  float: left;
+  width: 25%;
 }
+
 nav ul li a {
-    display: block;
-    background-color: #444;
-    color: #eee;
-    border-left: 1px solid #777;
-    padding: .5rem 0;
-    text-decoration: none;
-    font-size: .9rem;
-    text-align: center;
+  display: block;
+  background-color: #444;
+  color: #eee;
+  border-left: 1px solid #777;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-align: center;
 }
-nav ul li:first-child a {border-left: none;}
+
+nav ul li:first-child a {
+  border-left: none;
+}
 
 nav ul li a:hover {
-    background-color: #eee;
-    color: #333;
+  background-color: #eee;
+  color: #333;
 }
+
+nav ul li a:focus-visible {
+  outline: none;
+}
+
 nav ul li.active a {
-    background-color: #000;
-    color: #fff;
+  background-color: #000;
+  color: #fff;
 }
 /*----------- MAIN --------------*/
 main {
-    padding: 0 2%;
-    min-height: 20rem;
+  padding: 0 2%;
+  min-height: 20rem;
 }
 
 /*---------- FORM ----------*/
+form {
+  padding: 9px 30px 30px;
+}
 
 form fieldset {
-    margin: 30px;
-    border: 1px solid #445ba9;
-    border-radius: 10px;
-    padding: 10px 15px;
+  border: 1px solid #445ba9;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+form fieldset:not(:nth-child(1)) {
+  margin-top: 30px;
+}
+
+form fieldset:last-of-type {
+  margin-bottom: 30px;
 }
 
 form legend {
-    color: #445ba9;
-    margin: 0 16px;
-    padding: 0 8px;
+  color: #445ba9;
+  margin: 0 16px;
+  padding: 0 8px;
 }
 
 form label.top,
 form div {
-    display: block;
-    padding-top: 10px;
-    color: #9c2c13;
-    font-size: 14px;
+  display: block;
+  padding-top: 10px;
+  /*color: #9c2c13;*/
+  font-size: 14px;
 }
 
 form label.top input,
 form label.top select {
-    -webkit-appearance: none;
-    display: block;
-    font-size: 16px;
-    border: solid 1px #999;
-    border-radius: 4px;
-    padding: 12px;
-    color: #555;
-    width: 100%;
-    max-width: 320px;
-    background-color: rgba(0,0,0,0.1);
+  -webkit-appearance: none;
+  display: block;
+  font-size: 16px;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 12px;
+  color: #555;
+  width: 100%;
+  max-width: 320px;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 form label.sbs {
-    display: block;
-    padding: 12px 0;
-    color: #555;
+  display: block;
+  padding: 12px 0;
+  color: #555;
 }
 
-.input {
-    display: flex;
+input[type="date"] {
+  text-transform: uppercase;
 }
 
 form input.submitBtn {
-    display: block;
-    border: none;
-    background-color: #9c2c13;
-    color: white;
-    border-radius: 16px;
-    padding: 12px 24px;
-    margin: 0 30px 30px 30px;
-    width: 96%;
-    max-width: 320px;
+  background-color: #445ba9;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  margin: 0 18px 0 18px;
+  max-width: 320px;
+  padding: 12px 24px;
+  width: stretch;
+}
+
+form input[type="checkbox"],
+form input[type="radio"] {
+  accent-color: #445ba9;
 }
 
 form label.top input:required {
-    border-left: red solid 6px;
+  border-left: red solid 6px;
 }
 
 form label.top input:required:valid {
-    border-left: green solid 6px;
+  border-left: green solid 6px;
+}
+
+.red {
+  color: #9c2c13;
 }
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #ddd;
-    padding: .5rem 2%;
-    text-align: center;
+  background-color: #445ba9;
+  color: #fff;
+  padding: 0.5rem 2%;
+  text-align: center;
 }
-
-
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
