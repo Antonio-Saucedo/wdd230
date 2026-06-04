@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+header span.badge {
+  background-color: #faf5ff;
+}
+
+body,
+header,
+main .temp-container,
+main .conditions-container {
+  display: flex;
+}
+
+body,
+h1 {
+  font-size: 16px;
+}
+
+body {
+  flex-direction: column;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  height: 100vh;
+  height: 100dvh;
+  justify-content: center;
+  min-height: min-content;
+  min-width: 225px;
+}
+
+div.api-container,
+header,
+main,
+footer {
+  margin: 0 auto;
+}
+
+div.api-container {
+  border: 2px solid #673471;
+  border-radius: 16px;
+  box-shadow: 0 0 10px 0 #673471;
+  overflow: hidden;
+}
+
+header,
+main .card,
+footer {
+  padding: 10px;
+}
+
+header,
+main {
+  background-color: #fff;
+}
+
+header,
+main .temp-container .card {
+  color: #673471;
+}
+
+header {
+  align-items: center;
+  border-bottom: 2px solid #673471;
+  gap: 16px;
+  padding: 14px 22px;
+}
+
+header span:not(.badge) {
+  background-color: #673471;
+  border-radius: 50%;
+  display: inline-block;
+  height: 14px;
+  min-width: 14px;
+  width: 14px;
+}
+
+header span.badge,
+main .temp-container .card {
+  border: 1px solid #c879ab;
+}
+
+header span.badge {
+  border-radius: 20px;
+  font-size: 12px;
+  height: max-content;
+  margin-left: auto;
+  min-width: max-content;
+  padding: 3px 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+main .temp-container,
+main .conditions-container {
+  gap: 8px;
+  justify-content: space-between;
+}
+
+main .card {
+  border-radius: 10px;
+  width: stretch;
+}
+
+main .temp-container .card,
+footer {
+  text-align: center;
+}
+
+main .temp-container .card,
+footer {
+  font-size: 13px;
+}
+
+main .temp-container .card p,
+figcaption {
+  color: #10356a;
+}
+
+main .temp-container .card p {
+  font-size: 20px;
+}
+
+main .conditions-container .card {
+  background-color: #f0fbff;
+  border: 1px solid #52e4ff;
+  column-gap: 8px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-top: 16px;
+}
+
+main .conditions-container .card img {
+  grid-row: span 2;
+}
+
+main .conditions-container .card h2,
+main .conditions-container .card figcaption {
+  grid-column: 2;
+}
+
+h2,
+footer {
+  color: #50668c;
+}
+
+h2,
+figcaption {
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+img {
+  width: 50px;
+}
+
+figcaption {
+  font-weight: 600;
+}
+
+footer {
+  border-top: 2px solid #673471;
+}

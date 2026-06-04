@@ -1,45 +1,43 @@
-const currentTemp = document.querySelector("#current-temp");
-const minTemp = document.querySelector("#min");
-const maxTemp = document.querySelector("#max");
-const weatherIcon = document.querySelector("#weather-icon");
-const weatherDesc = document.querySelector("figcaption");
-const windDesc = document.querySelector("#wind-desc");
+// Cache DOM queries
+const elements = {
+  currentTemp: document.querySelector("#current-temp"),
+  minTemp: document.querySelector("#min"),
+  maxTemp: document.querySelector("#max"),
+  weatherIcon: document.querySelector("#weather-icon"),
+  weatherDesc: document.querySelector("figcaption"),
+  windDesc: document.querySelector("#wind-desc"),
+};
 
-const url = `https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=Imperial&appid=fc6f9211ad045deb2b01c57bb94315bc`;
+const API_KEY = "fc6f9211ad045deb2b01c57bb94315bc";
+const CITY = "Rigby";
+const ICON_BASE_URL = `https://antonio-saucedo.github.io/wdd230/chamber/images/weatherIcons`;
+const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${CITY}&units=Imperial&appid=${API_KEY}`;
 
-apiFetch(url);
-
-function displayResults (weatherData) {
-    currentTemp.innerHTML = weatherData.main.temp.toFixed(1);
-    minTemp.innerHTML = weatherData.main.temp_min.toFixed(1);
-    maxTemp.innerHTML = weatherData.main.temp_max.toFixed(1);
-    const weatherimagesrc = `https://antonio-saucedo.github.io/wdd230/chamber/images/weatherIcons/${weatherData.weather[0].icon}.png`;
-
-    // Capitalize first letter of each word.
-    const descweather = weatherData.weather[0].description;
-    const descweatherdisplay = descweather.split(" ");
-    for (var i = 0; i < descweatherdisplay.length; i++) {
-        descweatherdisplay[i] = descweatherdisplay[i].charAt(0).toUpperCase() + descweatherdisplay[i].slice(1);
-    }
-    const descweather2 = descweatherdisplay.join(" ");
-
-    const descwind = weatherData.wind.speed.toFixed(1);
-    weatherIcon.setAttribute("src", weatherimagesrc);
-    weatherIcon.setAttribute("alt", descweather);
-    weatherDesc.innerHTML = descweather2;
-    windDesc.innerHTML = descwind;
+function toTitleCase(str) {
+  return str.replace(/\b\w/g, (char) => char.toUpperCase());
 }
 
-async function apiFetch(apiURL) {
-    try {
-        const response = await fetch(apiURL);
-        if (response.ok) {
-            const data = await response.json();
-            displayResults(data);
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log(error);
-    }
+function displayResults({ main, weather, wind }) {
+  const { temp, temp_min, temp_max } = main;
+  const { icon, description } = weather[0];
+
+  elements.currentTemp.textContent = temp.toFixed(1);
+  elements.minTemp.textContent = temp_min.toFixed(1);
+  elements.maxTemp.textContent = temp_max.toFixed(1);
+  elements.weatherIcon.src = `${ICON_BASE_URL}/${icon}.png`;
+  elements.weatherIcon.alt = description;
+  elements.weatherDesc.textContent = toTitleCase(description);
+  elements.windDesc.textContent = wind.speed.toFixed(1);
 }
+
+async function apiFetch(url) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) throw Error(await response.text());
+    displayResults(await response.json());
+  } catch (error) {
+    console.error("Weather API fetch failed:", error);
+  }
+}
+
+apiFetch(API_URL);
