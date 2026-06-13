@@ -16,7 +16,7 @@ body,
 header,
 main,
 footer {
-  font-family: "Trebuchet MS";
+  font-family: "Trebuchet MS", Arial, sans-serif;
   width: 100%;
 }
 
